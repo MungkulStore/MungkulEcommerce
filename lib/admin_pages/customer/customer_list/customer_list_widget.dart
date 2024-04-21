@@ -118,368 +118,681 @@ class _CustomerListWidgetState extends State<CustomerListWidget>
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: Column(
-            mainAxisSize: MainAxisSize.max,
-            children: [
-              Expanded(
-                child: Row(
-                  mainAxisSize: MainAxisSize.max,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    wrapWithModel(
-                      model: _model.webNavModel,
-                      updateCallback: () => setState(() {}),
-                      child: const WebNavWidget(
-                        selectedNav: 3,
-                      ),
-                    ),
-                    Expanded(
-                      flex: 10,
-                      child: Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            30.0, 0.0, 30.0, 0.0),
-                        child: SingleChildScrollView(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Container(
-                                width: double.infinity,
-                                height: 25.0,
-                                decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.of(context)
-                                      .secondaryBackground,
-                                ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 12.0, 0.0, 30.0),
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          16.0, 0.0, 0.0, 8.0),
-                                      child: Text(
-                                        FFLocalizations.of(context).getText(
-                                          'sapw59wb' /* Customer */,
-                                        ),
-                                        textAlign: TextAlign.start,
-                                        style: FlutterFlowTheme.of(context)
-                                            .displaySmall
-                                            .override(
-                                              fontFamily: 'Kantumruy Pro',
-                                              letterSpacing: 0.0,
-                                            ),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          16.0, 0.0, 16.0, 16.0),
-                                      child: Text(
-                                        FFLocalizations.of(context).getText(
-                                          '71i7kcr3' /* Below is a summary of your Cus... */,
-                                        ),
-                                        textAlign: TextAlign.start,
-                                        style: FlutterFlowTheme.of(context)
-                                            .labelMedium
-                                            .override(
-                                              fontFamily: 'Kantumruy Pro',
-                                              letterSpacing: 0.0,
-                                            ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
-                                    16.0, 16.0, 16.0, 0.0),
-                                child: Container(
-                                  width: double.infinity,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(9.0),
-                                    border: Border.all(
-                                      color: const Color(0xFF39D2C0),
+          child: Align(
+            alignment: const AlignmentDirectional(0.0, 0.0),
+            child: Container(
+              constraints: const BoxConstraints(
+                maxWidth: 1537.0,
+                maxHeight: 960.0,
+              ),
+              decoration: const BoxDecoration(),
+              child: Column(
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Expanded(
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        wrapWithModel(
+                          model: _model.webNavModel,
+                          updateCallback: () => setState(() {}),
+                          child: const WebNavWidget(
+                            selectedNav: 3,
+                          ),
+                        ),
+                        Expanded(
+                          flex: 10,
+                          child: Padding(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
+                                30.0, 0.0, 30.0, 0.0),
+                            child: SingleChildScrollView(
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    width: double.infinity,
+                                    height: 25.0,
+                                    decoration: BoxDecoration(
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
                                     ),
                                   ),
-                                  child: Padding(
+                                  Padding(
                                     padding: const EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 1.0, 0.0, 0.0),
+                                        0.0, 12.0, 0.0, 30.0),
                                     child: Column(
-                                      mainAxisSize: MainAxisSize.min,
+                                      mainAxisSize: MainAxisSize.max,
                                       mainAxisAlignment:
                                           MainAxisAlignment.start,
                                       crossAxisAlignment:
-                                          CrossAxisAlignment.center,
+                                          CrossAxisAlignment.start,
                                       children: [
-                                        Container(
-                                          width: double.infinity,
-                                          height: 77.0,
-                                          decoration: BoxDecoration(
-                                            color: FlutterFlowTheme.of(context)
-                                                .primaryBackground,
-                                            boxShadow: const [
-                                              BoxShadow(
-                                                blurRadius: 3.0,
-                                                color: Color(0x20000000),
-                                                offset: Offset(
-                                                  0.0,
-                                                  1.0,
-                                                ),
-                                              )
-                                            ],
-                                            borderRadius: const BorderRadius.only(
-                                              bottomLeft: Radius.circular(0.0),
-                                              bottomRight: Radius.circular(0.0),
-                                              topLeft: Radius.circular(9.0),
-                                              topRight: Radius.circular(9.0),
+                                        Padding(
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  16.0, 0.0, 0.0, 8.0),
+                                          child: Text(
+                                            FFLocalizations.of(context).getText(
+                                              'sapw59wb' /* Customer */,
                                             ),
-                                          ),
-                                          alignment:
-                                              const AlignmentDirectional(-1.0, 0.0),
-                                          child: Padding(
-                                            padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    16.0, 0.0, 16.0, 0.0),
-                                            child: Row(
-                                              mainAxisSize: MainAxisSize.max,
-                                              children: [
-                                                Expanded(
-                                                  child: Text(
-                                                    FFLocalizations.of(context)
-                                                        .getText(
-                                                      'x1k38wjh' /* Our Users */,
-                                                    ),
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .headlineLarge
-                                                        .override(
-                                                          fontFamily:
-                                                              'Kantumruy Pro',
-                                                          letterSpacing: 0.0,
-                                                        ),
-                                                  ),
+                                            textAlign: TextAlign.start,
+                                            style: FlutterFlowTheme.of(context)
+                                                .displaySmall
+                                                .override(
+                                                  fontFamily: 'Kantumruy Pro',
+                                                  letterSpacing: 0.0,
                                                 ),
-                                                Padding(
-                                                  padding: const EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          12.0, 8.0, 12.0, 8.0),
-                                                  child: Container(
-                                                    width: 250.0,
-                                                    height: 45.0,
-                                                    decoration: BoxDecoration(
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .accent2,
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              9.0),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  16.0, 0.0, 16.0, 16.0),
+                                          child: Text(
+                                            FFLocalizations.of(context).getText(
+                                              '71i7kcr3' /* Below is a summary of your Cus... */,
+                                            ),
+                                            textAlign: TextAlign.start,
+                                            style: FlutterFlowTheme.of(context)
+                                                .labelMedium
+                                                .override(
+                                                  fontFamily: 'Kantumruy Pro',
+                                                  letterSpacing: 0.0,
+                                                ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                        16.0, 16.0, 16.0, 0.0),
+                                    child: Container(
+                                      width: double.infinity,
+                                      decoration: BoxDecoration(
+                                        borderRadius:
+                                            BorderRadius.circular(9.0),
+                                        border: Border.all(
+                                          color: const Color(0xFF39D2C0),
+                                        ),
+                                      ),
+                                      child: Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            0.0, 1.0, 0.0, 0.0),
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.min,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.center,
+                                          children: [
+                                            Container(
+                                              width: double.infinity,
+                                              height: 77.0,
+                                              decoration: BoxDecoration(
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryBackground,
+                                                boxShadow: const [
+                                                  BoxShadow(
+                                                    blurRadius: 3.0,
+                                                    color: Color(0x20000000),
+                                                    offset: Offset(
+                                                      0.0,
+                                                      1.0,
                                                     ),
-                                                    child: Padding(
+                                                  )
+                                                ],
+                                                borderRadius: const BorderRadius.only(
+                                                  bottomLeft:
+                                                      Radius.circular(0.0),
+                                                  bottomRight:
+                                                      Radius.circular(0.0),
+                                                  topLeft: Radius.circular(9.0),
+                                                  topRight:
+                                                      Radius.circular(9.0),
+                                                ),
+                                              ),
+                                              alignment: const AlignmentDirectional(
+                                                  -1.0, 0.0),
+                                              child: Padding(
+                                                padding: const EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        16.0, 0.0, 16.0, 0.0),
+                                                child: Row(
+                                                  mainAxisSize:
+                                                      MainAxisSize.max,
+                                                  children: [
+                                                    Expanded(
+                                                      child: Text(
+                                                        FFLocalizations.of(
+                                                                context)
+                                                            .getText(
+                                                          'x1k38wjh' /* Our Users */,
+                                                        ),
+                                                        style:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .headlineLarge
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Kantumruy Pro',
+                                                                  letterSpacing:
+                                                                      0.0,
+                                                                ),
+                                                      ),
+                                                    ),
+                                                    Padding(
                                                       padding:
                                                           const EdgeInsetsDirectional
                                                               .fromSTEB(
+                                                                  12.0,
                                                                   8.0,
-                                                                  0.0,
-                                                                  0.0,
-                                                                  0.0),
-                                                      child: Row(
-                                                        mainAxisSize:
-                                                            MainAxisSize.max,
-                                                        children: [
-                                                          Expanded(
-                                                            child: Padding(
-                                                              padding:
-                                                                  const EdgeInsetsDirectional
+                                                                  12.0,
+                                                                  8.0),
+                                                      child: Container(
+                                                        width: 250.0,
+                                                        height: 45.0,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .accent2,
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(
+                                                                      9.0),
+                                                        ),
+                                                        child: Padding(
+                                                          padding:
+                                                              const EdgeInsetsDirectional
+                                                                  .fromSTEB(
+                                                                      8.0,
+                                                                      0.0,
+                                                                      0.0,
+                                                                      0.0),
+                                                          child: Row(
+                                                            mainAxisSize:
+                                                                MainAxisSize
+                                                                    .max,
+                                                            children: [
+                                                              Expanded(
+                                                                child: Padding(
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           4.0,
                                                                           0.0,
                                                                           0.0,
                                                                           0.0),
-                                                              child:
-                                                                  TextFormField(
-                                                                controller: _model
-                                                                    .searchorderTextController,
-                                                                focusNode: _model
-                                                                    .searchorderFocusNode,
-                                                                onChanged: (_) =>
-                                                                    EasyDebounce
-                                                                        .debounce(
-                                                                  '_model.searchorderTextController',
-                                                                  const Duration(
-                                                                      milliseconds:
-                                                                          1000),
-                                                                  () async {
-                                                                    _model.searchOrderCopy =
-                                                                        await queryUsersRecordOnce(
-                                                                      queryBuilder: (usersRecord) => usersRecord.orderBy(
-                                                                          'created_time',
-                                                                          descending:
-                                                                              true),
-                                                                    );
-                                                                    safeSetState(
-                                                                        () {
-                                                                      _model.simpleSearchResults1 =
-                                                                          TextSearch(
+                                                                  child:
+                                                                      TextFormField(
+                                                                    controller:
                                                                         _model
-                                                                            .searchOrderCopy!
-                                                                            .map(
-                                                                              (record) => TextSearchItem.fromTerms(record, [
-                                                                                record.phoneNumber,
-                                                                                record.displayName,
-                                                                                record.adress
-                                                                              ]),
-                                                                            )
-                                                                            .toList(),
-                                                                      ).search(_model.searchorderTextController.text).map((r) => r.object).take(25).toList();
-                                                                    });
-                                                                    setState(
-                                                                        () {
-                                                                      _model.customerList = _model
-                                                                          .simpleSearchResults1
-                                                                          .toList()
-                                                                          .cast<
-                                                                              UsersRecord>();
-                                                                    });
+                                                                            .searchorderTextController,
+                                                                    focusNode:
+                                                                        _model
+                                                                            .searchorderFocusNode,
+                                                                    onChanged: (_) =>
+                                                                        EasyDebounce
+                                                                            .debounce(
+                                                                      '_model.searchorderTextController',
+                                                                      const Duration(
+                                                                          milliseconds:
+                                                                              1000),
+                                                                      () async {
+                                                                        _model.searchOrderCopy =
+                                                                            await queryUsersRecordOnce(
+                                                                          queryBuilder: (usersRecord) => usersRecord.orderBy(
+                                                                              'created_time',
+                                                                              descending: true),
+                                                                        );
+                                                                        safeSetState(
+                                                                            () {
+                                                                          _model.simpleSearchResults1 =
+                                                                              TextSearch(
+                                                                            _model.searchOrderCopy!
+                                                                                .map(
+                                                                                  (record) => TextSearchItem.fromTerms(record, [
+                                                                                    record.phoneNumber,
+                                                                                    record.displayName,
+                                                                                    record.adress
+                                                                                  ]),
+                                                                                )
+                                                                                .toList(),
+                                                                          ).search(_model.searchorderTextController.text).map((r) => r.object).take(25).toList();
+                                                                        });
+                                                                        setState(
+                                                                            () {
+                                                                          _model.customerList = _model
+                                                                              .simpleSearchResults1
+                                                                              .toList()
+                                                                              .cast<UsersRecord>();
+                                                                        });
 
-                                                                    setState(
-                                                                        () {});
-                                                                  },
+                                                                        setState(
+                                                                            () {});
+                                                                      },
+                                                                    ),
+                                                                    obscureText:
+                                                                        false,
+                                                                    decoration:
+                                                                        InputDecoration(
+                                                                      hintText:
+                                                                          FFLocalizations.of(context)
+                                                                              .getText(
+                                                                        'sghslqlu' /* Search Order */,
+                                                                      ),
+                                                                      enabledBorder:
+                                                                          const UnderlineInputBorder(
+                                                                        borderSide:
+                                                                            BorderSide(
+                                                                          color:
+                                                                              Color(0x00000000),
+                                                                          width:
+                                                                              1.0,
+                                                                        ),
+                                                                        borderRadius:
+                                                                            BorderRadius.only(
+                                                                          topLeft:
+                                                                              Radius.circular(4.0),
+                                                                          topRight:
+                                                                              Radius.circular(4.0),
+                                                                        ),
+                                                                      ),
+                                                                      focusedBorder:
+                                                                          const UnderlineInputBorder(
+                                                                        borderSide:
+                                                                            BorderSide(
+                                                                          color:
+                                                                              Color(0x00000000),
+                                                                          width:
+                                                                              1.0,
+                                                                        ),
+                                                                        borderRadius:
+                                                                            BorderRadius.only(
+                                                                          topLeft:
+                                                                              Radius.circular(4.0),
+                                                                          topRight:
+                                                                              Radius.circular(4.0),
+                                                                        ),
+                                                                      ),
+                                                                      errorBorder:
+                                                                          const UnderlineInputBorder(
+                                                                        borderSide:
+                                                                            BorderSide(
+                                                                          color:
+                                                                              Color(0x00000000),
+                                                                          width:
+                                                                              1.0,
+                                                                        ),
+                                                                        borderRadius:
+                                                                            BorderRadius.only(
+                                                                          topLeft:
+                                                                              Radius.circular(4.0),
+                                                                          topRight:
+                                                                              Radius.circular(4.0),
+                                                                        ),
+                                                                      ),
+                                                                      focusedErrorBorder:
+                                                                          const UnderlineInputBorder(
+                                                                        borderSide:
+                                                                            BorderSide(
+                                                                          color:
+                                                                              Color(0x00000000),
+                                                                          width:
+                                                                              1.0,
+                                                                        ),
+                                                                        borderRadius:
+                                                                            BorderRadius.only(
+                                                                          topLeft:
+                                                                              Radius.circular(4.0),
+                                                                          topRight:
+                                                                              Radius.circular(4.0),
+                                                                        ),
+                                                                      ),
+                                                                    ),
+                                                                    style: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .titleMedium
+                                                                        .override(
+                                                                          fontFamily:
+                                                                              'Poppins',
+                                                                          color:
+                                                                              FlutterFlowTheme.of(context).secondaryText,
+                                                                          letterSpacing:
+                                                                              0.0,
+                                                                        ),
+                                                                    validator: _model
+                                                                        .searchorderTextControllerValidator
+                                                                        .asValidator(
+                                                                            context),
+                                                                  ),
                                                                 ),
-                                                                obscureText:
-                                                                    false,
-                                                                decoration:
-                                                                    InputDecoration(
-                                                                  hintText: FFLocalizations.of(
-                                                                          context)
-                                                                      .getText(
-                                                                    'sghslqlu' /* Search Order */,
-                                                                  ),
-                                                                  enabledBorder:
-                                                                      const UnderlineInputBorder(
-                                                                    borderSide:
-                                                                        BorderSide(
-                                                                      color: Color(
-                                                                          0x00000000),
-                                                                      width:
-                                                                          1.0,
-                                                                    ),
-                                                                    borderRadius:
-                                                                        BorderRadius
-                                                                            .only(
-                                                                      topLeft: Radius
-                                                                          .circular(
-                                                                              4.0),
-                                                                      topRight:
-                                                                          Radius.circular(
-                                                                              4.0),
-                                                                    ),
-                                                                  ),
-                                                                  focusedBorder:
-                                                                      const UnderlineInputBorder(
-                                                                    borderSide:
-                                                                        BorderSide(
-                                                                      color: Color(
-                                                                          0x00000000),
-                                                                      width:
-                                                                          1.0,
-                                                                    ),
-                                                                    borderRadius:
-                                                                        BorderRadius
-                                                                            .only(
-                                                                      topLeft: Radius
-                                                                          .circular(
-                                                                              4.0),
-                                                                      topRight:
-                                                                          Radius.circular(
-                                                                              4.0),
-                                                                    ),
-                                                                  ),
-                                                                  errorBorder:
-                                                                      const UnderlineInputBorder(
-                                                                    borderSide:
-                                                                        BorderSide(
-                                                                      color: Color(
-                                                                          0x00000000),
-                                                                      width:
-                                                                          1.0,
-                                                                    ),
-                                                                    borderRadius:
-                                                                        BorderRadius
-                                                                            .only(
-                                                                      topLeft: Radius
-                                                                          .circular(
-                                                                              4.0),
-                                                                      topRight:
-                                                                          Radius.circular(
-                                                                              4.0),
-                                                                    ),
-                                                                  ),
-                                                                  focusedErrorBorder:
-                                                                      const UnderlineInputBorder(
-                                                                    borderSide:
-                                                                        BorderSide(
-                                                                      color: Color(
-                                                                          0x00000000),
-                                                                      width:
-                                                                          1.0,
-                                                                    ),
-                                                                    borderRadius:
-                                                                        BorderRadius
-                                                                            .only(
-                                                                      topLeft: Radius
-                                                                          .circular(
-                                                                              4.0),
-                                                                      topRight:
-                                                                          Radius.circular(
-                                                                              4.0),
-                                                                    ),
-                                                                  ),
-                                                                ),
-                                                                style: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleMedium
-                                                                    .override(
-                                                                      fontFamily:
-                                                                          'Poppins',
-                                                                      color: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .secondaryText,
-                                                                      letterSpacing:
-                                                                          0.0,
-                                                                    ),
-                                                                validator: _model
-                                                                    .searchorderTextControllerValidator
-                                                                    .asValidator(
-                                                                        context),
                                                               ),
+                                                              Container(
+                                                                width: 47.0,
+                                                                height: 94.0,
+                                                                decoration:
+                                                                    BoxDecoration(
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .primary,
+                                                                  borderRadius:
+                                                                      BorderRadius
+                                                                          .circular(
+                                                                              9.0),
+                                                                ),
+                                                                child: Padding(
+                                                                  padding: const EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          4.0,
+                                                                          0.0,
+                                                                          4.0,
+                                                                          0.0),
+                                                                  child:
+                                                                      InkWell(
+                                                                    splashColor:
+                                                                        Colors
+                                                                            .transparent,
+                                                                    focusColor:
+                                                                        Colors
+                                                                            .transparent,
+                                                                    hoverColor:
+                                                                        Colors
+                                                                            .transparent,
+                                                                    highlightColor:
+                                                                        Colors
+                                                                            .transparent,
+                                                                    onTap:
+                                                                        () async {
+                                                                      _model.searchOrder =
+                                                                          await queryUsersRecordOnce(
+                                                                        queryBuilder: (usersRecord) => usersRecord.orderBy(
+                                                                            'created_time',
+                                                                            descending:
+                                                                                true),
+                                                                      );
+                                                                      safeSetState(
+                                                                          () {
+                                                                        _model.simpleSearchResults2 =
+                                                                            TextSearch(
+                                                                          _model
+                                                                              .searchOrder!
+                                                                              .map(
+                                                                                (record) => TextSearchItem.fromTerms(record, [
+                                                                                  record.phoneNumber,
+                                                                                  record.displayName,
+                                                                                  record.adress
+                                                                                ]),
+                                                                              )
+                                                                              .toList(),
+                                                                        ).search(_model.searchorderTextController.text).map((r) => r.object).take(25).toList();
+                                                                      });
+                                                                      setState(
+                                                                          () {
+                                                                        _model.customerList = _model
+                                                                            .simpleSearchResults2
+                                                                            .toList()
+                                                                            .cast<UsersRecord>();
+                                                                      });
+
+                                                                      setState(
+                                                                          () {});
+                                                                    },
+                                                                    child: const Icon(
+                                                                      Icons
+                                                                          .search_rounded,
+                                                                      color: Colors
+                                                                          .white,
+                                                                      size:
+                                                                          24.0,
+                                                                    ),
+                                                                  ),
+                                                                ),
+                                                              ),
+                                                            ],
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ),
+                                            ),
+                                            Container(
+                                              width: double.infinity,
+                                              height: 50.0,
+                                              decoration: BoxDecoration(
+                                                color: const Color(0xFFF5F5F5),
+                                                boxShadow: const [
+                                                  BoxShadow(
+                                                    blurRadius: 3.0,
+                                                    color: Color(0x20000000),
+                                                    offset: Offset(
+                                                      0.0,
+                                                      1.0,
+                                                    ),
+                                                  )
+                                                ],
+                                                borderRadius:
+                                                    BorderRadius.circular(0.0),
+                                              ),
+                                              alignment: const AlignmentDirectional(
+                                                  -1.0, 0.0),
+                                              child: Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.start,
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                children: [
+                                                  Expanded(
+                                                    child: Container(
+                                                      height: 100.0,
+                                                      decoration: const BoxDecoration(
+                                                        color:
+                                                            Color(0x00FFFFFF),
+                                                      ),
+                                                      child: Align(
+                                                        alignment:
+                                                            const AlignmentDirectional(
+                                                                -1.0, 0.0),
+                                                        child: Padding(
+                                                          padding:
+                                                              const EdgeInsetsDirectional
+                                                                  .fromSTEB(
+                                                                      9.0,
+                                                                      0.0,
+                                                                      0.0,
+                                                                      0.0),
+                                                          child: Text(
+                                                            FFLocalizations.of(
+                                                                    context)
+                                                                .getText(
+                                                              '4akf3bd1' /* Name */,
+                                                            ),
+                                                            style: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .labelLarge
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Kantumruy Pro',
+                                                                  letterSpacing:
+                                                                      0.0,
+                                                                ),
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                  Expanded(
+                                                    child: Align(
+                                                      alignment:
+                                                          const AlignmentDirectional(
+                                                              0.0, 0.0),
+                                                      child: Container(
+                                                        decoration:
+                                                            const BoxDecoration(
+                                                          color:
+                                                              Color(0x00FFFFFF),
+                                                        ),
+                                                        child: Visibility(
+                                                          visible:
+                                                              responsiveVisibility(
+                                                            context: context,
+                                                            phone: false,
+                                                            tablet: false,
+                                                          ),
+                                                          child: Align(
+                                                            alignment:
+                                                                const AlignmentDirectional(
+                                                                    0.0, 0.0),
+                                                            child: Text(
+                                                              FFLocalizations.of(
+                                                                      context)
+                                                                  .getText(
+                                                                '7t90bq9j' /* Phone Number */,
+                                                              ),
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .labelLarge
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        'Kantumruy Pro',
+                                                                    letterSpacing:
+                                                                        0.0,
+                                                                  ),
                                                             ),
                                                           ),
-                                                          Container(
-                                                            width: 47.0,
-                                                            height: 94.0,
-                                                            decoration:
-                                                                BoxDecoration(
-                                                              color: FlutterFlowTheme
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                  Expanded(
+                                                    child: Align(
+                                                      alignment:
+                                                          const AlignmentDirectional(
+                                                              0.0, 0.0),
+                                                      child: Container(
+                                                        decoration:
+                                                            const BoxDecoration(),
+                                                        child: Visibility(
+                                                          visible:
+                                                              responsiveVisibility(
+                                                            context: context,
+                                                            phone: false,
+                                                            tablet: false,
+                                                          ),
+                                                          child: Align(
+                                                            alignment:
+                                                                const AlignmentDirectional(
+                                                                    0.0, 0.0),
+                                                            child: Text(
+                                                              FFLocalizations.of(
+                                                                      context)
+                                                                  .getText(
+                                                                '0f4t7vkf' /* adress */,
+                                                              ),
+                                                              style: FlutterFlowTheme
                                                                       .of(context)
-                                                                  .primary,
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          9.0),
+                                                                  .labelLarge
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        'Kantumruy Pro',
+                                                                    letterSpacing:
+                                                                        0.0,
+                                                                  ),
                                                             ),
-                                                            child: Padding(
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                  Expanded(
+                                                    child: Align(
+                                                      alignment:
+                                                          const AlignmentDirectional(
+                                                              0.0, 0.0),
+                                                      child: Container(
+                                                        decoration:
+                                                            const BoxDecoration(),
+                                                        child: Visibility(
+                                                          visible:
+                                                              responsiveVisibility(
+                                                            context: context,
+                                                            phone: false,
+                                                            tablet: false,
+                                                          ),
+                                                          child: Align(
+                                                            alignment:
+                                                                const AlignmentDirectional(
+                                                                    0.0, 0.0),
+                                                            child: Text(
+                                                              FFLocalizations.of(
+                                                                      context)
+                                                                  .getText(
+                                                                'krkl67lx' /* email */,
+                                                              ),
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .labelLarge
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        'Kantumruy Pro',
+                                                                    letterSpacing:
+                                                                        0.0,
+                                                                  ),
+                                                            ),
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                            Container(
+                                              width: double.infinity,
+                                              height: 414.0,
+                                              decoration: BoxDecoration(
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
+                                              ),
+                                              child: SingleChildScrollView(
+                                                child: Column(
+                                                  mainAxisSize:
+                                                      MainAxisSize.max,
+                                                  children: [
+                                                    Builder(
+                                                      builder: (context) {
+                                                        final userList = _model
+                                                            .customerList
+                                                            .toList();
+                                                        return ListView.builder(
+                                                          padding:
+                                                              EdgeInsets.zero,
+                                                          primary: false,
+                                                          shrinkWrap: true,
+                                                          scrollDirection:
+                                                              Axis.vertical,
+                                                          itemCount:
+                                                              userList.length,
+                                                          itemBuilder: (context,
+                                                              userListIndex) {
+                                                            final userListItem =
+                                                                userList[
+                                                                    userListIndex];
+                                                            return Padding(
                                                               padding:
                                                                   const EdgeInsetsDirectional
                                                                       .fromSTEB(
-                                                                          4.0,
                                                                           0.0,
-                                                                          4.0,
-                                                                          0.0),
+                                                                          8.0,
+                                                                          0.0,
+                                                                          8.0),
                                                               child: InkWell(
                                                                 splashColor: Colors
                                                                     .transparent,
@@ -492,716 +805,407 @@ class _CustomerListWidgetState extends State<CustomerListWidget>
                                                                         .transparent,
                                                                 onTap:
                                                                     () async {
-                                                                  _model.searchOrder =
-                                                                      await queryUsersRecordOnce(
-                                                                    queryBuilder: (usersRecord) => usersRecord.orderBy(
-                                                                        'created_time',
-                                                                        descending:
-                                                                            true),
+                                                                  context
+                                                                      .pushNamed(
+                                                                    'edit_user',
+                                                                    queryParameters:
+                                                                        {
+                                                                      'editId':
+                                                                          serializeParam(
+                                                                        userListItem
+                                                                            .reference,
+                                                                        ParamType
+                                                                            .DocumentReference,
+                                                                      ),
+                                                                    }.withoutNulls,
                                                                   );
-                                                                  safeSetState(
-                                                                      () {
-                                                                    _model.simpleSearchResults2 =
-                                                                        TextSearch(
-                                                                      _model
-                                                                          .searchOrder!
-                                                                          .map(
-                                                                            (record) =>
-                                                                                TextSearchItem.fromTerms(record, [
-                                                                              record.phoneNumber,
-                                                                              record.displayName,
-                                                                              record.adress
-                                                                            ]),
-                                                                          )
-                                                                          .toList(),
-                                                                    )
-                                                                            .search(_model
-                                                                                .searchorderTextController.text)
-                                                                            .map((r) =>
-                                                                                r.object)
-                                                                            .take(25)
-                                                                            .toList();
-                                                                  });
-                                                                  setState(() {
-                                                                    _model.customerList = _model
-                                                                        .simpleSearchResults2
-                                                                        .toList()
-                                                                        .cast<
-                                                                            UsersRecord>();
-                                                                  });
-
-                                                                  setState(
-                                                                      () {});
                                                                 },
-                                                                child: const Icon(
-                                                                  Icons
-                                                                      .search_rounded,
-                                                                  color: Colors
-                                                                      .white,
-                                                                  size: 24.0,
-                                                                ),
-                                                              ),
-                                                            ),
-                                                          ),
-                                                        ],
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
-                                          ),
-                                        ),
-                                        Container(
-                                          width: double.infinity,
-                                          height: 50.0,
-                                          decoration: BoxDecoration(
-                                            color: const Color(0xFFF5F5F5),
-                                            boxShadow: const [
-                                              BoxShadow(
-                                                blurRadius: 3.0,
-                                                color: Color(0x20000000),
-                                                offset: Offset(
-                                                  0.0,
-                                                  1.0,
-                                                ),
-                                              )
-                                            ],
-                                            borderRadius:
-                                                BorderRadius.circular(0.0),
-                                          ),
-                                          alignment:
-                                              const AlignmentDirectional(-1.0, 0.0),
-                                          child: Row(
-                                            mainAxisSize: MainAxisSize.max,
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.start,
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: [
-                                              Expanded(
-                                                child: Container(
-                                                  height: 100.0,
-                                                  decoration: const BoxDecoration(
-                                                    color: Color(0x00FFFFFF),
-                                                  ),
-                                                  child: Align(
-                                                    alignment:
-                                                        const AlignmentDirectional(
-                                                            -1.0, 0.0),
-                                                    child: Padding(
-                                                      padding:
-                                                          const EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  9.0,
-                                                                  0.0,
-                                                                  0.0,
-                                                                  0.0),
-                                                      child: Text(
-                                                        FFLocalizations.of(
-                                                                context)
-                                                            .getText(
-                                                          '4akf3bd1' /* Name */,
-                                                        ),
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .labelLarge
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Kantumruy Pro',
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                ),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                              Expanded(
-                                                child: Align(
-                                                  alignment:
-                                                      const AlignmentDirectional(
-                                                          0.0, 0.0),
-                                                  child: Container(
-                                                    decoration: const BoxDecoration(
-                                                      color: Color(0x00FFFFFF),
-                                                    ),
-                                                    child: Visibility(
-                                                      visible:
-                                                          responsiveVisibility(
-                                                        context: context,
-                                                        phone: false,
-                                                        tablet: false,
-                                                      ),
-                                                      child: Align(
-                                                        alignment:
-                                                            const AlignmentDirectional(
-                                                                0.0, 0.0),
-                                                        child: Text(
-                                                          FFLocalizations.of(
-                                                                  context)
-                                                              .getText(
-                                                            '7t90bq9j' /* Phone Number */,
-                                                          ),
-                                                          style: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .labelLarge
-                                                              .override(
-                                                                fontFamily:
-                                                                    'Kantumruy Pro',
-                                                                letterSpacing:
-                                                                    0.0,
-                                                              ),
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                              Expanded(
-                                                child: Align(
-                                                  alignment:
-                                                      const AlignmentDirectional(
-                                                          0.0, 0.0),
-                                                  child: Container(
-                                                    decoration: const BoxDecoration(),
-                                                    child: Visibility(
-                                                      visible:
-                                                          responsiveVisibility(
-                                                        context: context,
-                                                        phone: false,
-                                                        tablet: false,
-                                                      ),
-                                                      child: Align(
-                                                        alignment:
-                                                            const AlignmentDirectional(
-                                                                0.0, 0.0),
-                                                        child: Text(
-                                                          FFLocalizations.of(
-                                                                  context)
-                                                              .getText(
-                                                            '0f4t7vkf' /* adress */,
-                                                          ),
-                                                          style: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .labelLarge
-                                                              .override(
-                                                                fontFamily:
-                                                                    'Kantumruy Pro',
-                                                                letterSpacing:
-                                                                    0.0,
-                                                              ),
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                              Expanded(
-                                                child: Align(
-                                                  alignment:
-                                                      const AlignmentDirectional(
-                                                          0.0, 0.0),
-                                                  child: Container(
-                                                    decoration: const BoxDecoration(),
-                                                    child: Visibility(
-                                                      visible:
-                                                          responsiveVisibility(
-                                                        context: context,
-                                                        phone: false,
-                                                        tablet: false,
-                                                      ),
-                                                      child: Align(
-                                                        alignment:
-                                                            const AlignmentDirectional(
-                                                                0.0, 0.0),
-                                                        child: Text(
-                                                          FFLocalizations.of(
-                                                                  context)
-                                                              .getText(
-                                                            'krkl67lx' /* email */,
-                                                          ),
-                                                          style: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .labelLarge
-                                                              .override(
-                                                                fontFamily:
-                                                                    'Kantumruy Pro',
-                                                                letterSpacing:
-                                                                    0.0,
-                                                              ),
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                        Container(
-                                          width: double.infinity,
-                                          height: 414.0,
-                                          decoration: BoxDecoration(
-                                            color: FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
-                                          ),
-                                          child: SingleChildScrollView(
-                                            child: Column(
-                                              mainAxisSize: MainAxisSize.max,
-                                              children: [
-                                                Builder(
-                                                  builder: (context) {
-                                                    final userList = _model
-                                                        .customerList
-                                                        .toList();
-                                                    return ListView.builder(
-                                                      padding: EdgeInsets.zero,
-                                                      primary: false,
-                                                      shrinkWrap: true,
-                                                      scrollDirection:
-                                                          Axis.vertical,
-                                                      itemCount:
-                                                          userList.length,
-                                                      itemBuilder: (context,
-                                                          userListIndex) {
-                                                        final userListItem =
-                                                            userList[
-                                                                userListIndex];
-                                                        return Padding(
-                                                          padding:
-                                                              const EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      0.0,
-                                                                      8.0,
-                                                                      0.0,
-                                                                      8.0),
-                                                          child: InkWell(
-                                                            splashColor: Colors
-                                                                .transparent,
-                                                            focusColor: Colors
-                                                                .transparent,
-                                                            hoverColor: Colors
-                                                                .transparent,
-                                                            highlightColor:
-                                                                Colors
-                                                                    .transparent,
-                                                            onTap: () async {
-                                                              context.pushNamed(
-                                                                'edit_user',
-                                                                queryParameters:
-                                                                    {
-                                                                  'editId':
-                                                                      serializeParam(
-                                                                    userListItem
-                                                                        .reference,
-                                                                    ParamType
-                                                                        .DocumentReference,
-                                                                  ),
-                                                                }.withoutNulls,
-                                                              );
-                                                            },
-                                                            child: Container(
-                                                              width: double
-                                                                  .infinity,
-                                                              decoration:
-                                                                  BoxDecoration(
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .secondaryBackground,
-                                                                boxShadow: const [
-                                                                  BoxShadow(
-                                                                    blurRadius:
-                                                                        3.0,
-                                                                    color: Color(
-                                                                        0x20000000),
-                                                                    offset:
-                                                                        Offset(
-                                                                      0.0,
-                                                                      1.0,
-                                                                    ),
-                                                                  )
-                                                                ],
-                                                                borderRadius:
-                                                                    BorderRadius
-                                                                        .circular(
-                                                                            0.0),
-                                                              ),
-                                                              child: Row(
-                                                                mainAxisSize:
-                                                                    MainAxisSize
-                                                                        .min,
-                                                                mainAxisAlignment:
-                                                                    MainAxisAlignment
-                                                                        .start,
-                                                                crossAxisAlignment:
-                                                                    CrossAxisAlignment
-                                                                        .center,
-                                                                children: [
-                                                                  Expanded(
-                                                                    child:
-                                                                        Align(
-                                                                      alignment:
-                                                                          const AlignmentDirectional(
-                                                                              -1.0,
-                                                                              0.0),
-                                                                      child:
-                                                                          Container(
-                                                                        height:
-                                                                            50.0,
-                                                                        decoration:
-                                                                            BoxDecoration(
-                                                                          color:
-                                                                              FlutterFlowTheme.of(context).secondaryBackground,
+                                                                child:
+                                                                    Container(
+                                                                  width: double
+                                                                      .infinity,
+                                                                  decoration:
+                                                                      BoxDecoration(
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .secondaryBackground,
+                                                                    boxShadow: const [
+                                                                      BoxShadow(
+                                                                        blurRadius:
+                                                                            3.0,
+                                                                        color: Color(
+                                                                            0x20000000),
+                                                                        offset:
+                                                                            Offset(
+                                                                          0.0,
+                                                                          1.0,
                                                                         ),
+                                                                      )
+                                                                    ],
+                                                                    borderRadius:
+                                                                        BorderRadius.circular(
+                                                                            0.0),
+                                                                  ),
+                                                                  child: Row(
+                                                                    mainAxisSize:
+                                                                        MainAxisSize
+                                                                            .min,
+                                                                    mainAxisAlignment:
+                                                                        MainAxisAlignment
+                                                                            .start,
+                                                                    crossAxisAlignment:
+                                                                        CrossAxisAlignment
+                                                                            .center,
+                                                                    children: [
+                                                                      Expanded(
                                                                         child:
                                                                             Align(
                                                                           alignment: const AlignmentDirectional(
                                                                               -1.0,
                                                                               0.0),
                                                                           child:
-                                                                              Padding(
-                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                                                                9.0,
-                                                                                0.0,
-                                                                                0.0,
-                                                                                0.0),
+                                                                              Container(
+                                                                            height:
+                                                                                50.0,
+                                                                            decoration:
+                                                                                BoxDecoration(
+                                                                              color: FlutterFlowTheme.of(context).secondaryBackground,
+                                                                            ),
                                                                             child:
-                                                                                AutoSizeText(
-                                                                              userListItem.displayName,
-                                                                              style: FlutterFlowTheme.of(context).bodyLarge.override(
-                                                                                    fontFamily: 'Kantumruy Pro',
-                                                                                    letterSpacing: 0.0,
-                                                                                  ),
+                                                                                Align(
+                                                                              alignment: const AlignmentDirectional(-1.0, 0.0),
+                                                                              child: Padding(
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
+                                                                                child: AutoSizeText(
+                                                                                  userListItem.displayName,
+                                                                                  style: FlutterFlowTheme.of(context).bodyLarge.override(
+                                                                                        fontFamily: 'Kantumruy Pro',
+                                                                                        letterSpacing: 0.0,
+                                                                                      ),
+                                                                                ),
+                                                                              ),
                                                                             ),
                                                                           ),
                                                                         ),
                                                                       ),
-                                                                    ),
-                                                                  ),
-                                                                  Expanded(
-                                                                    child:
-                                                                        Container(
-                                                                      width:
-                                                                          150.0,
-                                                                      decoration:
-                                                                          const BoxDecoration(),
-                                                                      child:
-                                                                          Visibility(
-                                                                        visible:
-                                                                            responsiveVisibility(
-                                                                          context:
-                                                                              context,
-                                                                          phone:
-                                                                              false,
-                                                                          tablet:
-                                                                              false,
-                                                                        ),
+                                                                      Expanded(
                                                                         child:
-                                                                            Align(
-                                                                          alignment: const AlignmentDirectional(
-                                                                              0.0,
-                                                                              1.0),
+                                                                            Container(
+                                                                          width:
+                                                                              150.0,
+                                                                          decoration:
+                                                                              const BoxDecoration(),
                                                                           child:
-                                                                              Text(
-                                                                            userListItem.phoneNumber,
-                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  fontFamily: 'Kantumruy Pro',
-                                                                                  letterSpacing: 0.0,
-                                                                                ),
+                                                                              Visibility(
+                                                                            visible:
+                                                                                responsiveVisibility(
+                                                                              context: context,
+                                                                              phone: false,
+                                                                              tablet: false,
+                                                                            ),
+                                                                            child:
+                                                                                Align(
+                                                                              alignment: const AlignmentDirectional(0.0, 1.0),
+                                                                              child: Text(
+                                                                                userListItem.phoneNumber,
+                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                      fontFamily: 'Kantumruy Pro',
+                                                                                      letterSpacing: 0.0,
+                                                                                    ),
+                                                                              ),
+                                                                            ),
                                                                           ),
                                                                         ),
                                                                       ),
-                                                                    ),
-                                                                  ),
-                                                                  Expanded(
-                                                                    child:
-                                                                        Container(
-                                                                      width:
-                                                                          200.0,
-                                                                      decoration:
-                                                                          BoxDecoration(
-                                                                        color: FlutterFlowTheme.of(context)
-                                                                            .secondaryBackground,
-                                                                      ),
-                                                                      child:
-                                                                          Visibility(
-                                                                        visible:
-                                                                            responsiveVisibility(
-                                                                          context:
-                                                                              context,
-                                                                          phone:
-                                                                              false,
-                                                                          tablet:
-                                                                              false,
-                                                                        ),
+                                                                      Expanded(
                                                                         child:
-                                                                            Align(
-                                                                          alignment: const AlignmentDirectional(
-                                                                              0.0,
-                                                                              0.0),
+                                                                            Container(
+                                                                          width:
+                                                                              200.0,
+                                                                          decoration:
+                                                                              BoxDecoration(
+                                                                            color:
+                                                                                FlutterFlowTheme.of(context).secondaryBackground,
+                                                                          ),
                                                                           child:
-                                                                              AutoSizeText(
-                                                                            userListItem.adress,
-                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  fontFamily: 'Kantumruy Pro',
-                                                                                  letterSpacing: 0.0,
-                                                                                ),
+                                                                              Visibility(
+                                                                            visible:
+                                                                                responsiveVisibility(
+                                                                              context: context,
+                                                                              phone: false,
+                                                                              tablet: false,
+                                                                            ),
+                                                                            child:
+                                                                                Align(
+                                                                              alignment: const AlignmentDirectional(0.0, 0.0),
+                                                                              child: AutoSizeText(
+                                                                                userListItem.adress,
+                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                      fontFamily: 'Kantumruy Pro',
+                                                                                      letterSpacing: 0.0,
+                                                                                    ),
+                                                                              ),
+                                                                            ),
                                                                           ),
                                                                         ),
                                                                       ),
-                                                                    ),
-                                                                  ),
-                                                                  Expanded(
-                                                                    child:
-                                                                        Container(
-                                                                      width:
-                                                                          150.0,
-                                                                      decoration:
-                                                                          BoxDecoration(
-                                                                        color: FlutterFlowTheme.of(context)
-                                                                            .secondaryBackground,
-                                                                      ),
-                                                                      child:
-                                                                          Visibility(
-                                                                        visible:
-                                                                            responsiveVisibility(
-                                                                          context:
-                                                                              context,
-                                                                          phone:
-                                                                              false,
-                                                                          tablet:
-                                                                              false,
-                                                                        ),
+                                                                      Expanded(
                                                                         child:
-                                                                            Align(
-                                                                          alignment: const AlignmentDirectional(
-                                                                              0.0,
-                                                                              0.0),
+                                                                            Container(
+                                                                          width:
+                                                                              150.0,
+                                                                          decoration:
+                                                                              BoxDecoration(
+                                                                            color:
+                                                                                FlutterFlowTheme.of(context).secondaryBackground,
+                                                                          ),
                                                                           child:
-                                                                              Text(
-                                                                            userListItem.email,
-                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  fontFamily: 'Kantumruy Pro',
-                                                                                  fontSize: 14.0,
-                                                                                  letterSpacing: 0.0,
-                                                                                ),
+                                                                              Visibility(
+                                                                            visible:
+                                                                                responsiveVisibility(
+                                                                              context: context,
+                                                                              phone: false,
+                                                                              tablet: false,
+                                                                            ),
+                                                                            child:
+                                                                                Align(
+                                                                              alignment: const AlignmentDirectional(0.0, 0.0),
+                                                                              child: Text(
+                                                                                userListItem.email,
+                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                      fontFamily: 'Kantumruy Pro',
+                                                                                      fontSize: 14.0,
+                                                                                      letterSpacing: 0.0,
+                                                                                    ),
+                                                                              ),
+                                                                            ),
                                                                           ),
                                                                         ),
                                                                       ),
-                                                                    ),
+                                                                    ],
                                                                   ),
-                                                                ],
+                                                                ),
                                                               ),
-                                                            ),
-                                                          ),
-                                                        );
+                                                            );
+                                                          },
+                                                        ).animateOnPageLoad(
+                                                            animationsMap[
+                                                                'listViewOnPageLoadAnimation']!);
                                                       },
-                                                    ).animateOnPageLoad(
-                                                        animationsMap[
-                                                            'listViewOnPageLoadAnimation']!);
-                                                  },
+                                                    ),
+                                                  ],
                                                 ),
-                                              ],
+                                              ).animateOnPageLoad(animationsMap[
+                                                  'columnOnPageLoadAnimation2']!),
                                             ),
-                                          ).animateOnPageLoad(animationsMap[
-                                              'columnOnPageLoadAnimation2']!),
-                                        ),
-                                        Container(
-                                          width: double.infinity,
-                                          height: 415.0,
-                                          decoration: BoxDecoration(
-                                            color: FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
-                                          ),
-                                          child: Builder(
-                                            builder: (context) {
-                                              final kiki =
-                                                  _model.customerList.toList();
-                                              return FlutterFlowDataTable<
-                                                  UsersRecord>(
-                                                controller: _model
-                                                    .paginatedDataTableController,
-                                                data: kiki,
-                                                columnsBuilder:
-                                                    (onSortChanged) => [
-                                                  DataColumn2(
-                                                    label:
-                                                        DefaultTextStyle.merge(
-                                                      softWrap: true,
-                                                      child: Text(
-                                                        FFLocalizations.of(
-                                                                context)
-                                                            .getText(
-                                                          'l61kuat7' /* Edit Header 1 */,
-                                                        ),
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .labelLarge
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Kantumruy Pro',
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                ),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                  DataColumn2(
-                                                    label:
-                                                        DefaultTextStyle.merge(
-                                                      softWrap: true,
-                                                      child: Text(
-                                                        FFLocalizations.of(
-                                                                context)
-                                                            .getText(
-                                                          'moy0mafh' /* Edit Header 2 */,
-                                                        ),
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .labelLarge
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Kantumruy Pro',
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                ),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                  DataColumn2(
-                                                    label:
-                                                        DefaultTextStyle.merge(
-                                                      softWrap: true,
-                                                      child: Text(
-                                                        FFLocalizations.of(
-                                                                context)
-                                                            .getText(
-                                                          'iqonmgig' /* Edit Header 3 */,
-                                                        ),
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .labelLarge
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Kantumruy Pro',
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                ),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ],
-                                                dataRowBuilder: (kikiItem,
-                                                        kikiIndex,
-                                                        selected,
-                                                        onSelectChanged) =>
-                                                    DataRow(
-                                                  color:
-                                                      MaterialStateProperty.all(
-                                                    kikiIndex % 2 == 0
-                                                        ? FlutterFlowTheme.of(
-                                                                context)
-                                                            .secondaryBackground
-                                                        : FlutterFlowTheme.of(
-                                                                context)
-                                                            .primaryBackground,
-                                                  ),
-                                                  cells: [
-                                                    Text(
-                                                      kikiItem.displayName,
-                                                      style: FlutterFlowTheme
-                                                              .of(context)
-                                                          .bodyMedium
-                                                          .override(
-                                                            fontFamily:
-                                                                'Kantumruy Pro',
-                                                            letterSpacing: 0.0,
-                                                          ),
-                                                    ),
-                                                    Text(
-                                                      kikiItem.phoneNumber,
-                                                      style: FlutterFlowTheme
-                                                              .of(context)
-                                                          .bodyMedium
-                                                          .override(
-                                                            fontFamily:
-                                                                'Kantumruy Pro',
-                                                            letterSpacing: 0.0,
-                                                          ),
-                                                    ),
-                                                    Text(
-                                                      kikiItem.adress,
-                                                      style: FlutterFlowTheme
-                                                              .of(context)
-                                                          .bodyMedium
-                                                          .override(
-                                                            fontFamily:
-                                                                'Kantumruy Pro',
-                                                            letterSpacing: 0.0,
-                                                          ),
-                                                    ),
-                                                  ]
-                                                      .map((c) => DataCell(c))
-                                                      .toList(),
-                                                ),
-                                                paginated: true,
-                                                selectable: false,
-                                                hidePaginator: false,
-                                                showFirstLastButtons: false,
-                                                headingRowHeight: 56.0,
-                                                dataRowHeight: 48.0,
-                                                columnSpacing: 20.0,
-                                                headingRowColor:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primary,
-                                                borderRadius:
-                                                    BorderRadius.circular(8.0),
-                                                addHorizontalDivider: true,
-                                                addTopAndBottomDivider: false,
-                                                hideDefaultHorizontalDivider:
-                                                    true,
-                                                horizontalDividerColor:
+                                            Container(
+                                              width: double.infinity,
+                                              height: 415.0,
+                                              decoration: BoxDecoration(
+                                                color:
                                                     FlutterFlowTheme.of(context)
                                                         .secondaryBackground,
-                                                horizontalDividerThickness: 1.0,
-                                                addVerticalDivider: false,
-                                              );
-                                            },
-                                          ),
-                                        ),
-                                        Container(
-                                          width: double.infinity,
-                                          height: 43.0,
-                                          decoration: const BoxDecoration(
-                                            color: Color(0xFFF5F5F5),
-                                            borderRadius: BorderRadius.only(
-                                              bottomLeft: Radius.circular(9.0),
-                                              bottomRight: Radius.circular(9.0),
-                                              topLeft: Radius.circular(0.0),
-                                              topRight: Radius.circular(0.0),
+                                              ),
+                                              child: Builder(
+                                                builder: (context) {
+                                                  final kiki = _model
+                                                      .customerList
+                                                      .toList();
+                                                  return FlutterFlowDataTable<
+                                                      UsersRecord>(
+                                                    controller: _model
+                                                        .paginatedDataTableController,
+                                                    data: kiki,
+                                                    columnsBuilder:
+                                                        (onSortChanged) => [
+                                                      DataColumn2(
+                                                        label: DefaultTextStyle
+                                                            .merge(
+                                                          softWrap: true,
+                                                          child: Text(
+                                                            FFLocalizations.of(
+                                                                    context)
+                                                                .getText(
+                                                              'l61kuat7' /* Edit Header 1 */,
+                                                            ),
+                                                            style: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .labelLarge
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Kantumruy Pro',
+                                                                  letterSpacing:
+                                                                      0.0,
+                                                                ),
+                                                          ),
+                                                        ),
+                                                      ),
+                                                      DataColumn2(
+                                                        label: DefaultTextStyle
+                                                            .merge(
+                                                          softWrap: true,
+                                                          child: Text(
+                                                            FFLocalizations.of(
+                                                                    context)
+                                                                .getText(
+                                                              'moy0mafh' /* Edit Header 2 */,
+                                                            ),
+                                                            style: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .labelLarge
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Kantumruy Pro',
+                                                                  letterSpacing:
+                                                                      0.0,
+                                                                ),
+                                                          ),
+                                                        ),
+                                                      ),
+                                                      DataColumn2(
+                                                        label: DefaultTextStyle
+                                                            .merge(
+                                                          softWrap: true,
+                                                          child: Text(
+                                                            FFLocalizations.of(
+                                                                    context)
+                                                                .getText(
+                                                              'iqonmgig' /* Edit Header 3 */,
+                                                            ),
+                                                            style: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .labelLarge
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Kantumruy Pro',
+                                                                  letterSpacing:
+                                                                      0.0,
+                                                                ),
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ],
+                                                    dataRowBuilder: (kikiItem,
+                                                            kikiIndex,
+                                                            selected,
+                                                            onSelectChanged) =>
+                                                        DataRow(
+                                                      color:
+                                                          MaterialStateProperty
+                                                              .all(
+                                                        kikiIndex % 2 == 0
+                                                            ? FlutterFlowTheme
+                                                                    .of(context)
+                                                                .secondaryBackground
+                                                            : FlutterFlowTheme
+                                                                    .of(context)
+                                                                .primaryBackground,
+                                                      ),
+                                                      cells: [
+                                                        Text(
+                                                          kikiItem.displayName,
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Kantumruy Pro',
+                                                                letterSpacing:
+                                                                    0.0,
+                                                              ),
+                                                        ),
+                                                        Text(
+                                                          kikiItem.phoneNumber,
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Kantumruy Pro',
+                                                                letterSpacing:
+                                                                    0.0,
+                                                              ),
+                                                        ),
+                                                        Text(
+                                                          kikiItem.adress,
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Kantumruy Pro',
+                                                                letterSpacing:
+                                                                    0.0,
+                                                              ),
+                                                        ),
+                                                      ]
+                                                          .map((c) =>
+                                                              DataCell(c))
+                                                          .toList(),
+                                                    ),
+                                                    paginated: true,
+                                                    selectable: false,
+                                                    hidePaginator: false,
+                                                    showFirstLastButtons: false,
+                                                    headingRowHeight: 56.0,
+                                                    dataRowHeight: 48.0,
+                                                    columnSpacing: 20.0,
+                                                    headingRowColor:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .primary,
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            8.0),
+                                                    addHorizontalDivider: true,
+                                                    addTopAndBottomDivider:
+                                                        false,
+                                                    hideDefaultHorizontalDivider:
+                                                        true,
+                                                    horizontalDividerColor:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .secondaryBackground,
+                                                    horizontalDividerThickness:
+                                                        1.0,
+                                                    addVerticalDivider: false,
+                                                  );
+                                                },
+                                              ),
                                             ),
-                                          ),
+                                            Container(
+                                              width: double.infinity,
+                                              height: 43.0,
+                                              decoration: const BoxDecoration(
+                                                color: Color(0xFFF5F5F5),
+                                                borderRadius: BorderRadius.only(
+                                                  bottomLeft:
+                                                      Radius.circular(9.0),
+                                                  bottomRight:
+                                                      Radius.circular(9.0),
+                                                  topLeft: Radius.circular(0.0),
+                                                  topRight:
+                                                      Radius.circular(0.0),
+                                                ),
+                                              ),
+                                            ),
+                                          ],
                                         ),
-                                      ],
+                                      ),
                                     ),
                                   ),
-                                ),
+                                ],
                               ),
-                            ],
+                            ).animateOnPageLoad(
+                                animationsMap['columnOnPageLoadAnimation1']!),
                           ),
-                        ).animateOnPageLoad(
-                            animationsMap['columnOnPageLoadAnimation1']!),
-                      ),
+                        ),
+                      ],
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
-            ],
+            ),
           ),
         ),
       ),

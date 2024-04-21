@@ -455,8 +455,8 @@ class _HearderWidgetState extends State<HearderWidget> {
                                             .primaryBackground,
                                         size: 18.0,
                                       ),
-                                      onPressed: () {
-                                        print('IconButton pressed ...');
+                                      onPressed: () async {
+                                        context.pushNamed('Account');
                                       },
                                     ),
                                   ),

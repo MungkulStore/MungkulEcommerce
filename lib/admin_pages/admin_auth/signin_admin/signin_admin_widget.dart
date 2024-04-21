@@ -63,11 +63,14 @@ class _SigninAdminWidgetState extends State<SigninAdminWidget> {
             child: Container(
               width: double.infinity,
               height: double.infinity,
+              constraints: const BoxConstraints(
+                maxWidth: 1537.0,
+                maxHeight: 960.0,
+              ),
               decoration: BoxDecoration(
                 color: FlutterFlowTheme.of(context).secondaryBackground,
                 border: Border.all(
                   color: const Color(0xFF0B0001),
-                  width: 6.0,
                 ),
               ),
               child: SingleChildScrollView(

@@ -62,8 +62,8 @@ class _ContactWidgetState extends State<ContactWidget> {
             alignment: const AlignmentDirectional(0.0, 0.0),
             child: Container(
               constraints: const BoxConstraints(
-                maxWidth: 1440.0,
-                maxHeight: 900.0,
+                maxWidth: 1537.0,
+                maxHeight: 960.0,
               ),
               decoration: const BoxDecoration(),
               child: SingleChildScrollView(
