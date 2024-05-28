@@ -124,7 +124,7 @@ class _SignUpPopupWidgetState extends State<SignUpPopupWidget>
                         ),
                         style:
                             FlutterFlowTheme.of(context).displaySmall.override(
-                                  fontFamily: 'Kantumruy Pro',
+                                  fontFamily: 'Inter',
                                   color: FlutterFlowTheme.of(context).primary,
                                   letterSpacing: 0.0,
                                 ),
@@ -143,7 +143,7 @@ class _SignUpPopupWidgetState extends State<SignUpPopupWidget>
                         style: FlutterFlowTheme.of(context)
                             .labelMedium
                             .override(
-                              fontFamily: 'Kantumruy Pro',
+                              fontFamily: 'Inter',
                               color: FlutterFlowTheme.of(context).primaryText,
                               letterSpacing: 0.0,
                             ),
@@ -175,12 +175,12 @@ class _SignUpPopupWidgetState extends State<SignUpPopupWidget>
                         ),
                         labelStyle:
                             FlutterFlowTheme.of(context).labelLarge.override(
-                                  fontFamily: 'Kantumruy Pro',
+                                  fontFamily: 'Inter',
                                   letterSpacing: 0.0,
                                 ),
                         hintStyle:
                             FlutterFlowTheme.of(context).labelMedium.override(
-                                  fontFamily: 'Kantumruy Pro',
+                                  fontFamily: 'Inter',
                                   letterSpacing: 0.0,
                                 ),
                         enabledBorder: UnderlineInputBorder(
@@ -216,7 +216,7 @@ class _SignUpPopupWidgetState extends State<SignUpPopupWidget>
                             const EdgeInsetsDirectional.fromSTEB(22.0, 0.0, 0.0, 0.0),
                       ),
                       style: FlutterFlowTheme.of(context).bodyLarge.override(
-                            fontFamily: 'Kantumruy Pro',
+                            fontFamily: 'Inter',
                             letterSpacing: 0.0,
                           ),
                       keyboardType: TextInputType.name,
@@ -239,12 +239,12 @@ class _SignUpPopupWidgetState extends State<SignUpPopupWidget>
                         ),
                         labelStyle:
                             FlutterFlowTheme.of(context).labelLarge.override(
-                                  fontFamily: 'Kantumruy Pro',
+                                  fontFamily: 'Inter',
                                   letterSpacing: 0.0,
                                 ),
                         hintStyle:
                             FlutterFlowTheme.of(context).labelMedium.override(
-                                  fontFamily: 'Kantumruy Pro',
+                                  fontFamily: 'Inter',
                                   letterSpacing: 0.0,
                                 ),
                         enabledBorder: UnderlineInputBorder(
@@ -280,7 +280,7 @@ class _SignUpPopupWidgetState extends State<SignUpPopupWidget>
                             const EdgeInsetsDirectional.fromSTEB(22.0, 0.0, 0.0, 0.0),
                       ),
                       style: FlutterFlowTheme.of(context).bodyLarge.override(
-                            fontFamily: 'Kantumruy Pro',
+                            fontFamily: 'Inter',
                             letterSpacing: 0.0,
                           ),
                       keyboardType: TextInputType.emailAddress,
@@ -303,12 +303,12 @@ class _SignUpPopupWidgetState extends State<SignUpPopupWidget>
                         ),
                         labelStyle:
                             FlutterFlowTheme.of(context).labelLarge.override(
-                                  fontFamily: 'Kantumruy Pro',
+                                  fontFamily: 'Inter',
                                   letterSpacing: 0.0,
                                 ),
                         hintStyle:
                             FlutterFlowTheme.of(context).labelMedium.override(
-                                  fontFamily: 'Kantumruy Pro',
+                                  fontFamily: 'Inter',
                                   letterSpacing: 0.0,
                                 ),
                         enabledBorder: UnderlineInputBorder(
@@ -344,7 +344,7 @@ class _SignUpPopupWidgetState extends State<SignUpPopupWidget>
                             const EdgeInsetsDirectional.fromSTEB(22.0, 0.0, 0.0, 0.0),
                       ),
                       style: FlutterFlowTheme.of(context).bodyLarge.override(
-                            fontFamily: 'Kantumruy Pro',
+                            fontFamily: 'Inter',
                             letterSpacing: 0.0,
                           ),
                       keyboardType: TextInputType.emailAddress,
@@ -367,12 +367,12 @@ class _SignUpPopupWidgetState extends State<SignUpPopupWidget>
                         ),
                         labelStyle:
                             FlutterFlowTheme.of(context).labelLarge.override(
-                                  fontFamily: 'Kantumruy Pro',
+                                  fontFamily: 'Inter',
                                   letterSpacing: 0.0,
                                 ),
                         hintStyle:
                             FlutterFlowTheme.of(context).labelMedium.override(
-                                  fontFamily: 'Kantumruy Pro',
+                                  fontFamily: 'Inter',
                                   letterSpacing: 0.0,
                                 ),
                         enabledBorder: UnderlineInputBorder(
@@ -408,7 +408,7 @@ class _SignUpPopupWidgetState extends State<SignUpPopupWidget>
                             const EdgeInsetsDirectional.fromSTEB(22.0, 0.0, 0.0, 0.0),
                       ),
                       style: FlutterFlowTheme.of(context).bodyLarge.override(
-                            fontFamily: 'Kantumruy Pro',
+                            fontFamily: 'Inter',
                             letterSpacing: 0.0,
                           ),
                       keyboardType: TextInputType.emailAddress,
@@ -473,7 +473,7 @@ class _SignUpPopupWidgetState extends State<SignUpPopupWidget>
                               textStyle: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: 'Kantumruy Pro',
+                                    fontFamily: 'Inter',
                                     color: Colors.white,
                                     letterSpacing: 0.0,
                                   ),
@@ -521,7 +521,7 @@ class _SignUpPopupWidgetState extends State<SignUpPopupWidget>
                             style: FlutterFlowTheme.of(context)
                                 .labelLarge
                                 .override(
-                                  fontFamily: 'Kantumruy Pro',
+                                  fontFamily: 'Inter',
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w500,
                                 ),
@@ -536,7 +536,7 @@ class _SignUpPopupWidgetState extends State<SignUpPopupWidget>
                             length: 6,
                             textStyle:
                                 FlutterFlowTheme.of(context).bodyLarge.override(
-                                      fontFamily: 'Kantumruy Pro',
+                                      fontFamily: 'Inter',
                                       letterSpacing: 0.0,
                                     ),
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -659,7 +659,7 @@ class _SignUpPopupWidgetState extends State<SignUpPopupWidget>
                           'anbg7fta' /* Resend Code */,
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Kantumruy Pro',
+                              fontFamily: 'Inter',
                               color: FlutterFlowTheme.of(context).primary,
                               letterSpacing: 0.0,
                               fontWeight: FontWeight.normal,
@@ -700,7 +700,7 @@ class _SignUpPopupWidgetState extends State<SignUpPopupWidget>
                           ),
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Kantumruy Pro',
+                                    fontFamily: 'Inter',
                                     color: FlutterFlowTheme.of(context).primary,
                                     fontSize: 16.0,
                                     letterSpacing: 0.0,

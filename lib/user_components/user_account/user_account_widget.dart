@@ -63,7 +63,7 @@ class _UserAccountWidgetState extends State<UserAccountWidget> {
                     'ncl3dx2t' /* Manage My Account */,
                   ),
                   style: FlutterFlowTheme.of(context).titleLarge.override(
-                        fontFamily: 'Kantumruy Pro',
+                        fontFamily: 'Inter',
                         letterSpacing: 0.0,
                         fontWeight: FontWeight.bold,
                       ),
@@ -88,7 +88,7 @@ class _UserAccountWidgetState extends State<UserAccountWidget> {
                   ),
                   child: Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(15.0, 8.0, 8.0, 8.0),
+                        const EdgeInsetsDirectional.fromSTEB(15.0, 15.0, 8.0, 15.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -117,7 +117,7 @@ class _UserAccountWidgetState extends State<UserAccountWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .labelLarge
                                 .override(
-                                  fontFamily: 'Kantumruy Pro',
+                                  fontFamily: 'Inter',
                                   color: widget.selection == 1
                                       ? FlutterFlowTheme.of(context)
                                           .primaryBackground
@@ -138,7 +138,7 @@ class _UserAccountWidgetState extends State<UserAccountWidget> {
                   'zg98mdkw' /* My Order */,
                 ),
                 style: FlutterFlowTheme.of(context).titleLarge.override(
-                      fontFamily: 'Kantumruy Pro',
+                      fontFamily: 'Inter',
                       letterSpacing: 0.0,
                       fontWeight: FontWeight.bold,
                     ),
@@ -191,7 +191,7 @@ class _UserAccountWidgetState extends State<UserAccountWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .labelLarge
                                 .override(
-                                  fontFamily: 'Kantumruy Pro',
+                                  fontFamily: 'Inter',
                                   color: widget.selection == 2
                                       ? FlutterFlowTheme.of(context)
                                           .primaryBackground
@@ -207,7 +207,7 @@ class _UserAccountWidgetState extends State<UserAccountWidget> {
                   ),
                 ),
               ),
-            ],
+            ].divide(const SizedBox(height: 15.0)),
           ),
         ),
       ),

@@ -1,14 +1,14 @@
+import '/auth/base_auth_user_provider.dart';
 import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
+import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_language_selector.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/user_components/footer/footer_widget.dart';
 import '/user_components/product_card/product_card_widget.dart';
 import '/custom_code/widgets/index.dart' as custom_widgets;
-import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
@@ -216,7 +216,11 @@ class _ProductPageWidgetState extends State<ProductPageWidget>
                     maxWidth: 1537.0,
                     maxHeight: 960.0,
                   ),
-                  decoration: const BoxDecoration(),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: FlutterFlowTheme.of(context).primary,
+                    ),
+                  ),
                   child: SingleChildScrollView(
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
@@ -258,7 +262,7 @@ class _ProductPageWidgetState extends State<ProductPageWidget>
                                               BorderRadius.circular(8.0),
                                           child: Image.asset(
                                             'assets/images/MK_MONGKUL_LOGO-03.png',
-                                            width: 241.0,
+                                            width: 240.0,
                                             height: 200.0,
                                             fit: BoxFit.contain,
                                           ),
@@ -279,7 +283,9 @@ class _ProductPageWidgetState extends State<ProductPageWidget>
                                               highlightColor:
                                                   Colors.transparent,
                                               onTap: () async {
-                                                context.pushNamed('HomePage');
+                                                setState(() {});
+
+                                                context.goNamed('HomePage');
                                               },
                                               child: Text(
                                                 FFLocalizations.of(context)
@@ -317,8 +323,7 @@ class _ProductPageWidgetState extends State<ProductPageWidget>
                                                     FlutterFlowTheme.of(context)
                                                         .titleMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Kantumruy Pro',
+                                                          fontFamily: 'Inter',
                                                           fontSize: 20.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -373,8 +378,7 @@ class _ProductPageWidgetState extends State<ProductPageWidget>
                                                           context)
                                                       .titleMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         fontSize: 20.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -618,60 +622,52 @@ class _ProductPageWidgetState extends State<ProductPageWidget>
                                           ),
                                         ),
                                       ),
-                                      Container(
-                                        decoration: const BoxDecoration(
-                                          color: Color(0x00FFFFFF),
-                                        ),
-                                      ),
                                       Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
-                                          Align(
-                                            alignment:
-                                                const AlignmentDirectional(-1.0, 0.0),
-                                            child: Container(
-                                              width: 50.0,
-                                              decoration: const BoxDecoration(
-                                                color: Color(0x00FFFFFF),
-                                              ),
-                                              child: Visibility(
-                                                visible: loggedIn == true,
-                                                child: Align(
-                                                  alignment:
-                                                      const AlignmentDirectional(
-                                                          0.0, 0.0),
-                                                  child: InkWell(
-                                                    splashColor:
+                                          if (loggedIn == true)
+                                            Align(
+                                              alignment: const AlignmentDirectional(
+                                                  0.0, 0.0),
+                                              child: InkWell(
+                                                splashColor: Colors.transparent,
+                                                focusColor: Colors.transparent,
+                                                hoverColor: Colors.transparent,
+                                                highlightColor:
+                                                    Colors.transparent,
+                                                onTap: () async {},
+                                                child: Container(
+                                                  decoration: const BoxDecoration(
+                                                    color: Color(0x00FFFFFF),
+                                                  ),
+                                                  child: FlutterFlowIconButton(
+                                                    borderColor:
                                                         Colors.transparent,
-                                                    focusColor:
-                                                        Colors.transparent,
-                                                    hoverColor:
-                                                        Colors.transparent,
-                                                    highlightColor:
-                                                        Colors.transparent,
-                                                    onTap: () async {
-                                                      context
-                                                          .pushNamed('Account');
-                                                    },
-                                                    child: FaIcon(
-                                                      FontAwesomeIcons
-                                                          .userCircle,
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .primary,
-                                                      size: 27.0,
+                                                    borderRadius: 25.0,
+                                                    borderWidth: 1.0,
+                                                    buttonSize: 40.0,
+                                                    fillColor:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .primary,
+                                                    icon: FaIcon(
+                                                      FontAwesomeIcons.user,
+                                                      color: FlutterFlowTheme
+                                                              .of(context)
+                                                          .primaryBackground,
+                                                      size: 18.0,
                                                     ),
+                                                    onPressed: () async {
+                                                      context.pushNamed(
+                                                          'my_Order');
+                                                    },
                                                   ),
                                                 ),
                                               ),
                                             ),
-                                          ),
-                                          Container(
-                                            width: 50.0,
-                                            decoration: const BoxDecoration(
-                                              color: Color(0x00FFFFFF),
-                                            ),
+                                          Align(
+                                            alignment:
+                                                const AlignmentDirectional(1.0, 0.0),
                                             child: InkWell(
                                               splashColor: Colors.transparent,
                                               focusColor: Colors.transparent,
@@ -679,110 +675,77 @@ class _ProductPageWidgetState extends State<ProductPageWidget>
                                               highlightColor:
                                                   Colors.transparent,
                                               onTap: () async {
-                                                GoRouter.of(context)
-                                                    .prepareAuthEvent();
-                                                await authManager.signOut();
-                                                GoRouter.of(context)
-                                                    .clearRedirectLocation();
-
-                                                context.pushNamedAuth(
-                                                    'Log_in', context.mounted);
+                                                context.pushNamed('Cart');
                                               },
-                                              child: const Icon(
-                                                Icons.favorite_border,
-                                                color: Colors.white,
-                                                size: 27.0,
-                                              ),
-                                            ),
-                                          ),
-                                          Align(
-                                            alignment:
-                                                const AlignmentDirectional(1.0, 0.0),
-                                            child: Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      0.0, 0.0, 12.0, 0.0),
-                                              child: InkWell(
-                                                splashColor: Colors.transparent,
-                                                focusColor: Colors.transparent,
-                                                hoverColor: Colors.transparent,
-                                                highlightColor:
-                                                    Colors.transparent,
-                                                onTap: () async {
-                                                  context.pushNamed('Cart');
-                                                },
-                                                child: Container(
-                                                  width: 50.0,
-                                                  height: 55.0,
-                                                  decoration: const BoxDecoration(
-                                                    color: Color(0x00FFFFFF),
-                                                  ),
-                                                  child: Padding(
-                                                    padding:
-                                                        const EdgeInsetsDirectional
-                                                            .fromSTEB(0.0, 0.0,
-                                                                1.0, 0.0),
-                                                    child: Stack(
-                                                      children: [
-                                                        const Align(
-                                                          alignment:
-                                                              AlignmentDirectional(
-                                                                  0.0, 0.0),
-                                                          child: Icon(
-                                                            Icons
-                                                                .shopping_cart_outlined,
-                                                            color: Colors.white,
-                                                            size: 27.0,
-                                                          ),
+                                              child: Container(
+                                                width: 50.0,
+                                                height: 55.0,
+                                                decoration: const BoxDecoration(
+                                                  color: Color(0x00FFFFFF),
+                                                ),
+                                                child: Padding(
+                                                  padding: const EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          0.0, 0.0, 1.0, 0.0),
+                                                  child: Stack(
+                                                    children: [
+                                                      const Align(
+                                                        alignment:
+                                                            AlignmentDirectional(
+                                                                0.0, 0.0),
+                                                        child: Icon(
+                                                          Icons
+                                                              .shopping_cart_outlined,
+                                                          color: Colors.white,
+                                                          size: 27.0,
                                                         ),
-                                                        if (FFAppState()
-                                                                .checkoutCart.isNotEmpty)
-                                                          Align(
+                                                      ),
+                                                      if (FFAppState()
+                                                              .checkoutCart.isNotEmpty)
+                                                        Align(
+                                                          alignment:
+                                                              const AlignmentDirectional(
+                                                                  1.0, -1.0),
+                                                          child: Container(
+                                                            width: 21.0,
+                                                            height: 21.0,
+                                                            decoration:
+                                                                BoxDecoration(
+                                                              color: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .primary,
+                                                              shape: BoxShape
+                                                                  .circle,
+                                                            ),
                                                             alignment:
                                                                 const AlignmentDirectional(
-                                                                    1.0, -1.0),
-                                                            child: Container(
-                                                              width: 21.0,
-                                                              height: 21.0,
-                                                              decoration:
-                                                                  BoxDecoration(
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .primary,
-                                                                shape: BoxShape
-                                                                    .circle,
-                                                              ),
+                                                                    0.0, 0.0),
+                                                            child: Align(
                                                               alignment:
                                                                   const AlignmentDirectional(
                                                                       0.0, 0.0),
-                                                              child: Align(
-                                                                alignment:
-                                                                    const AlignmentDirectional(
-                                                                        0.0,
-                                                                        0.0),
-                                                                child: Text(
-                                                                  FFAppState()
-                                                                      .checkoutCart
-                                                                      .length
-                                                                      .toString(),
-                                                                  textAlign:
-                                                                      TextAlign
-                                                                          .center,
-                                                                  style: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodySmall
-                                                                      .override(
-                                                                        fontFamily:
-                                                                            'Kantumruy Pro',
-                                                                        letterSpacing:
-                                                                            0.0,
-                                                                      ),
-                                                                ),
+                                                              child: Text(
+                                                                FFAppState()
+                                                                    .checkoutCart
+                                                                    .length
+                                                                    .toString(),
+                                                                textAlign:
+                                                                    TextAlign
+                                                                        .center,
+                                                                style: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodySmall
+                                                                    .override(
+                                                                      fontFamily:
+                                                                          'Inter',
+                                                                      letterSpacing:
+                                                                          0.0,
+                                                                    ),
                                                               ),
                                                             ),
                                                           ),
-                                                      ],
-                                                    ),
+                                                        ),
+                                                    ],
                                                   ),
                                                 ),
                                               ),
@@ -812,7 +775,7 @@ class _ProductPageWidgetState extends State<ProductPageWidget>
                                             onChanged: (lang) =>
                                                 setAppLanguage(context, lang),
                                           ),
-                                        ],
+                                        ].divide(const SizedBox(width: 10.0)),
                                       ),
                                     ].divide(const SizedBox(width: 20.0)),
                                   ),
@@ -835,175 +798,175 @@ class _ProductPageWidgetState extends State<ProductPageWidget>
                             mainAxisSize: MainAxisSize.max,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Column(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  Align(
-                                    alignment: const AlignmentDirectional(-1.0, 0.0),
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.start,
-                                      children: [
-                                        Align(
-                                          alignment:
-                                              const AlignmentDirectional(1.0, 0.0),
-                                          child: Container(
-                                            width: 270.0,
-                                            decoration: BoxDecoration(
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .primaryBackground,
-                                              boxShadow: const [
-                                                BoxShadow(
-                                                  blurRadius: 4.0,
-                                                  color: Color(0x33000000),
-                                                  offset: Offset(
-                                                    0.0,
-                                                    2.0,
-                                                  ),
-                                                )
-                                              ],
-                                              borderRadius:
-                                                  BorderRadius.circular(9.0),
-                                            ),
-                                            child: Align(
-                                              alignment: const AlignmentDirectional(
-                                                  1.0, 0.0),
-                                              child: SwitchListTile.adaptive(
-                                                value: _model
-                                                        .switchListTileValue ??=
-                                                    widget.isDiscount,
-                                                onChanged: (newValue) async {
-                                                  setState(() => _model
-                                                          .switchListTileValue =
-                                                      newValue);
-                                                  if (newValue) {
-                                                    setState(() {
-                                                      _model.categoryName = '';
-                                                    });
-                                                    _model.discountProducts =
-                                                        await queryProductsRecordOnce(
-                                                      queryBuilder:
-                                                          (productsRecord) =>
-                                                              productsRecord
-                                                                  .where(
-                                                        'discount',
-                                                        isGreaterThan: 0,
-                                                      ),
-                                                    );
-                                                    setState(() {
-                                                      _model.filteredProdutList =
-                                                          _model
-                                                              .discountProducts!
-                                                              .toList()
-                                                              .cast<
-                                                                  ProductsRecord>();
-                                                    });
-                                                    if (animationsMap[
-                                                            'conditionalBuilderOnActionTriggerAnimation'] !=
-                                                        null) {
-                                                      await animationsMap[
-                                                              'conditionalBuilderOnActionTriggerAnimation']!
-                                                          .controller
-                                                          .forward(from: 0.0);
-                                                    }
-
-                                                    setState(() {});
-                                                  } else {
-                                                    setState(() {
-                                                      _model.categoryName = '';
-                                                    });
-                                                    _model.products =
-                                                        await queryProductsRecordOnce();
-                                                    setState(() {
-                                                      _model.filteredProdutList =
-                                                          _model.products!
-                                                              .toList()
-                                                              .cast<
-                                                                  ProductsRecord>();
-                                                    });
-                                                    if (animationsMap[
-                                                            'conditionalBuilderOnActionTriggerAnimation'] !=
-                                                        null) {
-                                                      await animationsMap[
-                                                              'conditionalBuilderOnActionTriggerAnimation']!
-                                                          .controller
-                                                          .forward(from: 0.0);
-                                                    }
-
-                                                    setState(() {});
-                                                  }
-                                                },
-                                                title: Text(
-                                                  FFLocalizations.of(context)
-                                                      .getText(
-                                                    'bbaxtjrt' /* Discount */,
-                                                  ),
-                                                  textAlign: TextAlign.start,
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .titleLarge
-                                                      .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
-                                                        color:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .primary,
-                                                        letterSpacing: 0.0,
-                                                      ),
-                                                ),
-                                                subtitle: Text(
-                                                  FFLocalizations.of(context)
-                                                      .getText(
-                                                    'xs0pc2ye' /*  Discount product */,
-                                                  ),
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
-                                                        color:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .primary,
-                                                        letterSpacing: 0.0,
-                                                      ),
-                                                ),
-                                                tileColor: const Color(0x00E2C721),
-                                                activeColor:
+                              Container(
+                                decoration: const BoxDecoration(),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Align(
+                                      alignment:
+                                          const AlignmentDirectional(-1.0, 0.0),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.start,
+                                        children: [
+                                          Align(
+                                            alignment:
+                                                const AlignmentDirectional(1.0, 0.0),
+                                            child: Container(
+                                              width: 270.0,
+                                              decoration: BoxDecoration(
+                                                color:
                                                     FlutterFlowTheme.of(context)
-                                                        .primary,
-                                                activeTrackColor:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primary,
-                                                dense: false,
-                                                controlAffinity:
-                                                    ListTileControlAffinity
-                                                        .trailing,
-                                                shape: RoundedRectangleBorder(
-                                                  borderRadius:
-                                                      BorderRadius.circular(
-                                                          9.0),
+                                                        .primaryBackground,
+                                                boxShadow: const [
+                                                  BoxShadow(
+                                                    blurRadius: 4.0,
+                                                    color: Color(0x33000000),
+                                                    offset: Offset(
+                                                      0.0,
+                                                      2.0,
+                                                    ),
+                                                  )
+                                                ],
+                                                borderRadius:
+                                                    BorderRadius.circular(9.0),
+                                              ),
+                                              child: Align(
+                                                alignment: const AlignmentDirectional(
+                                                    1.0, 0.0),
+                                                child: SwitchListTile.adaptive(
+                                                  value: _model
+                                                          .switchListTileValue ??=
+                                                      widget.isDiscount,
+                                                  onChanged: (newValue) async {
+                                                    setState(() => _model
+                                                            .switchListTileValue =
+                                                        newValue);
+                                                    if (newValue) {
+                                                      setState(() {
+                                                        _model.categoryName =
+                                                            '';
+                                                      });
+                                                      _model.discountProducts =
+                                                          await queryProductsRecordOnce(
+                                                        queryBuilder:
+                                                            (productsRecord) =>
+                                                                productsRecord
+                                                                    .where(
+                                                          'discount',
+                                                          isGreaterThan: 0,
+                                                        ),
+                                                      );
+                                                      setState(() {
+                                                        _model.filteredProdutList =
+                                                            _model
+                                                                .discountProducts!
+                                                                .toList()
+                                                                .cast<
+                                                                    ProductsRecord>();
+                                                      });
+                                                      if (animationsMap[
+                                                              'conditionalBuilderOnActionTriggerAnimation'] !=
+                                                          null) {
+                                                        await animationsMap[
+                                                                'conditionalBuilderOnActionTriggerAnimation']!
+                                                            .controller
+                                                            .forward(from: 0.0);
+                                                      }
+
+                                                      setState(() {});
+                                                    } else {
+                                                      setState(() {
+                                                        _model.categoryName =
+                                                            '';
+                                                      });
+                                                      _model.products =
+                                                          await queryProductsRecordOnce();
+                                                      setState(() {
+                                                        _model.filteredProdutList =
+                                                            _model.products!
+                                                                .toList()
+                                                                .cast<
+                                                                    ProductsRecord>();
+                                                      });
+                                                      if (animationsMap[
+                                                              'conditionalBuilderOnActionTriggerAnimation'] !=
+                                                          null) {
+                                                        await animationsMap[
+                                                                'conditionalBuilderOnActionTriggerAnimation']!
+                                                            .controller
+                                                            .forward(from: 0.0);
+                                                      }
+
+                                                      setState(() {});
+                                                    }
+                                                  },
+                                                  title: Text(
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                      'bdwomnyk' /* Discount */,
+                                                    ),
+                                                    textAlign: TextAlign.start,
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .titleLarge
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .primary,
+                                                          letterSpacing: 0.0,
+                                                        ),
+                                                  ),
+                                                  subtitle: Text(
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                      'u413xiip' /*  Discount product */,
+                                                    ),
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .primary,
+                                                          letterSpacing: 0.0,
+                                                        ),
+                                                  ),
+                                                  tileColor: const Color(0x00E2C721),
+                                                  activeColor:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .primary,
+                                                  activeTrackColor:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .primary,
+                                                  dense: false,
+                                                  controlAffinity:
+                                                      ListTileControlAffinity
+                                                          .trailing,
+                                                  shape: RoundedRectangleBorder(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            9.0),
+                                                  ),
                                                 ),
                                               ),
                                             ),
                                           ),
-                                        ),
-                                      ],
+                                        ],
+                                      ),
                                     ),
-                                  ),
-                                  if (responsiveVisibility(
-                                    context: context,
-                                    phone: false,
-                                    tablet: false,
-                                  ))
-                                    Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 0.0, 4.0, 0.0),
-                                      child: Container(
+                                    if (responsiveVisibility(
+                                      context: context,
+                                      phone: false,
+                                      tablet: false,
+                                    ))
+                                      Container(
                                         width: 270.0,
                                         decoration: BoxDecoration(
                                           color: FlutterFlowTheme.of(context)
@@ -1018,12 +981,16 @@ class _ProductPageWidgetState extends State<ProductPageWidget>
                                               ),
                                             )
                                           ],
+                                          borderRadius:
+                                              BorderRadius.circular(9.0),
                                         ),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             StreamBuilder<List<ProductsRecord>>(
-                                              stream: queryProductsRecord(),
+                                              stream: queryProductsRecord(
+                                                singleRecord: true,
+                                              ),
                                               builder: (context, snapshot) {
                                                 // Customize what your widget looks like when it's loading.
                                                 if (!snapshot.hasData) {
@@ -1047,6 +1014,16 @@ class _ProductPageWidgetState extends State<ProductPageWidget>
                                                 List<ProductsRecord>
                                                     containerProductsRecordList =
                                                     snapshot.data!;
+                                                // Return an empty Container when the item does not exist.
+                                                if (snapshot.data!.isEmpty) {
+                                                  return Container();
+                                                }
+                                                final containerProductsRecord =
+                                                    containerProductsRecordList
+                                                            .isNotEmpty
+                                                        ? containerProductsRecordList
+                                                            .first
+                                                        : null;
                                                 return Container(
                                                   decoration: BoxDecoration(
                                                     color: FlutterFlowTheme.of(
@@ -1054,200 +1031,249 @@ class _ProductPageWidgetState extends State<ProductPageWidget>
                                                         .secondaryBackground,
                                                     borderRadius:
                                                         BorderRadius.circular(
-                                                            12.0),
-                                                  ),
-                                                  child: Padding(
-                                                    padding:
-                                                        const EdgeInsetsDirectional
-                                                            .fromSTEB(0.0, 16.0,
-                                                                0.0, 16.0),
-                                                    child: Builder(
-                                                      builder: (context) {
-                                                        final categoryList = functions
-                                                            .repeatedCategory(
-                                                                containerProductsRecordList
-                                                                    .map((e) =>
-                                                                        e.category)
-                                                                    .toList())
-                                                            .toList();
-                                                        return ListView
-                                                            .separated(
-                                                          padding: const EdgeInsets
-                                                              .symmetric(
-                                                                  vertical:
-                                                                      5.0),
-                                                          shrinkWrap: true,
-                                                          scrollDirection:
-                                                              Axis.vertical,
-                                                          itemCount:
-                                                              categoryList
-                                                                  .length,
-                                                          separatorBuilder: (_,
-                                                                  __) =>
-                                                              const SizedBox(
-                                                                  height: 5.0),
-                                                          itemBuilder: (context,
-                                                              categoryListIndex) {
-                                                            final categoryListItem =
-                                                                categoryList[
-                                                                    categoryListIndex];
-                                                            return Padding(
-                                                              padding:
-                                                                  const EdgeInsets
-                                                                      .all(6.0),
-                                                              child:
-                                                                  FFButtonWidget(
-                                                                onPressed:
-                                                                    () async {
-                                                                  _model.resultedListCopy2 =
-                                                                      await queryProductsRecordOnce(
-                                                                    queryBuilder:
-                                                                        (productsRecord) =>
-                                                                            productsRecord.where(
-                                                                      'category',
-                                                                      isEqualTo:
-                                                                          categoryListItem,
-                                                                    ),
-                                                                  );
-                                                                  setState(() {
-                                                                    _model.categoryName =
-                                                                        categoryListItem;
-                                                                  });
-                                                                  setState(() {
-                                                                    _model.discountProductList =
-                                                                        0;
-                                                                    _model.tempProductList =
-                                                                        [];
-                                                                  });
-                                                                  if (_model
-                                                                          .switchListTileValue ==
-                                                                      true) {
-                                                                    while (_model
-                                                                            .discountProductList <
-                                                                        _model
-                                                                            .resultedListCopy2!
-                                                                            .length) {
-                                                                      if (_model
-                                                                              .resultedListCopy2![_model.discountProductList]
-                                                                              .discount >
-                                                                          0) {
-                                                                        setState(
-                                                                            () {
-                                                                          _model
-                                                                              .addToTempProductList(_model.resultedListCopy2![_model.discountProductList]);
-                                                                        });
-                                                                      }
-                                                                      setState(
-                                                                          () {
-                                                                        _model.discountProductList =
-                                                                            _model.discountProductList +
-                                                                                1;
-                                                                      });
-                                                                    }
-                                                                    setState(
-                                                                        () {
-                                                                      _model.filteredProdutList = _model
-                                                                          .tempProductList
-                                                                          .toList()
-                                                                          .cast<
-                                                                              ProductsRecord>();
-                                                                    });
-                                                                  } else {
-                                                                    setState(
-                                                                        () {
-                                                                      _model.filteredProdutList = _model
-                                                                          .resultedListCopy2!
-                                                                          .toList()
-                                                                          .cast<
-                                                                              ProductsRecord>();
-                                                                    });
-                                                                  }
-
-                                                                  if (animationsMap[
-                                                                          'conditionalBuilderOnActionTriggerAnimation'] !=
-                                                                      null) {
-                                                                    await animationsMap[
-                                                                            'conditionalBuilderOnActionTriggerAnimation']!
-                                                                        .controller
-                                                                        .forward(
-                                                                            from:
-                                                                                0.0);
-                                                                  }
-
-                                                                  setState(
-                                                                      () {});
-                                                                },
-                                                                text:
-                                                                    categoryListItem,
-                                                                options:
-                                                                    FFButtonOptions(
-                                                                  height: 40.0,
-                                                                  padding: const EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          24.0,
-                                                                          0.0,
-                                                                          24.0,
-                                                                          0.0),
-                                                                  iconPadding: const EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0),
-                                                                  color: _model
-                                                                              .categoryName ==
-                                                                          categoryListItem
-                                                                      ? FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .primary
-                                                                      : FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .primaryBackground,
-                                                                  textStyle: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .titleSmall
-                                                                      .override(
-                                                                        fontFamily:
-                                                                            'Kantumruy Pro',
-                                                                        color: _model.categoryName ==
-                                                                                categoryListItem
-                                                                            ? FlutterFlowTheme.of(context).primaryBackground
-                                                                            : FlutterFlowTheme.of(context).primaryText,
-                                                                        letterSpacing:
-                                                                            0.0,
-                                                                      ),
-                                                                  elevation:
-                                                                      3.0,
-                                                                  borderRadius:
-                                                                      BorderRadius
-                                                                          .circular(
-                                                                              8.0),
-                                                                  hoverColor:
-                                                                      FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .primary,
-                                                                  hoverTextColor:
-                                                                      FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .primaryBackground,
-                                                                ),
-                                                                showLoadingIndicator:
-                                                                    false,
-                                                              ),
-                                                            );
-                                                          },
-                                                        );
-                                                      },
-                                                    ),
+                                                            0.0),
                                                   ),
                                                 );
                                               },
                                             ),
+                                            Container(
+                                              decoration: BoxDecoration(
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryBackground,
+                                              ),
+                                              child: Padding(
+                                                padding: const EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        0.0, 16.0, 0.0, 16.0),
+                                                child: StreamBuilder<
+                                                    List<CategoriesRecord>>(
+                                                  stream:
+                                                      queryCategoriesRecord(),
+                                                  builder: (context, snapshot) {
+                                                    // Customize what your widget looks like when it's loading.
+                                                    if (!snapshot.hasData) {
+                                                      return Center(
+                                                        child: SizedBox(
+                                                          width: 50.0,
+                                                          height: 50.0,
+                                                          child:
+                                                              CircularProgressIndicator(
+                                                            valueColor:
+                                                                AlwaysStoppedAnimation<
+                                                                    Color>(
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .primary,
+                                                            ),
+                                                          ),
+                                                        ),
+                                                      );
+                                                    }
+                                                    List<CategoriesRecord>
+                                                        listViewCategoriesRecordList =
+                                                        snapshot.data!;
+                                                    return ListView.builder(
+                                                      padding: EdgeInsets.zero,
+                                                      shrinkWrap: true,
+                                                      scrollDirection:
+                                                          Axis.vertical,
+                                                      itemCount:
+                                                          listViewCategoriesRecordList
+                                                              .length,
+                                                      itemBuilder: (context,
+                                                          listViewIndex) {
+                                                        final listViewCategoriesRecord =
+                                                            listViewCategoriesRecordList[
+                                                                listViewIndex];
+                                                        return Padding(
+                                                          padding:
+                                                              const EdgeInsets.all(
+                                                                  10.0),
+                                                          child: InkWell(
+                                                            splashColor: Colors
+                                                                .transparent,
+                                                            focusColor: Colors
+                                                                .transparent,
+                                                            hoverColor: Colors
+                                                                .transparent,
+                                                            highlightColor:
+                                                                Colors
+                                                                    .transparent,
+                                                            onTap: () async {
+                                                              _model.resultedListCopy =
+                                                                  await queryProductsRecordOnce(
+                                                                queryBuilder:
+                                                                    (productsRecord) =>
+                                                                        productsRecord
+                                                                            .where(
+                                                                  'category',
+                                                                  isEqualTo:
+                                                                      listViewCategoriesRecord
+                                                                          .id,
+                                                                ),
+                                                              );
+                                                              setState(() {
+                                                                _model.categoryName =
+                                                                    listViewCategoriesRecord
+                                                                        .id;
+                                                              });
+                                                              setState(() {
+                                                                _model.discountProductList =
+                                                                    0;
+                                                                _model.tempProductList =
+                                                                    [];
+                                                              });
+                                                              if (_model
+                                                                      .switchListTileValue ==
+                                                                  true) {
+                                                                while (_model
+                                                                        .discountProductList <
+                                                                    _model
+                                                                        .resultedListCopy!
+                                                                        .length) {
+                                                                  if (_model
+                                                                          .resultedListCopy![
+                                                                              _model.discountProductList]
+                                                                          .discount >
+                                                                      0) {
+                                                                    setState(
+                                                                        () {
+                                                                      _model.addToTempProductList(_model
+                                                                              .resultedListCopy![
+                                                                          _model
+                                                                              .discountProductList]);
+                                                                    });
+                                                                  }
+                                                                  setState(() {
+                                                                    _model.discountProductList =
+                                                                        _model.discountProductList +
+                                                                            1;
+                                                                  });
+                                                                }
+                                                                setState(() {
+                                                                  _model.filteredProdutList = _model
+                                                                      .tempProductList
+                                                                      .toList()
+                                                                      .cast<
+                                                                          ProductsRecord>();
+                                                                });
+                                                              } else {
+                                                                setState(() {
+                                                                  _model.filteredProdutList = _model
+                                                                      .resultedListCopy!
+                                                                      .toList()
+                                                                      .cast<
+                                                                          ProductsRecord>();
+                                                                });
+                                                              }
+
+                                                              if (animationsMap[
+                                                                      'conditionalBuilderOnActionTriggerAnimation'] !=
+                                                                  null) {
+                                                                await animationsMap[
+                                                                        'conditionalBuilderOnActionTriggerAnimation']!
+                                                                    .controller
+                                                                    .forward(
+                                                                        from:
+                                                                            0.0);
+                                                              }
+
+                                                              setState(() {});
+                                                            },
+                                                            child: Container(
+                                                              decoration:
+                                                                  BoxDecoration(
+                                                                color: _model
+                                                                            .categoryName ==
+                                                                        listViewCategoriesRecord
+                                                                            .id
+                                                                    ? FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .primary
+                                                                    : FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .primaryBackground,
+                                                                boxShadow: const [
+                                                                  BoxShadow(
+                                                                    blurRadius:
+                                                                        4.0,
+                                                                    color: Color(
+                                                                        0x33000000),
+                                                                    offset:
+                                                                        Offset(
+                                                                      0.0,
+                                                                      2.0,
+                                                                    ),
+                                                                  )
+                                                                ],
+                                                                borderRadius:
+                                                                    BorderRadius
+                                                                        .circular(
+                                                                            4.0),
+                                                              ),
+                                                              child: Padding(
+                                                                padding:
+                                                                    const EdgeInsets
+                                                                        .all(
+                                                                            6.0),
+                                                                child: Row(
+                                                                  mainAxisSize:
+                                                                      MainAxisSize
+                                                                          .max,
+                                                                  mainAxisAlignment:
+                                                                      MainAxisAlignment
+                                                                          .start,
+                                                                  children: [
+                                                                    ClipRRect(
+                                                                      borderRadius:
+                                                                          BorderRadius.circular(
+                                                                              8.0),
+                                                                      child: Image
+                                                                          .network(
+                                                                        listViewCategoriesRecord
+                                                                            .image,
+                                                                        height:
+                                                                            50.0,
+                                                                        fit: BoxFit
+                                                                            .cover,
+                                                                      ),
+                                                                    ),
+                                                                    Text(
+                                                                      listViewCategoriesRecord
+                                                                          .name,
+                                                                      style: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .override(
+                                                                            fontFamily:
+                                                                                'Inter',
+                                                                            color: _model.categoryName == listViewCategoriesRecord.id
+                                                                                ? FlutterFlowTheme.of(context).primaryBackground
+                                                                                : FlutterFlowTheme.of(context).primaryText,
+                                                                            letterSpacing:
+                                                                                0.0,
+                                                                          ),
+                                                                    ),
+                                                                  ].divide(const SizedBox(
+                                                                      width:
+                                                                          15.0)),
+                                                                ),
+                                                              ),
+                                                            ),
+                                                          ),
+                                                        );
+                                                      },
+                                                    );
+                                                  },
+                                                ),
+                                              ),
+                                            ),
                                           ],
                                         ),
                                       ),
-                                    ),
-                                ].divide(const SizedBox(height: 14.0)),
+                                  ].divide(const SizedBox(height: 14.0)),
+                                ),
                               ),
                               Builder(
                                 builder: (context) {
@@ -1290,8 +1316,7 @@ class _ProductPageWidgetState extends State<ProductPageWidget>
                                                           context)
                                                       .headlineLarge
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         color:
                                                             const Color(0xFFDDDDDD),
                                                         letterSpacing: 0.0,

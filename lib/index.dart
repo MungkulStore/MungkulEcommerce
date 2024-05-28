@@ -43,3 +43,5 @@ export '/admin_pages/customer/edit_user/edit_user_widget.dart'
     show EditUserWidget;
 export '/advertisement_banner_list/advertisement_banner_list_widget.dart'
     show AdvertisementBannerListWidget;
+export '/ecommerce_pages/product/compare_products/compare_products_widget.dart'
+    show CompareProductsWidget;

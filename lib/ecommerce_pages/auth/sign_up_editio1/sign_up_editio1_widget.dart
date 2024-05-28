@@ -210,16 +210,17 @@ class _SignUpEditio1WidgetState extends State<SignUpEditio1Widget>
                                                   .getText(
                                                 'i4v8xjz0' /* Create an Account */,
                                               ),
-                                              style: FlutterFlowTheme.of(
-                                                      context)
-                                                  .displaySmall
-                                                  .override(
-                                                    fontFamily: 'Kantumruy Pro',
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primary,
-                                                    letterSpacing: 0.0,
-                                                  ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .displaySmall
+                                                      .override(
+                                                        fontFamily: 'Inter',
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primary,
+                                                        letterSpacing: 0.0,
+                                                      ),
                                             ),
                                           ),
                                         ],
@@ -238,7 +239,7 @@ class _SignUpEditio1WidgetState extends State<SignUpEditio1Widget>
                                             style: FlutterFlowTheme.of(context)
                                                 .labelMedium
                                                 .override(
-                                                  fontFamily: 'Kantumruy Pro',
+                                                  fontFamily: 'Inter',
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .primaryText,
@@ -280,16 +281,14 @@ class _SignUpEditio1WidgetState extends State<SignUpEditio1Widget>
                                                   FlutterFlowTheme.of(context)
                                                       .labelLarge
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                       ),
                                               hintStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                       ),
                                               enabledBorder:
@@ -342,7 +341,7 @@ class _SignUpEditio1WidgetState extends State<SignUpEditio1Widget>
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyLarge
                                                 .override(
-                                                  fontFamily: 'Kantumruy Pro',
+                                                  fontFamily: 'Inter',
                                                   letterSpacing: 0.0,
                                                 ),
                                             keyboardType: TextInputType.name,
@@ -372,16 +371,14 @@ class _SignUpEditio1WidgetState extends State<SignUpEditio1Widget>
                                                   FlutterFlowTheme.of(context)
                                                       .labelLarge
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                       ),
                                               hintStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                       ),
                                               enabledBorder:
@@ -434,7 +431,7 @@ class _SignUpEditio1WidgetState extends State<SignUpEditio1Widget>
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyLarge
                                                 .override(
-                                                  fontFamily: 'Kantumruy Pro',
+                                                  fontFamily: 'Inter',
                                                   letterSpacing: 0.0,
                                                 ),
                                             keyboardType:
@@ -465,16 +462,14 @@ class _SignUpEditio1WidgetState extends State<SignUpEditio1Widget>
                                                   FlutterFlowTheme.of(context)
                                                       .labelLarge
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                       ),
                                               hintStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                       ),
                                               enabledBorder:
@@ -527,7 +522,7 @@ class _SignUpEditio1WidgetState extends State<SignUpEditio1Widget>
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyLarge
                                                 .override(
-                                                  fontFamily: 'Kantumruy Pro',
+                                                  fontFamily: 'Inter',
                                                   letterSpacing: 0.0,
                                                 ),
                                             keyboardType:
@@ -558,16 +553,14 @@ class _SignUpEditio1WidgetState extends State<SignUpEditio1Widget>
                                                   FlutterFlowTheme.of(context)
                                                       .labelLarge
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                       ),
                                               hintStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                       ),
                                               enabledBorder:
@@ -620,7 +613,7 @@ class _SignUpEditio1WidgetState extends State<SignUpEditio1Widget>
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyLarge
                                                 .override(
-                                                  fontFamily: 'Kantumruy Pro',
+                                                  fontFamily: 'Inter',
                                                   letterSpacing: 0.0,
                                                 ),
                                             keyboardType:
@@ -641,8 +634,7 @@ class _SignUpEditio1WidgetState extends State<SignUpEditio1Widget>
                                                   FlutterFlowTheme.of(context)
                                                       .bodyLarge
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                       ),
                                               mainAxisAlignment:
@@ -829,8 +821,7 @@ class _SignUpEditio1WidgetState extends State<SignUpEditio1Widget>
                                                             .of(context)
                                                         .titleSmall
                                                         .override(
-                                                          fontFamily:
-                                                              'Kantumruy Pro',
+                                                          fontFamily: 'Inter',
                                                           color: Colors.white,
                                                           letterSpacing: 0.0,
                                                         ),
@@ -900,8 +891,7 @@ class _SignUpEditio1WidgetState extends State<SignUpEditio1Widget>
                                                           context)
                                                       .labelLarge
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -973,7 +963,7 @@ class _SignUpEditio1WidgetState extends State<SignUpEditio1Widget>
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,

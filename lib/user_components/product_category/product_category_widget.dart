@@ -106,7 +106,7 @@ class _ProductCategoryWidgetState extends State<ProductCategoryWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
-                                          fontFamily: 'Kantumruy Pro',
+                                          fontFamily: 'Inter',
                                           color: FlutterFlowTheme.of(context)
                                               .secondaryText,
                                           letterSpacing: 0.0,
@@ -146,7 +146,7 @@ class _ProductCategoryWidgetState extends State<ProductCategoryWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .titleSmall
                                               .override(
-                                                fontFamily: 'Kantumruy Pro',
+                                                fontFamily: 'Inter',
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .secondaryText,
@@ -173,7 +173,7 @@ class _ProductCategoryWidgetState extends State<ProductCategoryWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .titleSmall
                                               .override(
-                                                fontFamily: 'Kantumruy Pro',
+                                                fontFamily: 'Inter',
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .secondaryText,

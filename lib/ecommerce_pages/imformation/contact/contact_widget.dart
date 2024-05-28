@@ -65,7 +65,11 @@ class _ContactWidgetState extends State<ContactWidget> {
                 maxWidth: 1537.0,
                 maxHeight: 960.0,
               ),
-              decoration: const BoxDecoration(),
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: FlutterFlowTheme.of(context).primary,
+                ),
+              ),
               child: SingleChildScrollView(
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
@@ -79,8 +83,8 @@ class _ContactWidgetState extends State<ContactWidget> {
                       ),
                     ),
                     Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(40.0, 0.0, 40.0, 0.0),
+                      padding: const EdgeInsetsDirectional.fromSTEB(
+                          130.0, 0.0, 130.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -96,8 +100,9 @@ class _ContactWidgetState extends State<ContactWidget> {
                                   child: Container(
                                     width: 100.0,
                                     height: 500.0,
-                                    decoration: const BoxDecoration(
-                                      color: Color(0xFFF5F5F5),
+                                    decoration: BoxDecoration(
+                                      color: const Color(0xFFF5F5F5),
+                                      borderRadius: BorderRadius.circular(4.0),
                                     ),
                                     child: Padding(
                                       padding: const EdgeInsets.all(32.0),
@@ -137,8 +142,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyLarge
                                                         .override(
-                                                          fontFamily:
-                                                              'Kantumruy Pro',
+                                                          fontFamily: 'Inter',
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.bold,
@@ -160,8 +164,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Kantumruy Pro',
+                                                          fontFamily: 'Inter',
                                                           letterSpacing: 0.0,
                                                         ),
                                               ),
@@ -174,8 +177,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Kantumruy Pro',
+                                                          fontFamily: 'Inter',
                                                           letterSpacing: 0.0,
                                                         ),
                                               ),
@@ -212,8 +214,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyLarge
                                                         .override(
-                                                          fontFamily:
-                                                              'Kantumruy Pro',
+                                                          fontFamily: 'Inter',
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.bold,
@@ -235,8 +236,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Kantumruy Pro',
+                                                          fontFamily: 'Inter',
                                                           letterSpacing: 0.0,
                                                         ),
                                               ),
@@ -249,8 +249,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Kantumruy Pro',
+                                                          fontFamily: 'Inter',
                                                           letterSpacing: 0.0,
                                                         ),
                                               ),
@@ -264,7 +263,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                   ),
                                 ),
                                 Expanded(
-                                  flex: 3,
+                                  flex: 2,
                                   child: Container(
                                     height: 500.0,
                                     decoration: BoxDecoration(
@@ -298,7 +297,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .titleLarge
                                                 .override(
-                                                  fontFamily: 'Kantumruy Pro',
+                                                  fontFamily: 'Inter',
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .primary,
@@ -346,7 +345,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                                                     .labelMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Kantumruy Pro',
+                                                                          'Inter',
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
@@ -362,7 +361,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                                                     .labelLarge
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Kantumruy Pro',
+                                                                          'Inter',
                                                                       letterSpacing:
                                                                           0.0,
                                                                       fontWeight:
@@ -436,7 +435,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -489,7 +488,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                                                     .labelMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Kantumruy Pro',
+                                                                          'Inter',
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
@@ -505,7 +504,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                                                     .labelLarge
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Kantumruy Pro',
+                                                                          'Inter',
                                                                       letterSpacing:
                                                                           0.0,
                                                                       fontWeight:
@@ -579,7 +578,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -632,7 +631,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                                                     .labelMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Kantumruy Pro',
+                                                                          'Inter',
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
@@ -648,7 +647,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                                                     .labelLarge
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Kantumruy Pro',
+                                                                          'Inter',
                                                                       letterSpacing:
                                                                           0.0,
                                                                       fontWeight:
@@ -722,7 +721,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -781,7 +780,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                                                     .labelMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Kantumruy Pro',
+                                                                          'Inter',
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
@@ -797,7 +796,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                                                     .labelLarge
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Kantumruy Pro',
+                                                                          'Inter',
                                                                       letterSpacing:
                                                                           0.0,
                                                                       fontWeight:
@@ -871,7 +870,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -930,8 +929,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .titleSmall
                                                         .override(
-                                                          fontFamily:
-                                                              'Kantumruy Pro',
+                                                          fontFamily: 'Inter',
                                                           color: Colors.white,
                                                           letterSpacing: 0.0,
                                                         ),

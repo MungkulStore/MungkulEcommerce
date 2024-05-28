@@ -2,6 +2,7 @@ import '/admin_components/web_nav/web_nav_widget.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_data_table.dart';
+import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:auto_size_text/auto_size_text.dart';
@@ -9,6 +10,7 @@ import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:text_search/text_search.dart';
 import 'customer_list_model.dart';
 export 'customer_list_model.dart';
@@ -181,7 +183,7 @@ class _CustomerListWidgetState extends State<CustomerListWidget>
                                             style: FlutterFlowTheme.of(context)
                                                 .displaySmall
                                                 .override(
-                                                  fontFamily: 'Kantumruy Pro',
+                                                  fontFamily: 'Inter',
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
@@ -198,7 +200,7 @@ class _CustomerListWidgetState extends State<CustomerListWidget>
                                             style: FlutterFlowTheme.of(context)
                                                 .labelMedium
                                                 .override(
-                                                  fontFamily: 'Kantumruy Pro',
+                                                  fontFamily: 'Inter',
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
@@ -208,7 +210,7 @@ class _CustomerListWidgetState extends State<CustomerListWidget>
                                   ),
                                   Padding(
                                     padding: const EdgeInsetsDirectional.fromSTEB(
-                                        16.0, 16.0, 16.0, 0.0),
+                                        16.0, 16.0, 16.0, 16.0),
                                     child: Container(
                                       width: double.infinity,
                                       decoration: BoxDecoration(
@@ -278,7 +280,7 @@ class _CustomerListWidgetState extends State<CustomerListWidget>
                                                                 .headlineLarge
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -561,106 +563,71 @@ class _CustomerListWidgetState extends State<CustomerListWidget>
                                                 ),
                                               ),
                                             ),
-                                            Container(
-                                              width: double.infinity,
-                                              height: 50.0,
-                                              decoration: BoxDecoration(
-                                                color: const Color(0xFFF5F5F5),
-                                                boxShadow: const [
-                                                  BoxShadow(
-                                                    blurRadius: 3.0,
-                                                    color: Color(0x20000000),
-                                                    offset: Offset(
-                                                      0.0,
-                                                      1.0,
-                                                    ),
-                                                  )
-                                                ],
-                                                borderRadius:
-                                                    BorderRadius.circular(0.0),
-                                              ),
-                                              alignment: const AlignmentDirectional(
-                                                  -1.0, 0.0),
-                                              child: Row(
-                                                mainAxisSize: MainAxisSize.max,
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment.start,
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.start,
-                                                children: [
-                                                  Expanded(
-                                                    child: Container(
-                                                      height: 100.0,
-                                                      decoration: const BoxDecoration(
-                                                        color:
-                                                            Color(0x00FFFFFF),
+                                            if (responsiveVisibility(
+                                              context: context,
+                                              desktop: false,
+                                            ))
+                                              Container(
+                                                width: double.infinity,
+                                                height: 50.0,
+                                                decoration: BoxDecoration(
+                                                  color: const Color(0xFFF5F5F5),
+                                                  boxShadow: const [
+                                                    BoxShadow(
+                                                      blurRadius: 3.0,
+                                                      color: Color(0x20000000),
+                                                      offset: Offset(
+                                                        0.0,
+                                                        1.0,
                                                       ),
-                                                      child: Align(
-                                                        alignment:
-                                                            const AlignmentDirectional(
-                                                                -1.0, 0.0),
-                                                        child: Padding(
-                                                          padding:
-                                                              const EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      9.0,
-                                                                      0.0,
-                                                                      0.0,
-                                                                      0.0),
-                                                          child: Text(
-                                                            FFLocalizations.of(
-                                                                    context)
-                                                                .getText(
-                                                              '4akf3bd1' /* Name */,
-                                                            ),
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .labelLarge
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Kantumruy Pro',
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                ),
-                                                          ),
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                  Expanded(
-                                                    child: Align(
-                                                      alignment:
-                                                          const AlignmentDirectional(
-                                                              0.0, 0.0),
+                                                    )
+                                                  ],
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          0.0),
+                                                ),
+                                                alignment: const AlignmentDirectional(
+                                                    -1.0, 0.0),
+                                                child: Row(
+                                                  mainAxisSize:
+                                                      MainAxisSize.max,
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment.start,
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.start,
+                                                  children: [
+                                                    Expanded(
                                                       child: Container(
+                                                        height: 100.0,
                                                         decoration:
                                                             const BoxDecoration(
                                                           color:
                                                               Color(0x00FFFFFF),
                                                         ),
-                                                        child: Visibility(
-                                                          visible:
-                                                              responsiveVisibility(
-                                                            context: context,
-                                                            phone: false,
-                                                            tablet: false,
-                                                          ),
-                                                          child: Align(
-                                                            alignment:
-                                                                const AlignmentDirectional(
-                                                                    0.0, 0.0),
+                                                        child: Align(
+                                                          alignment:
+                                                              const AlignmentDirectional(
+                                                                  -1.0, 0.0),
+                                                          child: Padding(
+                                                            padding:
+                                                                const EdgeInsetsDirectional
+                                                                    .fromSTEB(
+                                                                        9.0,
+                                                                        0.0,
+                                                                        0.0,
+                                                                        0.0),
                                                             child: Text(
                                                               FFLocalizations.of(
                                                                       context)
                                                                   .getText(
-                                                                '7t90bq9j' /* Phone Number */,
+                                                                '4akf3bd1' /* Name */,
                                                               ),
                                                               style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .labelLarge
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Kantumruy Pro',
+                                                                        'Inter',
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
@@ -669,217 +636,290 @@ class _CustomerListWidgetState extends State<CustomerListWidget>
                                                         ),
                                                       ),
                                                     ),
-                                                  ),
-                                                  Expanded(
-                                                    child: Align(
-                                                      alignment:
-                                                          const AlignmentDirectional(
-                                                              0.0, 0.0),
-                                                      child: Container(
-                                                        decoration:
-                                                            const BoxDecoration(),
-                                                        child: Visibility(
-                                                          visible:
-                                                              responsiveVisibility(
-                                                            context: context,
-                                                            phone: false,
-                                                            tablet: false,
+                                                    Expanded(
+                                                      child: Align(
+                                                        alignment:
+                                                            const AlignmentDirectional(
+                                                                0.0, 0.0),
+                                                        child: Container(
+                                                          decoration:
+                                                              const BoxDecoration(
+                                                            color: Color(
+                                                                0x00FFFFFF),
                                                           ),
-                                                          child: Align(
-                                                            alignment:
-                                                                const AlignmentDirectional(
-                                                                    0.0, 0.0),
-                                                            child: Text(
-                                                              FFLocalizations.of(
-                                                                      context)
-                                                                  .getText(
-                                                                '0f4t7vkf' /* adress */,
+                                                          child: Visibility(
+                                                            visible:
+                                                                responsiveVisibility(
+                                                              context: context,
+                                                              phone: false,
+                                                              tablet: false,
+                                                            ),
+                                                            child: Align(
+                                                              alignment:
+                                                                  const AlignmentDirectional(
+                                                                      0.0, 0.0),
+                                                              child: Text(
+                                                                FFLocalizations.of(
+                                                                        context)
+                                                                    .getText(
+                                                                  '7t90bq9j' /* Phone Number */,
+                                                                ),
+                                                                style: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelLarge
+                                                                    .override(
+                                                                      fontFamily:
+                                                                          'Inter',
+                                                                      letterSpacing:
+                                                                          0.0,
+                                                                    ),
                                                               ),
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .labelLarge
-                                                                  .override(
-                                                                    fontFamily:
-                                                                        'Kantumruy Pro',
-                                                                    letterSpacing:
-                                                                        0.0,
-                                                                  ),
                                                             ),
                                                           ),
                                                         ),
                                                       ),
                                                     ),
-                                                  ),
-                                                  Expanded(
-                                                    child: Align(
-                                                      alignment:
-                                                          const AlignmentDirectional(
-                                                              0.0, 0.0),
-                                                      child: Container(
-                                                        decoration:
-                                                            const BoxDecoration(),
-                                                        child: Visibility(
-                                                          visible:
-                                                              responsiveVisibility(
-                                                            context: context,
-                                                            phone: false,
-                                                            tablet: false,
-                                                          ),
-                                                          child: Align(
-                                                            alignment:
-                                                                const AlignmentDirectional(
-                                                                    0.0, 0.0),
-                                                            child: Text(
-                                                              FFLocalizations.of(
-                                                                      context)
-                                                                  .getText(
-                                                                'krkl67lx' /* email */,
+                                                    Expanded(
+                                                      child: Align(
+                                                        alignment:
+                                                            const AlignmentDirectional(
+                                                                0.0, 0.0),
+                                                        child: Container(
+                                                          decoration:
+                                                              const BoxDecoration(),
+                                                          child: Visibility(
+                                                            visible:
+                                                                responsiveVisibility(
+                                                              context: context,
+                                                              phone: false,
+                                                              tablet: false,
+                                                            ),
+                                                            child: Align(
+                                                              alignment:
+                                                                  const AlignmentDirectional(
+                                                                      0.0, 0.0),
+                                                              child: Text(
+                                                                FFLocalizations.of(
+                                                                        context)
+                                                                    .getText(
+                                                                  '0f4t7vkf' /* adress */,
+                                                                ),
+                                                                style: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelLarge
+                                                                    .override(
+                                                                      fontFamily:
+                                                                          'Inter',
+                                                                      letterSpacing:
+                                                                          0.0,
+                                                                    ),
                                                               ),
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .labelLarge
-                                                                  .override(
-                                                                    fontFamily:
-                                                                        'Kantumruy Pro',
-                                                                    letterSpacing:
-                                                                        0.0,
-                                                                  ),
                                                             ),
                                                           ),
                                                         ),
                                                       ),
                                                     ),
-                                                  ),
-                                                ],
+                                                    Expanded(
+                                                      child: Align(
+                                                        alignment:
+                                                            const AlignmentDirectional(
+                                                                0.0, 0.0),
+                                                        child: Container(
+                                                          decoration:
+                                                              const BoxDecoration(),
+                                                          child: Visibility(
+                                                            visible:
+                                                                responsiveVisibility(
+                                                              context: context,
+                                                              phone: false,
+                                                              tablet: false,
+                                                            ),
+                                                            child: Align(
+                                                              alignment:
+                                                                  const AlignmentDirectional(
+                                                                      0.0, 0.0),
+                                                              child: Text(
+                                                                FFLocalizations.of(
+                                                                        context)
+                                                                    .getText(
+                                                                  'krkl67lx' /* email */,
+                                                                ),
+                                                                style: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelLarge
+                                                                    .override(
+                                                                      fontFamily:
+                                                                          'Inter',
+                                                                      letterSpacing:
+                                                                          0.0,
+                                                                    ),
+                                                              ),
+                                                            ),
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
                                               ),
-                                            ),
-                                            Container(
-                                              width: double.infinity,
-                                              height: 414.0,
-                                              decoration: BoxDecoration(
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .secondaryBackground,
-                                              ),
-                                              child: SingleChildScrollView(
-                                                child: Column(
-                                                  mainAxisSize:
-                                                      MainAxisSize.max,
-                                                  children: [
-                                                    Builder(
-                                                      builder: (context) {
-                                                        final userList = _model
-                                                            .customerList
-                                                            .toList();
-                                                        return ListView.builder(
-                                                          padding:
-                                                              EdgeInsets.zero,
-                                                          primary: false,
-                                                          shrinkWrap: true,
-                                                          scrollDirection:
-                                                              Axis.vertical,
-                                                          itemCount:
-                                                              userList.length,
-                                                          itemBuilder: (context,
-                                                              userListIndex) {
-                                                            final userListItem =
-                                                                userList[
-                                                                    userListIndex];
-                                                            return Padding(
-                                                              padding:
-                                                                  const EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          0.0,
-                                                                          8.0,
-                                                                          0.0,
-                                                                          8.0),
-                                                              child: InkWell(
-                                                                splashColor: Colors
-                                                                    .transparent,
-                                                                focusColor: Colors
-                                                                    .transparent,
-                                                                hoverColor: Colors
-                                                                    .transparent,
-                                                                highlightColor:
-                                                                    Colors
-                                                                        .transparent,
-                                                                onTap:
-                                                                    () async {
-                                                                  context
-                                                                      .pushNamed(
-                                                                    'edit_user',
-                                                                    queryParameters:
-                                                                        {
-                                                                      'editId':
-                                                                          serializeParam(
-                                                                        userListItem
-                                                                            .reference,
-                                                                        ParamType
-                                                                            .DocumentReference,
-                                                                      ),
-                                                                    }.withoutNulls,
-                                                                  );
-                                                                },
-                                                                child:
-                                                                    Container(
-                                                                  width: double
-                                                                      .infinity,
-                                                                  decoration:
-                                                                      BoxDecoration(
-                                                                    color: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .secondaryBackground,
-                                                                    boxShadow: const [
-                                                                      BoxShadow(
-                                                                        blurRadius:
-                                                                            3.0,
-                                                                        color: Color(
-                                                                            0x20000000),
-                                                                        offset:
-                                                                            Offset(
-                                                                          0.0,
-                                                                          1.0,
+                                            if (responsiveVisibility(
+                                              context: context,
+                                              desktop: false,
+                                            ))
+                                              Container(
+                                                width: double.infinity,
+                                                height: 414.0,
+                                                decoration: BoxDecoration(
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .secondaryBackground,
+                                                ),
+                                                child: SingleChildScrollView(
+                                                  child: Column(
+                                                    mainAxisSize:
+                                                        MainAxisSize.max,
+                                                    children: [
+                                                      Builder(
+                                                        builder: (context) {
+                                                          final userList =
+                                                              _model
+                                                                  .customerList
+                                                                  .toList();
+                                                          return ListView
+                                                              .builder(
+                                                            padding:
+                                                                EdgeInsets.zero,
+                                                            primary: false,
+                                                            shrinkWrap: true,
+                                                            scrollDirection:
+                                                                Axis.vertical,
+                                                            itemCount:
+                                                                userList.length,
+                                                            itemBuilder: (context,
+                                                                userListIndex) {
+                                                              final userListItem =
+                                                                  userList[
+                                                                      userListIndex];
+                                                              return Padding(
+                                                                padding:
+                                                                    const EdgeInsetsDirectional
+                                                                        .fromSTEB(
+                                                                            0.0,
+                                                                            8.0,
+                                                                            0.0,
+                                                                            8.0),
+                                                                child: InkWell(
+                                                                  splashColor:
+                                                                      Colors
+                                                                          .transparent,
+                                                                  focusColor: Colors
+                                                                      .transparent,
+                                                                  hoverColor: Colors
+                                                                      .transparent,
+                                                                  highlightColor:
+                                                                      Colors
+                                                                          .transparent,
+                                                                  onTap:
+                                                                      () async {
+                                                                    context
+                                                                        .pushNamed(
+                                                                      'edit_user',
+                                                                      queryParameters:
+                                                                          {
+                                                                        'editId':
+                                                                            serializeParam(
+                                                                          userListItem
+                                                                              .reference,
+                                                                          ParamType
+                                                                              .DocumentReference,
                                                                         ),
-                                                                      )
-                                                                    ],
-                                                                    borderRadius:
-                                                                        BorderRadius.circular(
-                                                                            0.0),
-                                                                  ),
-                                                                  child: Row(
-                                                                    mainAxisSize:
-                                                                        MainAxisSize
-                                                                            .min,
-                                                                    mainAxisAlignment:
-                                                                        MainAxisAlignment
-                                                                            .start,
-                                                                    crossAxisAlignment:
-                                                                        CrossAxisAlignment
-                                                                            .center,
-                                                                    children: [
-                                                                      Expanded(
-                                                                        child:
-                                                                            Align(
-                                                                          alignment: const AlignmentDirectional(
-                                                                              -1.0,
+                                                                      }.withoutNulls,
+                                                                    );
+                                                                  },
+                                                                  child:
+                                                                      Container(
+                                                                    width: double
+                                                                        .infinity,
+                                                                    decoration:
+                                                                        BoxDecoration(
+                                                                      color: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .secondaryBackground,
+                                                                      boxShadow: const [
+                                                                        BoxShadow(
+                                                                          blurRadius:
+                                                                              3.0,
+                                                                          color:
+                                                                              Color(0x20000000),
+                                                                          offset:
+                                                                              Offset(
+                                                                            0.0,
+                                                                            1.0,
+                                                                          ),
+                                                                        )
+                                                                      ],
+                                                                      borderRadius:
+                                                                          BorderRadius.circular(
                                                                               0.0),
+                                                                    ),
+                                                                    child: Row(
+                                                                      mainAxisSize:
+                                                                          MainAxisSize
+                                                                              .min,
+                                                                      mainAxisAlignment:
+                                                                          MainAxisAlignment
+                                                                              .start,
+                                                                      crossAxisAlignment:
+                                                                          CrossAxisAlignment
+                                                                              .center,
+                                                                      children: [
+                                                                        Expanded(
+                                                                          child:
+                                                                              Align(
+                                                                            alignment:
+                                                                                const AlignmentDirectional(-1.0, 0.0),
+                                                                            child:
+                                                                                Container(
+                                                                              height: 50.0,
+                                                                              decoration: BoxDecoration(
+                                                                                color: FlutterFlowTheme.of(context).secondaryBackground,
+                                                                              ),
+                                                                              child: Align(
+                                                                                alignment: const AlignmentDirectional(-1.0, 0.0),
+                                                                                child: Padding(
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
+                                                                                  child: AutoSizeText(
+                                                                                    userListItem.displayName,
+                                                                                    style: FlutterFlowTheme.of(context).bodyLarge.override(
+                                                                                          fontFamily: 'Inter',
+                                                                                          letterSpacing: 0.0,
+                                                                                        ),
+                                                                                  ),
+                                                                                ),
+                                                                              ),
+                                                                            ),
+                                                                          ),
+                                                                        ),
+                                                                        Expanded(
                                                                           child:
                                                                               Container(
-                                                                            height:
-                                                                                50.0,
+                                                                            width:
+                                                                                150.0,
                                                                             decoration:
-                                                                                BoxDecoration(
-                                                                              color: FlutterFlowTheme.of(context).secondaryBackground,
-                                                                            ),
+                                                                                const BoxDecoration(),
                                                                             child:
-                                                                                Align(
-                                                                              alignment: const AlignmentDirectional(-1.0, 0.0),
-                                                                              child: Padding(
-                                                                                padding: const EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
-                                                                                child: AutoSizeText(
-                                                                                  userListItem.displayName,
-                                                                                  style: FlutterFlowTheme.of(context).bodyLarge.override(
-                                                                                        fontFamily: 'Kantumruy Pro',
+                                                                                Visibility(
+                                                                              visible: responsiveVisibility(
+                                                                                context: context,
+                                                                                phone: false,
+                                                                                tablet: false,
+                                                                              ),
+                                                                              child: Align(
+                                                                                alignment: const AlignmentDirectional(0.0, 1.0),
+                                                                                child: Text(
+                                                                                  userListItem.phoneNumber,
+                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                        fontFamily: 'Inter',
                                                                                         letterSpacing: 0.0,
                                                                                       ),
                                                                                 ),
@@ -887,120 +927,84 @@ class _CustomerListWidgetState extends State<CustomerListWidget>
                                                                             ),
                                                                           ),
                                                                         ),
-                                                                      ),
-                                                                      Expanded(
-                                                                        child:
-                                                                            Container(
-                                                                          width:
-                                                                              150.0,
-                                                                          decoration:
-                                                                              const BoxDecoration(),
+                                                                        Expanded(
                                                                           child:
-                                                                              Visibility(
-                                                                            visible:
-                                                                                responsiveVisibility(
-                                                                              context: context,
-                                                                              phone: false,
-                                                                              tablet: false,
+                                                                              Container(
+                                                                            width:
+                                                                                200.0,
+                                                                            decoration:
+                                                                                BoxDecoration(
+                                                                              color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                             ),
                                                                             child:
-                                                                                Align(
-                                                                              alignment: const AlignmentDirectional(0.0, 1.0),
-                                                                              child: Text(
-                                                                                userListItem.phoneNumber,
-                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                      fontFamily: 'Kantumruy Pro',
-                                                                                      letterSpacing: 0.0,
-                                                                                    ),
+                                                                                Visibility(
+                                                                              visible: responsiveVisibility(
+                                                                                context: context,
+                                                                                phone: false,
+                                                                                tablet: false,
+                                                                              ),
+                                                                              child: Align(
+                                                                                alignment: const AlignmentDirectional(0.0, 0.0),
+                                                                                child: AutoSizeText(
+                                                                                  userListItem.adress,
+                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                        fontFamily: 'Inter',
+                                                                                        letterSpacing: 0.0,
+                                                                                      ),
+                                                                                ),
                                                                               ),
                                                                             ),
                                                                           ),
                                                                         ),
-                                                                      ),
-                                                                      Expanded(
-                                                                        child:
-                                                                            Container(
-                                                                          width:
-                                                                              200.0,
-                                                                          decoration:
-                                                                              BoxDecoration(
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).secondaryBackground,
-                                                                          ),
+                                                                        Expanded(
                                                                           child:
-                                                                              Visibility(
-                                                                            visible:
-                                                                                responsiveVisibility(
-                                                                              context: context,
-                                                                              phone: false,
-                                                                              tablet: false,
+                                                                              Container(
+                                                                            width:
+                                                                                150.0,
+                                                                            decoration:
+                                                                                BoxDecoration(
+                                                                              color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                             ),
                                                                             child:
-                                                                                Align(
-                                                                              alignment: const AlignmentDirectional(0.0, 0.0),
-                                                                              child: AutoSizeText(
-                                                                                userListItem.adress,
-                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                      fontFamily: 'Kantumruy Pro',
-                                                                                      letterSpacing: 0.0,
-                                                                                    ),
+                                                                                Visibility(
+                                                                              visible: responsiveVisibility(
+                                                                                context: context,
+                                                                                phone: false,
+                                                                                tablet: false,
+                                                                              ),
+                                                                              child: Align(
+                                                                                alignment: const AlignmentDirectional(0.0, 0.0),
+                                                                                child: Text(
+                                                                                  userListItem.email,
+                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                        fontFamily: 'Inter',
+                                                                                        fontSize: 14.0,
+                                                                                        letterSpacing: 0.0,
+                                                                                      ),
+                                                                                ),
                                                                               ),
                                                                             ),
                                                                           ),
                                                                         ),
-                                                                      ),
-                                                                      Expanded(
-                                                                        child:
-                                                                            Container(
-                                                                          width:
-                                                                              150.0,
-                                                                          decoration:
-                                                                              BoxDecoration(
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).secondaryBackground,
-                                                                          ),
-                                                                          child:
-                                                                              Visibility(
-                                                                            visible:
-                                                                                responsiveVisibility(
-                                                                              context: context,
-                                                                              phone: false,
-                                                                              tablet: false,
-                                                                            ),
-                                                                            child:
-                                                                                Align(
-                                                                              alignment: const AlignmentDirectional(0.0, 0.0),
-                                                                              child: Text(
-                                                                                userListItem.email,
-                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                      fontFamily: 'Kantumruy Pro',
-                                                                                      fontSize: 14.0,
-                                                                                      letterSpacing: 0.0,
-                                                                                    ),
-                                                                              ),
-                                                                            ),
-                                                                          ),
-                                                                        ),
-                                                                      ),
-                                                                    ],
+                                                                      ],
+                                                                    ),
                                                                   ),
                                                                 ),
-                                                              ),
-                                                            );
-                                                          },
-                                                        ).animateOnPageLoad(
-                                                            animationsMap[
-                                                                'listViewOnPageLoadAnimation']!);
-                                                      },
-                                                    ),
-                                                  ],
-                                                ),
-                                              ).animateOnPageLoad(animationsMap[
-                                                  'columnOnPageLoadAnimation2']!),
-                                            ),
+                                                              );
+                                                            },
+                                                          ).animateOnPageLoad(
+                                                              animationsMap[
+                                                                  'listViewOnPageLoadAnimation']!);
+                                                        },
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ).animateOnPageLoad(animationsMap[
+                                                    'columnOnPageLoadAnimation2']!),
+                                              ),
                                             Container(
                                               width: double.infinity,
-                                              height: 415.0,
+                                              height: 400.0,
                                               decoration: BoxDecoration(
                                                 color:
                                                     FlutterFlowTheme.of(context)
@@ -1008,14 +1012,14 @@ class _CustomerListWidgetState extends State<CustomerListWidget>
                                               ),
                                               child: Builder(
                                                 builder: (context) {
-                                                  final kiki = _model
+                                                  final userData = _model
                                                       .customerList
                                                       .toList();
                                                   return FlutterFlowDataTable<
                                                       UsersRecord>(
                                                     controller: _model
                                                         .paginatedDataTableController,
-                                                    data: kiki,
+                                                    data: userData,
                                                     columnsBuilder:
                                                         (onSortChanged) => [
                                                       DataColumn2(
@@ -1026,14 +1030,14 @@ class _CustomerListWidgetState extends State<CustomerListWidget>
                                                             FFLocalizations.of(
                                                                     context)
                                                                 .getText(
-                                                              'l61kuat7' /* Edit Header 1 */,
+                                                              'l61kuat7' /* Name */,
                                                             ),
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .labelLarge
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -1044,21 +1048,26 @@ class _CustomerListWidgetState extends State<CustomerListWidget>
                                                         label: DefaultTextStyle
                                                             .merge(
                                                           softWrap: true,
-                                                          child: Text(
-                                                            FFLocalizations.of(
-                                                                    context)
-                                                                .getText(
-                                                              'moy0mafh' /* Edit Header 2 */,
+                                                          child: Align(
+                                                            alignment:
+                                                                const AlignmentDirectional(
+                                                                    0.0, 0.0),
+                                                            child: Text(
+                                                              FFLocalizations.of(
+                                                                      context)
+                                                                  .getText(
+                                                                'moy0mafh' /* Phone Number */,
+                                                              ),
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .labelLarge
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        'Inter',
+                                                                    letterSpacing:
+                                                                        0.0,
+                                                                  ),
                                                             ),
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .labelLarge
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Kantumruy Pro',
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                ),
                                                           ),
                                                         ),
                                                       ),
@@ -1066,34 +1075,96 @@ class _CustomerListWidgetState extends State<CustomerListWidget>
                                                         label: DefaultTextStyle
                                                             .merge(
                                                           softWrap: true,
-                                                          child: Text(
-                                                            FFLocalizations.of(
-                                                                    context)
-                                                                .getText(
-                                                              'iqonmgig' /* Edit Header 3 */,
+                                                          child: Align(
+                                                            alignment:
+                                                                const AlignmentDirectional(
+                                                                    0.0, 0.0),
+                                                            child: Text(
+                                                              FFLocalizations.of(
+                                                                      context)
+                                                                  .getText(
+                                                                'iqonmgig' /* Adress */,
+                                                              ),
+                                                              textAlign:
+                                                                  TextAlign
+                                                                      .center,
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .labelLarge
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        'Inter',
+                                                                    letterSpacing:
+                                                                        0.0,
+                                                                  ),
                                                             ),
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .labelLarge
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Kantumruy Pro',
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                ),
+                                                          ),
+                                                        ),
+                                                      ),
+                                                      DataColumn2(
+                                                        label: DefaultTextStyle
+                                                            .merge(
+                                                          softWrap: true,
+                                                          child: Align(
+                                                            alignment:
+                                                                const AlignmentDirectional(
+                                                                    0.0, 0.0),
+                                                            child: Text(
+                                                              FFLocalizations.of(
+                                                                      context)
+                                                                  .getText(
+                                                                '7k0b85u0' /* Email */,
+                                                              ),
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .labelLarge
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        'Inter',
+                                                                    letterSpacing:
+                                                                        0.0,
+                                                                  ),
+                                                            ),
+                                                          ),
+                                                        ),
+                                                      ),
+                                                      DataColumn2(
+                                                        label: DefaultTextStyle
+                                                            .merge(
+                                                          softWrap: true,
+                                                          child: Align(
+                                                            alignment:
+                                                                const AlignmentDirectional(
+                                                                    0.0, 0.0),
+                                                            child: Text(
+                                                              FFLocalizations.of(
+                                                                      context)
+                                                                  .getText(
+                                                                'qljitdj1' /* Edit Info */,
+                                                              ),
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .labelLarge
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        'Inter',
+                                                                    letterSpacing:
+                                                                        0.0,
+                                                                  ),
+                                                            ),
                                                           ),
                                                         ),
                                                       ),
                                                     ],
-                                                    dataRowBuilder: (kikiItem,
-                                                            kikiIndex,
+                                                    dataRowBuilder: (userDataItem,
+                                                            userDataIndex,
                                                             selected,
                                                             onSelectChanged) =>
                                                         DataRow(
                                                       color:
                                                           MaterialStateProperty
                                                               .all(
-                                                        kikiIndex % 2 == 0
+                                                        userDataIndex % 2 == 0
                                                             ? FlutterFlowTheme
                                                                     .of(context)
                                                                 .secondaryBackground
@@ -1103,40 +1174,111 @@ class _CustomerListWidgetState extends State<CustomerListWidget>
                                                       ),
                                                       cells: [
                                                         Text(
-                                                          kikiItem.displayName,
+                                                          userDataItem
+                                                              .displayName,
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
                                                         ),
-                                                        Text(
-                                                          kikiItem.phoneNumber,
-                                                          style: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .bodyMedium
-                                                              .override(
-                                                                fontFamily:
-                                                                    'Kantumruy Pro',
-                                                                letterSpacing:
-                                                                    0.0,
-                                                              ),
+                                                        Align(
+                                                          alignment:
+                                                              const AlignmentDirectional(
+                                                                  0.0, 0.0),
+                                                          child: Text(
+                                                            userDataItem
+                                                                .phoneNumber,
+                                                            style: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .bodyMedium
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Inter',
+                                                                  letterSpacing:
+                                                                      0.0,
+                                                                ),
+                                                          ),
                                                         ),
-                                                        Text(
-                                                          kikiItem.adress,
-                                                          style: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .bodyMedium
-                                                              .override(
-                                                                fontFamily:
-                                                                    'Kantumruy Pro',
-                                                                letterSpacing:
-                                                                    0.0,
-                                                              ),
+                                                        Align(
+                                                          alignment:
+                                                              const AlignmentDirectional(
+                                                                  0.0, 0.0),
+                                                          child: Text(
+                                                            userDataItem.adress,
+                                                            style: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .bodyMedium
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Inter',
+                                                                  letterSpacing:
+                                                                      0.0,
+                                                                ),
+                                                          ),
+                                                        ),
+                                                        Align(
+                                                          alignment:
+                                                              const AlignmentDirectional(
+                                                                  0.0, 0.0),
+                                                          child: Text(
+                                                            userDataItem.email,
+                                                            style: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .bodyMedium
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Inter',
+                                                                  letterSpacing:
+                                                                      0.0,
+                                                                ),
+                                                          ),
+                                                        ),
+                                                        Align(
+                                                          alignment:
+                                                              const AlignmentDirectional(
+                                                                  0.0, 0.0),
+                                                          child:
+                                                              FlutterFlowIconButton(
+                                                            borderColor:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .secondary,
+                                                            borderRadius: 9.0,
+                                                            borderWidth: 1.0,
+                                                            fillColor:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .primary,
+                                                            icon: FaIcon(
+                                                              FontAwesomeIcons
+                                                                  .pencilAlt,
+                                                              color: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .primaryBackground,
+                                                              size: 20.0,
+                                                            ),
+                                                            onPressed:
+                                                                () async {
+                                                              context.pushNamed(
+                                                                'edit_user',
+                                                                queryParameters:
+                                                                    {
+                                                                  'editId':
+                                                                      serializeParam(
+                                                                    userDataItem
+                                                                        .reference,
+                                                                    ParamType
+                                                                        .DocumentReference,
+                                                                  ),
+                                                                }.withoutNulls,
+                                                              );
+                                                            },
+                                                          ),
                                                         ),
                                                       ]
                                                           .map((c) =>
@@ -1148,8 +1290,7 @@ class _CustomerListWidgetState extends State<CustomerListWidget>
                                                     hidePaginator: false,
                                                     showFirstLastButtons: false,
                                                     headingRowHeight: 56.0,
-                                                    dataRowHeight: 48.0,
-                                                    columnSpacing: 20.0,
+                                                    dataRowHeight: 60.0,
                                                     headingRowColor:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -1168,7 +1309,13 @@ class _CustomerListWidgetState extends State<CustomerListWidget>
                                                             .secondaryBackground,
                                                     horizontalDividerThickness:
                                                         1.0,
-                                                    addVerticalDivider: false,
+                                                    addVerticalDivider: true,
+                                                    verticalDividerColor:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .secondaryBackground,
+                                                    verticalDividerThickness:
+                                                        1.0,
                                                   );
                                                 },
                                               ),

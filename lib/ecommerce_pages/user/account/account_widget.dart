@@ -72,7 +72,11 @@ class _AccountWidgetState extends State<AccountWidget> {
                 maxWidth: 1537.0,
                 maxHeight: 960.0,
               ),
-              decoration: const BoxDecoration(),
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: FlutterFlowTheme.of(context).primary,
+                ),
+              ),
               child: SingleChildScrollView(
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
@@ -147,7 +151,7 @@ class _AccountWidgetState extends State<AccountWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .headlineSmall
                                                 .override(
-                                                  fontFamily: 'Kantumruy Pro',
+                                                  fontFamily: 'Inter',
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .primary,
@@ -184,7 +188,7 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                                 .labelLarge
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                   fontWeight:
@@ -228,7 +232,7 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                                       .labelMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Kantumruy Pro',
+                                                                            'Inter',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -238,7 +242,7 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                                       .labelMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Kantumruy Pro',
+                                                                            'Inter',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -309,7 +313,7 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -352,7 +356,7 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                                 .labelLarge
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                   fontWeight:
@@ -388,7 +392,7 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                                     .labelMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Kantumruy Pro',
+                                                                          'Inter',
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
@@ -398,7 +402,7 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                                     .labelMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Kantumruy Pro',
+                                                                          'Inter',
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
@@ -469,7 +473,7 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -525,7 +529,7 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                                 .labelLarge
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                   fontWeight:
@@ -569,7 +573,7 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                                       .labelMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Kantumruy Pro',
+                                                                            'Inter',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -579,7 +583,7 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                                       .labelMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Kantumruy Pro',
+                                                                            'Inter',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -650,7 +654,7 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -693,7 +697,7 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                                 .labelLarge
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                   fontWeight:
@@ -734,7 +738,7 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                                     .labelMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Kantumruy Pro',
+                                                                          'Inter',
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
@@ -744,7 +748,7 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                                     .labelMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Kantumruy Pro',
+                                                                          'Inter',
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
@@ -815,7 +819,7 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -894,7 +898,7 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                               .titleSmall
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .primary,
@@ -1006,7 +1010,7 @@ class _AccountWidgetState extends State<AccountWidget> {
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   color: Colors
                                                                       .white,
                                                                   fontSize:

@@ -162,7 +162,7 @@ class _SuccessfulPlaceOrderWidgetState extends State<SuccessfulPlaceOrderWidget>
                           style: FlutterFlowTheme.of(context)
                               .labelLarge
                               .override(
-                                fontFamily: 'Kantumruy Pro',
+                                fontFamily: 'Inter',
                                 color: FlutterFlowTheme.of(context).primaryText,
                                 fontSize: 19.0,
                                 letterSpacing: 0.0,
@@ -216,7 +216,7 @@ class _SuccessfulPlaceOrderWidgetState extends State<SuccessfulPlaceOrderWidget>
                                       style: FlutterFlowTheme.of(context)
                                           .headlineSmall
                                           .override(
-                                            fontFamily: 'Kantumruy Pro',
+                                            fontFamily: 'Inter',
                                             color: FlutterFlowTheme.of(context)
                                                 .primary,
                                             letterSpacing: 0.0,

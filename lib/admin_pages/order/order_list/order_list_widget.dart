@@ -224,8 +224,7 @@ class _OrderListWidgetState extends State<OrderListWidget>
                                                           context)
                                                       .displayMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w600,
@@ -248,7 +247,7 @@ class _OrderListWidgetState extends State<OrderListWidget>
                                             style: FlutterFlowTheme.of(context)
                                                 .labelMedium
                                                 .override(
-                                                  fontFamily: 'Kantumruy Pro',
+                                                  fontFamily: 'Inter',
                                                   letterSpacing: 0.0,
                                                 ),
                                           ).animateOnPageLoad(animationsMap[
@@ -330,7 +329,7 @@ class _OrderListWidgetState extends State<OrderListWidget>
                                                                 .headlineLarge
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -686,7 +685,7 @@ class _OrderListWidgetState extends State<OrderListWidget>
                                                                 .bodyLarge
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -716,7 +715,7 @@ class _OrderListWidgetState extends State<OrderListWidget>
                                                                 .bodyLarge
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -748,7 +747,7 @@ class _OrderListWidgetState extends State<OrderListWidget>
                                                               .labelLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -781,7 +780,7 @@ class _OrderListWidgetState extends State<OrderListWidget>
                                                               .labelLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 letterSpacing:
                                                                     0.0,
                                                                 fontWeight:
@@ -817,7 +816,7 @@ class _OrderListWidgetState extends State<OrderListWidget>
                                                               .labelLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 letterSpacing:
                                                                     0.0,
                                                                 fontWeight:
@@ -888,7 +887,7 @@ class _OrderListWidgetState extends State<OrderListWidget>
                                                               .labelLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .primaryText,
@@ -966,7 +965,7 @@ class _OrderListWidgetState extends State<OrderListWidget>
                                                                 .labelLarge
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                   fontWeight:
@@ -1085,7 +1084,7 @@ class _OrderListWidgetState extends State<OrderListWidget>
                                                                                     child: AutoSizeText(
                                                                                       orderListItem.guestInfo.name,
                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                            fontFamily: 'Kantumruy Pro',
+                                                                                            fontFamily: 'Inter',
                                                                                             letterSpacing: 0.0,
                                                                                           ),
                                                                                     ),
@@ -1136,7 +1135,7 @@ class _OrderListWidgetState extends State<OrderListWidget>
                                                                                         'N/A',
                                                                                       ),
                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                            fontFamily: 'Kantumruy Pro',
+                                                                                            fontFamily: 'Inter',
                                                                                             letterSpacing: 0.0,
                                                                                           ),
                                                                                     ),
@@ -1181,7 +1180,7 @@ class _OrderListWidgetState extends State<OrderListWidget>
                                                                                 Text(
                                                                               orderListItem.deliveryOption,
                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                    fontFamily: 'Kantumruy Pro',
+                                                                                    fontFamily: 'Inter',
                                                                                     letterSpacing: 0.0,
                                                                                   ),
                                                                             ),
@@ -1209,7 +1208,7 @@ class _OrderListWidgetState extends State<OrderListWidget>
                                                                               child: AutoSizeText(
                                                                                 orderListItem.guestInfo.phoneNumber,
                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                      fontFamily: 'Kantumruy Pro',
+                                                                                      fontFamily: 'Inter',
                                                                                       letterSpacing: 0.0,
                                                                                     ),
                                                                               ),
@@ -1261,7 +1260,7 @@ class _OrderListWidgetState extends State<OrderListWidget>
                                                                                       'N/A',
                                                                                     ),
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                          fontFamily: 'Kantumruy Pro',
+                                                                                          fontFamily: 'Inter',
                                                                                           letterSpacing: 0.0,
                                                                                         ),
                                                                                   ),
@@ -1306,7 +1305,7 @@ class _OrderListWidgetState extends State<OrderListWidget>
                                                                               locale: '',
                                                                             ),
                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  fontFamily: 'Kantumruy Pro',
+                                                                                  fontFamily: 'Inter',
                                                                                   letterSpacing: 0.0,
                                                                                 ),
                                                                           ),
@@ -1341,7 +1340,7 @@ class _OrderListWidgetState extends State<OrderListWidget>
                                                                               Text(
                                                                             orderListItem.paymentMethod,
                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  fontFamily: 'Kantumruy Pro',
+                                                                                  fontFamily: 'Inter',
                                                                                   fontSize: 14.0,
                                                                                   letterSpacing: 0.0,
                                                                                 ),
@@ -1391,7 +1390,7 @@ class _OrderListWidgetState extends State<OrderListWidget>
                                                                                 Text(
                                                                               orderListItem.status,
                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                    fontFamily: 'Kantumruy Pro',
+                                                                                    fontFamily: 'Inter',
                                                                                     letterSpacing: 0.0,
                                                                                   ),
                                                                             ),

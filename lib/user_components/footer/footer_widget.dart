@@ -87,7 +87,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                 color: FlutterFlowTheme.of(context).primaryText,
               ),
               child: Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(40.0, 0.0, 40.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(130.0, 0.0, 130.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -124,7 +124,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .titleLarge
                                 .override(
-                                  fontFamily: 'Kantumruy Pro',
+                                  fontFamily: 'Inter',
                                   color: FlutterFlowTheme.of(context).primary,
                                   letterSpacing: 0.0,
                                 ),
@@ -134,7 +134,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                             textAlign: TextAlign.start,
                             style:
                                 FlutterFlowTheme.of(context).bodyLarge.override(
-                                      fontFamily: 'Kantumruy Pro',
+                                      fontFamily: 'Inter',
                                       color: FlutterFlowTheme.of(context)
                                           .primaryBackground,
                                       letterSpacing: 0.0,
@@ -145,7 +145,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Kantumruy Pro',
+                                  fontFamily: 'Inter',
                                   color: Colors.white,
                                   fontSize: 16.0,
                                   letterSpacing: 0.0,
@@ -156,7 +156,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Kantumruy Pro',
+                                  fontFamily: 'Inter',
                                   color: Colors.white,
                                   fontSize: 16.0,
                                   letterSpacing: 0.0,
@@ -182,7 +182,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .titleLarge
                                 .override(
-                                  fontFamily: 'Kantumruy Pro',
+                                  fontFamily: 'Inter',
                                   color: FlutterFlowTheme.of(context).primary,
                                   letterSpacing: 0.0,
                                 ),
@@ -204,7 +204,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      fontFamily: 'Kantumruy Pro',
+                                      fontFamily: 'Inter',
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.normal,
                                     ),
@@ -226,7 +226,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: 'Kantumruy Pro',
+                                      fontFamily: 'Inter',
                                       color: Colors.white,
                                       fontSize: 16.0,
                                       letterSpacing: 0.0,
@@ -248,7 +248,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Kantumruy Pro',
+                                    fontFamily: 'Inter',
                                     color: Colors.white,
                                     fontSize: 16.0,
                                     letterSpacing: 0.0,
@@ -275,7 +275,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .titleLarge
                                 .override(
-                                  fontFamily: 'Kantumruy Pro',
+                                  fontFamily: 'Inter',
                                   color: FlutterFlowTheme.of(context).primary,
                                   letterSpacing: 0.0,
                                 ),
@@ -302,7 +302,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        fontFamily: 'Kantumruy Pro',
+                                        fontFamily: 'Inter',
                                         color: Colors.white,
                                         fontSize: 16.0,
                                         letterSpacing: 0.0,
@@ -332,7 +332,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        fontFamily: 'Kantumruy Pro',
+                                        fontFamily: 'Inter',
                                         color: Colors.white,
                                         fontSize: 16.0,
                                         letterSpacing: 0.0,
@@ -411,7 +411,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                       locale: FFLocalizations.of(context).languageCode,
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Kantumruy Pro',
+                          fontFamily: 'Inter',
                           color: FlutterFlowTheme.of(context).primaryBackground,
                           letterSpacing: 0.0,
                         ),
@@ -423,7 +423,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                         '1jxehsmc' /* Mungkul Technology. All Rights... */,
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Kantumruy Pro',
+                            fontFamily: 'Inter',
                             color:
                                 FlutterFlowTheme.of(context).primaryBackground,
                             letterSpacing: 0.0,

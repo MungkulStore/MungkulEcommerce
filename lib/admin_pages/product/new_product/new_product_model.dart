@@ -1,4 +1,5 @@
 import '/admin_components/web_nav/web_nav_widget.dart';
+import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'new_product_widget.dart' show NewProductWidget;
@@ -22,9 +23,29 @@ class NewProductModel extends FlutterFlowModel<NewProductWidget> {
 
   bool newCategory = false;
 
+  String? categoryicon;
+
+  List<CategoriesRecord> categoriesLists = [];
+  void addToCategoriesLists(CategoriesRecord item) => categoriesLists.add(item);
+  void removeFromCategoriesLists(CategoriesRecord item) =>
+      categoriesLists.remove(item);
+  void removeAtIndexFromCategoriesLists(int index) =>
+      categoriesLists.removeAt(index);
+  void insertAtIndexInCategoriesLists(int index, CategoriesRecord item) =>
+      categoriesLists.insert(index, item);
+  void updateCategoriesListsAtIndex(
+          int index, Function(CategoriesRecord) updateFn) =>
+      categoriesLists[index] = updateFn(categoriesLists[index]);
+
+  String? currentID;
+
+  String? selectedCategory;
+
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
+  // Stores action output result for [Firestore Query - Query a collection] action in new_product widget.
+  List<CategoriesRecord>? categoriesList;
   // Model for webNav component.
   late WebNavModel webNavModel;
   // State field(s) for productsName widget.
@@ -63,13 +84,19 @@ class NewProductModel extends FlutterFlowModel<NewProductWidget> {
   FocusNode? percentageFocusNode;
   TextEditingController? percentageTextController;
   String? Function(BuildContext, String?)? percentageTextControllerValidator;
-  // State field(s) for Category widget.
-  String? categoryValue;
-  FormFieldController<String>? categoryValueController;
+  // State field(s) for Categorydropdown widget.
+  String? categorydropdownValue;
+  FormFieldController<String>? categorydropdownValueController;
   // State field(s) for Category widget.
   FocusNode? categoryFocusNode;
   TextEditingController? categoryTextController;
   String? Function(BuildContext, String?)? categoryTextControllerValidator;
+  // Stores action output result for [Backend Call - Create Document] action in Button widget.
+  CategoriesRecord? createdCategory;
+  bool isDataUploading4 = false;
+  FFUploadedFile uploadedLocalFile4 =
+      FFUploadedFile(bytes: Uint8List.fromList([]));
+  String uploadedFileUrl4 = '';
 
   @override
   void initState(BuildContext context) {

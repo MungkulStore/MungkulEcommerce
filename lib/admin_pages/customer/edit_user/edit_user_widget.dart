@@ -170,7 +170,7 @@ class _EditUserWidgetState extends State<EditUserWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .headlineSmall
                                             .override(
-                                              fontFamily: 'Kantumruy Pro',
+                                              fontFamily: 'Inter',
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .primary,
@@ -203,8 +203,7 @@ class _EditUserWidgetState extends State<EditUserWidget> {
                                                             context)
                                                         .labelLarge
                                                         .override(
-                                                          fontFamily:
-                                                              'Kantumruy Pro',
+                                                          fontFamily: 'Inter',
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w600,
@@ -237,7 +236,7 @@ class _EditUserWidgetState extends State<EditUserWidget> {
                                                                 .labelMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -247,7 +246,7 @@ class _EditUserWidgetState extends State<EditUserWidget> {
                                                                 .labelMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -317,8 +316,7 @@ class _EditUserWidgetState extends State<EditUserWidget> {
                                                               .of(context)
                                                           .bodyMedium
                                                           .override(
-                                                            fontFamily:
-                                                                'Kantumruy Pro',
+                                                            fontFamily: 'Inter',
                                                             letterSpacing: 0.0,
                                                           ),
                                                       validator: _model
@@ -353,8 +351,7 @@ class _EditUserWidgetState extends State<EditUserWidget> {
                                                             context)
                                                         .labelLarge
                                                         .override(
-                                                          fontFamily:
-                                                              'Kantumruy Pro',
+                                                          fontFamily: 'Inter',
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w600,
@@ -378,7 +375,7 @@ class _EditUserWidgetState extends State<EditUserWidget> {
                                                               .labelMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -388,7 +385,7 @@ class _EditUserWidgetState extends State<EditUserWidget> {
                                                               .labelMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -450,8 +447,7 @@ class _EditUserWidgetState extends State<EditUserWidget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Kantumruy Pro',
+                                                          fontFamily: 'Inter',
                                                           letterSpacing: 0.0,
                                                         ),
                                                     validator: _model
@@ -498,8 +494,7 @@ class _EditUserWidgetState extends State<EditUserWidget> {
                                                             context)
                                                         .labelLarge
                                                         .override(
-                                                          fontFamily:
-                                                              'Kantumruy Pro',
+                                                          fontFamily: 'Inter',
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w600,
@@ -532,7 +527,7 @@ class _EditUserWidgetState extends State<EditUserWidget> {
                                                                 .labelMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -542,7 +537,7 @@ class _EditUserWidgetState extends State<EditUserWidget> {
                                                                 .labelMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -612,8 +607,7 @@ class _EditUserWidgetState extends State<EditUserWidget> {
                                                               .of(context)
                                                           .bodyMedium
                                                           .override(
-                                                            fontFamily:
-                                                                'Kantumruy Pro',
+                                                            fontFamily: 'Inter',
                                                             letterSpacing: 0.0,
                                                           ),
                                                       validator: _model
@@ -648,8 +642,7 @@ class _EditUserWidgetState extends State<EditUserWidget> {
                                                             context)
                                                         .labelLarge
                                                         .override(
-                                                          fontFamily:
-                                                              'Kantumruy Pro',
+                                                          fontFamily: 'Inter',
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w600,
@@ -682,7 +675,7 @@ class _EditUserWidgetState extends State<EditUserWidget> {
                                                                 .labelMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -692,7 +685,7 @@ class _EditUserWidgetState extends State<EditUserWidget> {
                                                                 .labelMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -762,8 +755,7 @@ class _EditUserWidgetState extends State<EditUserWidget> {
                                                               .of(context)
                                                           .bodyMedium
                                                           .override(
-                                                            fontFamily:
-                                                                'Kantumruy Pro',
+                                                            fontFamily: 'Inter',
                                                             letterSpacing: 0.0,
                                                           ),
                                                       validator: _model
@@ -816,8 +808,7 @@ class _EditUserWidgetState extends State<EditUserWidget> {
                                                 FlutterFlowTheme.of(context)
                                                     .titleSmall
                                                     .override(
-                                                      fontFamily:
-                                                          'Kantumruy Pro',
+                                                      fontFamily: 'Inter',
                                                       color: Colors.white,
                                                       fontSize: 18.0,
                                                       letterSpacing: 0.0,

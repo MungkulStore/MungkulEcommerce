@@ -137,6 +137,64 @@ class FFAppState extends ChangeNotifier {
   set totalRevenue(double value) {
     _totalRevenue = value;
   }
+
+  List<DocumentReference> _CompareProduct = [];
+  List<DocumentReference> get CompareProduct => _CompareProduct;
+  set CompareProduct(List<DocumentReference> value) {
+    _CompareProduct = value;
+  }
+
+  void addToCompareProduct(DocumentReference value) {
+    _CompareProduct.add(value);
+  }
+
+  void removeFromCompareProduct(DocumentReference value) {
+    _CompareProduct.remove(value);
+  }
+
+  void removeAtIndexFromCompareProduct(int index) {
+    _CompareProduct.removeAt(index);
+  }
+
+  void updateCompareProductAtIndex(
+    int index,
+    DocumentReference Function(DocumentReference) updateFn,
+  ) {
+    _CompareProduct[index] = updateFn(_CompareProduct[index]);
+  }
+
+  void insertAtIndexInCompareProduct(int index, DocumentReference value) {
+    _CompareProduct.insert(index, value);
+  }
+
+  List<String> _compareProducts = [];
+  List<String> get compareProducts => _compareProducts;
+  set compareProducts(List<String> value) {
+    _compareProducts = value;
+  }
+
+  void addToCompareProducts(String value) {
+    _compareProducts.add(value);
+  }
+
+  void removeFromCompareProducts(String value) {
+    _compareProducts.remove(value);
+  }
+
+  void removeAtIndexFromCompareProducts(int index) {
+    _compareProducts.removeAt(index);
+  }
+
+  void updateCompareProductsAtIndex(
+    int index,
+    String Function(String) updateFn,
+  ) {
+    _compareProducts[index] = updateFn(_compareProducts[index]);
+  }
+
+  void insertAtIndexInCompareProducts(int index, String value) {
+    _compareProducts.insert(index, value);
+  }
 }
 
 void _safeInit(Function() initializeField) {

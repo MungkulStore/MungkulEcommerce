@@ -156,7 +156,7 @@ class _ProductListWidgetState extends State<ProductListWidget>
                                           style: FlutterFlowTheme.of(context)
                                               .displayMedium
                                               .override(
-                                                fontFamily: 'Kantumruy Pro',
+                                                fontFamily: 'Inter',
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w600,
                                               ),
@@ -207,19 +207,16 @@ class _ProductListWidgetState extends State<ProductListWidget>
                                                           .getText(
                                                         'iveq1e7p' /* Add Products */,
                                                       ),
-                                                      style:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyLarge
-                                                              .override(
-                                                                fontFamily:
-                                                                    'Kantumruy Pro',
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .primaryBackground,
-                                                                letterSpacing:
-                                                                    0.0,
-                                                              ),
+                                                      style: FlutterFlowTheme
+                                                              .of(context)
+                                                          .bodyLarge
+                                                          .override(
+                                                            fontFamily: 'Inter',
+                                                            color: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .primaryBackground,
+                                                            letterSpacing: 0.0,
+                                                          ),
                                                     ),
                                                   ),
                                                 ),
@@ -298,8 +295,7 @@ class _ProductListWidgetState extends State<ProductListWidget>
                                                               .of(context)
                                                           .headlineLarge
                                                           .override(
-                                                            fontFamily:
-                                                                'Kantumruy Pro',
+                                                            fontFamily: 'Inter',
                                                             letterSpacing: 0.0,
                                                           ),
                                                     ),
@@ -634,7 +630,7 @@ class _ProductListWidgetState extends State<ProductListWidget>
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                   fontWeight:
@@ -666,46 +662,9 @@ class _ProductListWidgetState extends State<ProductListWidget>
                                                               .of(context)
                                                           .bodyMedium
                                                           .override(
-                                                            fontFamily:
-                                                                'Kantumruy Pro',
+                                                            fontFamily: 'Inter',
                                                             letterSpacing: 0.0,
                                                           ),
-                                                    ),
-                                                  ),
-                                                ),
-                                                Align(
-                                                  alignment:
-                                                      const AlignmentDirectional(
-                                                          -1.0, 0.0),
-                                                  child: Container(
-                                                    width: 100.0,
-                                                    decoration: const BoxDecoration(
-                                                      color: Color(0x00FFFFFF),
-                                                    ),
-                                                    child: Align(
-                                                      alignment:
-                                                          const AlignmentDirectional(
-                                                              0.0, 0.0),
-                                                      child: Text(
-                                                        FFLocalizations.of(
-                                                                context)
-                                                            .getText(
-                                                          'mmkcb2xw' /* Category */,
-                                                        ),
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .labelMedium
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Kantumruy Pro',
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .w500,
-                                                                ),
-                                                      ),
                                                     ),
                                                   ),
                                                 ),
@@ -734,7 +693,7 @@ class _ProductListWidgetState extends State<ProductListWidget>
                                                                 .labelLarge
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                   fontWeight:
@@ -770,7 +729,7 @@ class _ProductListWidgetState extends State<ProductListWidget>
                                                                 .labelLarge
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                   fontWeight:
@@ -836,8 +795,7 @@ class _ProductListWidgetState extends State<ProductListWidget>
                                                             .of(context)
                                                         .labelLarge
                                                         .override(
-                                                          fontFamily:
-                                                              'Kantumruy Pro',
+                                                          fontFamily: 'Inter',
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w500,
@@ -906,7 +864,7 @@ class _ProductListWidgetState extends State<ProductListWidget>
                                                               .labelLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 letterSpacing:
                                                                     0.0,
                                                                 fontWeight:
@@ -1047,7 +1005,7 @@ class _ProductListWidgetState extends State<ProductListWidget>
                                                                                 listProductsItem.name,
                                                                                 textAlign: TextAlign.start,
                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                      fontFamily: 'Kantumruy Pro',
+                                                                                      fontFamily: 'Inter',
                                                                                       letterSpacing: 0.0,
                                                                                     ),
                                                                               ),
@@ -1092,50 +1050,10 @@ class _ProductListWidgetState extends State<ProductListWidget>
                                                                               AutoSizeText(
                                                                             listProductsItem.description,
                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  fontFamily: 'Kantumruy Pro',
+                                                                                  fontFamily: 'Inter',
                                                                                   letterSpacing: 0.0,
                                                                                 ),
                                                                           ),
-                                                                        ),
-                                                                      ),
-                                                                    ),
-                                                                  ),
-                                                                  Container(
-                                                                    width:
-                                                                        100.0,
-                                                                    decoration:
-                                                                        BoxDecoration(
-                                                                      color: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .secondaryBackground,
-                                                                    ),
-                                                                    child:
-                                                                        Visibility(
-                                                                      visible:
-                                                                          responsiveVisibility(
-                                                                        context:
-                                                                            context,
-                                                                        phone:
-                                                                            false,
-                                                                        tablet:
-                                                                            false,
-                                                                      ),
-                                                                      child:
-                                                                          Align(
-                                                                        alignment: const AlignmentDirectional(
-                                                                            0.0,
-                                                                            0.0),
-                                                                        child:
-                                                                            AutoSizeText(
-                                                                          listProductsItem
-                                                                              .category,
-                                                                          style: FlutterFlowTheme.of(context)
-                                                                              .bodyMedium
-                                                                              .override(
-                                                                                fontFamily: 'Kantumruy Pro',
-                                                                                fontSize: 14.0,
-                                                                                letterSpacing: 0.0,
-                                                                              ),
                                                                         ),
                                                                       ),
                                                                     ),
@@ -1181,7 +1099,7 @@ class _ProductListWidgetState extends State<ProductListWidget>
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                fontFamily: 'Kantumruy Pro',
+                                                                                fontFamily: 'Inter',
                                                                                 letterSpacing: 0.0,
                                                                               ),
                                                                         ),
@@ -1221,7 +1139,7 @@ class _ProductListWidgetState extends State<ProductListWidget>
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                fontFamily: 'Kantumruy Pro',
+                                                                                fontFamily: 'Inter',
                                                                                 fontSize: 14.0,
                                                                                 letterSpacing: 0.0,
                                                                               ),
@@ -1263,7 +1181,7 @@ class _ProductListWidgetState extends State<ProductListWidget>
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                fontFamily: 'Kantumruy Pro',
+                                                                                fontFamily: 'Inter',
                                                                                 letterSpacing: 0.0,
                                                                               ),
                                                                         ),

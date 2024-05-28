@@ -92,7 +92,11 @@ class _CartWidgetState extends State<CartWidget> with TickerProviderStateMixin {
             maxWidth: 1537.0,
             maxHeight: 960.0,
           ),
-          decoration: const BoxDecoration(),
+          decoration: BoxDecoration(
+            border: Border.all(
+              color: FlutterFlowTheme.of(context).primary,
+            ),
+          ),
           alignment: const AlignmentDirectional(0.0, 0.0),
           child: SingleChildScrollView(
             child: Column(
@@ -145,7 +149,7 @@ class _CartWidgetState extends State<CartWidget> with TickerProviderStateMixin {
                                   style: FlutterFlowTheme.of(context)
                                       .headlineMedium
                                       .override(
-                                        fontFamily: 'Kantumruy Pro',
+                                        fontFamily: 'Inter',
                                         color: FlutterFlowTheme.of(context)
                                             .primary,
                                         fontSize: 35.0,
@@ -323,7 +327,7 @@ class _CartWidgetState extends State<CartWidget> with TickerProviderStateMixin {
                                                                                       Text(
                                                                                         cartItemsItem.product.name,
                                                                                         style: FlutterFlowTheme.of(context).headlineMedium.override(
-                                                                                              fontFamily: 'Kantumruy Pro',
+                                                                                              fontFamily: 'Inter',
                                                                                               letterSpacing: 0.0,
                                                                                               fontWeight: FontWeight.bold,
                                                                                             ),
@@ -334,7 +338,7 @@ class _CartWidgetState extends State<CartWidget> with TickerProviderStateMixin {
                                                                                           cartItemsItem.product.description.maybeHandleOverflow(maxChars: 100),
                                                                                           textAlign: TextAlign.start,
                                                                                           style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                fontFamily: 'Kantumruy Pro',
+                                                                                                fontFamily: 'Inter',
                                                                                                 letterSpacing: 0.0,
                                                                                                 fontWeight: FontWeight.w600,
                                                                                               ),
@@ -343,8 +347,8 @@ class _CartWidgetState extends State<CartWidget> with TickerProviderStateMixin {
                                                                                       Padding(
                                                                                         padding: const EdgeInsetsDirectional.fromSTEB(0.0, 18.0, 0.0, 0.0),
                                                                                         child: Row(
-                                                                                          mainAxisSize: MainAxisSize.min,
-                                                                                          mainAxisAlignment: MainAxisAlignment.start,
+                                                                                          mainAxisSize: MainAxisSize.max,
+                                                                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                           crossAxisAlignment: CrossAxisAlignment.center,
                                                                                           children: [
                                                                                             Align(
@@ -396,7 +400,7 @@ class _CartWidgetState extends State<CartWidget> with TickerProviderStateMixin {
                                                                                                           'nus25p16' /* Remove */,
                                                                                                         ),
                                                                                                         style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                              fontFamily: 'Kantumruy Pro',
+                                                                                                              fontFamily: 'Inter',
                                                                                                               letterSpacing: 0.0,
                                                                                                             ),
                                                                                                       ),
@@ -405,152 +409,139 @@ class _CartWidgetState extends State<CartWidget> with TickerProviderStateMixin {
                                                                                                 ),
                                                                                               ),
                                                                                             ),
-                                                                                            Expanded(
-                                                                                              child: Align(
-                                                                                                alignment: const AlignmentDirectional(0.0, 0.0),
-                                                                                                child: Container(
-                                                                                                  width: 140.0,
-                                                                                                  height: 30.0,
-                                                                                                  decoration: BoxDecoration(
-                                                                                                    color: FlutterFlowTheme.of(context).primaryBackground,
-                                                                                                    borderRadius: BorderRadius.circular(9.0),
-                                                                                                    border: Border.all(
-                                                                                                      color: FlutterFlowTheme.of(context).accent2,
+                                                                                            Container(
+                                                                                              height: 40.0,
+                                                                                              decoration: const BoxDecoration(),
+                                                                                              child: Row(
+                                                                                                mainAxisSize: MainAxisSize.min,
+                                                                                                mainAxisAlignment: MainAxisAlignment.start,
+                                                                                                children: [
+                                                                                                  InkWell(
+                                                                                                    splashColor: Colors.transparent,
+                                                                                                    focusColor: Colors.transparent,
+                                                                                                    hoverColor: Colors.transparent,
+                                                                                                    highlightColor: Colors.transparent,
+                                                                                                    onTap: () async {
+                                                                                                      if (cartItemsItem.quantity > 1) {
+                                                                                                        FFAppState().update(() {
+                                                                                                          FFAppState().sum = FFAppState().sum + (-cartItemsItem.product.price);
+                                                                                                        });
+                                                                                                        FFAppState().update(() {
+                                                                                                          FFAppState().subTotal = FFAppState().subTotal + (-cartItemsItem.product.basePrice);
+                                                                                                        });
+                                                                                                        FFAppState().update(() {
+                                                                                                          FFAppState().discountAmount = FFAppState().discountAmount + (-cartItemsItem.product.basePrice * cartItemsItem.product.discount / 100);
+                                                                                                        });
+                                                                                                        FFAppState().update(() {
+                                                                                                          FFAppState().updateCheckoutCartAtIndex(
+                                                                                                            cartItemsIndex,
+                                                                                                            (e) => e
+                                                                                                              ..incrementQuantity(-1)
+                                                                                                              ..incrementTotalPrice(-cartItemsItem.product.price),
+                                                                                                          );
+                                                                                                        });
+                                                                                                        return;
+                                                                                                      } else {
+                                                                                                        FFAppState().update(() {
+                                                                                                          FFAppState().sum = FFAppState().sum + (-cartItemsItem.product.price);
+                                                                                                        });
+                                                                                                        FFAppState().update(() {
+                                                                                                          FFAppState().subTotal = FFAppState().subTotal + (-cartItemsItem.product.basePrice);
+                                                                                                        });
+                                                                                                        FFAppState().update(() {
+                                                                                                          FFAppState().discountAmount = FFAppState().discountAmount + (-cartItemsItem.product.basePrice * cartItemsItem.product.discount / 100);
+                                                                                                        });
+                                                                                                        FFAppState().update(() {
+                                                                                                          FFAppState().updateCheckoutCartAtIndex(
+                                                                                                            cartItemsIndex,
+                                                                                                            (e) => e..quantity = null,
+                                                                                                          );
+                                                                                                        });
+                                                                                                        FFAppState().update(() {
+                                                                                                          FFAppState().removeFromCheckoutCart(cartItemsItem);
+                                                                                                        });
+                                                                                                        if (FFAppState().checkoutCart.isEmpty) {
+                                                                                                          setState(() {
+                                                                                                            _model.cartEmptied = true;
+                                                                                                          });
+                                                                                                        } else {
+                                                                                                          return;
+                                                                                                        }
+
+                                                                                                        return;
+                                                                                                      }
+                                                                                                    },
+                                                                                                    child: Container(
+                                                                                                      width: 46.0,
+                                                                                                      height: 100.0,
+                                                                                                      decoration: BoxDecoration(
+                                                                                                        color: FlutterFlowTheme.of(context).primary,
+                                                                                                        borderRadius: BorderRadius.circular(9.0),
+                                                                                                        shape: BoxShape.rectangle,
+                                                                                                      ),
+                                                                                                      child: Align(
+                                                                                                        alignment: const AlignmentDirectional(0.0, 0.0),
+                                                                                                        child: FaIcon(
+                                                                                                          FontAwesomeIcons.minus,
+                                                                                                          color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                          size: 24.0,
+                                                                                                        ),
+                                                                                                      ),
                                                                                                     ),
                                                                                                   ),
-                                                                                                  child: Row(
-                                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                                                                    children: [
-                                                                                                      Padding(
-                                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
-                                                                                                        child: InkWell(
-                                                                                                          splashColor: Colors.transparent,
-                                                                                                          focusColor: Colors.transparent,
-                                                                                                          hoverColor: Colors.transparent,
-                                                                                                          highlightColor: Colors.transparent,
-                                                                                                          onTap: () async {
-                                                                                                            if (cartItemsItem.quantity > 1) {
-                                                                                                              FFAppState().update(() {
-                                                                                                                FFAppState().sum = FFAppState().sum + (-cartItemsItem.product.price);
-                                                                                                              });
-                                                                                                              FFAppState().update(() {
-                                                                                                                FFAppState().subTotal = FFAppState().subTotal + (-cartItemsItem.product.basePrice);
-                                                                                                              });
-                                                                                                              FFAppState().update(() {
-                                                                                                                FFAppState().discountAmount = FFAppState().discountAmount + (-cartItemsItem.product.basePrice * cartItemsItem.product.discount / 100);
-                                                                                                              });
-                                                                                                              FFAppState().update(() {
-                                                                                                                FFAppState().updateCheckoutCartAtIndex(
-                                                                                                                  cartItemsIndex,
-                                                                                                                  (e) => e
-                                                                                                                    ..incrementQuantity(-1)
-                                                                                                                    ..incrementTotalPrice(-cartItemsItem.product.price),
-                                                                                                                );
-                                                                                                              });
-                                                                                                              return;
-                                                                                                            } else {
-                                                                                                              FFAppState().update(() {
-                                                                                                                FFAppState().sum = FFAppState().sum + (-cartItemsItem.product.price);
-                                                                                                              });
-                                                                                                              FFAppState().update(() {
-                                                                                                                FFAppState().subTotal = FFAppState().subTotal + (-cartItemsItem.product.basePrice);
-                                                                                                              });
-                                                                                                              FFAppState().update(() {
-                                                                                                                FFAppState().discountAmount = FFAppState().discountAmount + (-cartItemsItem.product.basePrice * cartItemsItem.product.discount / 100);
-                                                                                                              });
-                                                                                                              FFAppState().update(() {
-                                                                                                                FFAppState().updateCheckoutCartAtIndex(
-                                                                                                                  cartItemsIndex,
-                                                                                                                  (e) => e..quantity = null,
-                                                                                                                );
-                                                                                                              });
-                                                                                                              FFAppState().update(() {
-                                                                                                                FFAppState().removeFromCheckoutCart(cartItemsItem);
-                                                                                                              });
-                                                                                                              if (FFAppState().checkoutCart.isEmpty) {
-                                                                                                                setState(() {
-                                                                                                                  _model.cartEmptied = true;
-                                                                                                                });
-                                                                                                              } else {
-                                                                                                                return;
-                                                                                                              }
-
-                                                                                                              return;
-                                                                                                            }
-                                                                                                          },
-                                                                                                          child: Container(
-                                                                                                            width: 46.0,
-                                                                                                            height: 100.0,
-                                                                                                            decoration: BoxDecoration(
-                                                                                                              color: FlutterFlowTheme.of(context).primary,
-                                                                                                              borderRadius: BorderRadius.circular(9.0),
-                                                                                                              shape: BoxShape.rectangle,
-                                                                                                            ),
-                                                                                                            child: Align(
-                                                                                                              alignment: const AlignmentDirectional(0.0, 0.0),
-                                                                                                              child: FaIcon(
-                                                                                                                FontAwesomeIcons.minus,
-                                                                                                                color: FlutterFlowTheme.of(context).primaryBackground,
-                                                                                                                size: 24.0,
-                                                                                                              ),
-                                                                                                            ),
+                                                                                                  Padding(
+                                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                                                                                                    child: AutoSizeText(
+                                                                                                      valueOrDefault<String>(
+                                                                                                        cartItemsItem.quantity.toString(),
+                                                                                                        '0',
+                                                                                                      ),
+                                                                                                      style: FlutterFlowTheme.of(context).labelLarge.override(
+                                                                                                            fontFamily: 'Inter',
+                                                                                                            fontSize: 18.0,
+                                                                                                            letterSpacing: 0.0,
                                                                                                           ),
-                                                                                                        ),
-                                                                                                      ),
-                                                                                                      Expanded(
-                                                                                                        child: Text(
-                                                                                                          cartItemsItem.quantity.toString(),
-                                                                                                          style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                                fontFamily: 'Kantumruy Pro',
-                                                                                                                fontSize: 18.0,
-                                                                                                                letterSpacing: 0.0,
-                                                                                                              ),
-                                                                                                        ),
-                                                                                                      ),
-                                                                                                      Padding(
-                                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
-                                                                                                        child: InkWell(
-                                                                                                          splashColor: Colors.transparent,
-                                                                                                          focusColor: Colors.transparent,
-                                                                                                          hoverColor: Colors.transparent,
-                                                                                                          highlightColor: Colors.transparent,
-                                                                                                          onTap: () async {
-                                                                                                            FFAppState().update(() {
-                                                                                                              FFAppState().updateCheckoutCartAtIndex(
-                                                                                                                cartItemsIndex,
-                                                                                                                (e) => e
-                                                                                                                  ..incrementQuantity(1)
-                                                                                                                  ..incrementTotalPrice(cartItemsItem.product.price),
-                                                                                                              );
-                                                                                                            });
-                                                                                                            FFAppState().update(() {
-                                                                                                              FFAppState().sum = FFAppState().sum + cartItemsItem.product.price;
-                                                                                                              FFAppState().discountAmount = FFAppState().discountAmount + (cartItemsItem.product.basePrice * cartItemsItem.product.discount / 100);
-                                                                                                              FFAppState().subTotal = FFAppState().subTotal + cartItemsItem.product.basePrice;
-                                                                                                            });
-                                                                                                          },
-                                                                                                          child: Container(
-                                                                                                            width: 46.0,
-                                                                                                            height: 100.0,
-                                                                                                            decoration: BoxDecoration(
-                                                                                                              color: FlutterFlowTheme.of(context).primary,
-                                                                                                              borderRadius: BorderRadius.circular(9.0),
-                                                                                                            ),
-                                                                                                            child: Align(
-                                                                                                              alignment: const AlignmentDirectional(0.0, 0.0),
-                                                                                                              child: FaIcon(
-                                                                                                                FontAwesomeIcons.plus,
-                                                                                                                color: FlutterFlowTheme.of(context).primaryBackground,
-                                                                                                                size: 24.0,
-                                                                                                              ),
-                                                                                                            ),
-                                                                                                          ),
-                                                                                                        ),
-                                                                                                      ),
-                                                                                                    ],
+                                                                                                      minFontSize: 9.0,
+                                                                                                    ),
                                                                                                   ),
-                                                                                                ),
+                                                                                                  InkWell(
+                                                                                                    splashColor: Colors.transparent,
+                                                                                                    focusColor: Colors.transparent,
+                                                                                                    hoverColor: Colors.transparent,
+                                                                                                    highlightColor: Colors.transparent,
+                                                                                                    onTap: () async {
+                                                                                                      FFAppState().update(() {
+                                                                                                        FFAppState().updateCheckoutCartAtIndex(
+                                                                                                          cartItemsIndex,
+                                                                                                          (e) => e
+                                                                                                            ..incrementQuantity(1)
+                                                                                                            ..incrementTotalPrice(cartItemsItem.product.price),
+                                                                                                        );
+                                                                                                      });
+                                                                                                      FFAppState().update(() {
+                                                                                                        FFAppState().sum = FFAppState().sum + cartItemsItem.product.price;
+                                                                                                        FFAppState().discountAmount = FFAppState().discountAmount + (cartItemsItem.product.basePrice * cartItemsItem.product.discount / 100);
+                                                                                                        FFAppState().subTotal = FFAppState().subTotal + cartItemsItem.product.basePrice;
+                                                                                                      });
+                                                                                                    },
+                                                                                                    child: Container(
+                                                                                                      width: 46.0,
+                                                                                                      height: 100.0,
+                                                                                                      decoration: BoxDecoration(
+                                                                                                        color: FlutterFlowTheme.of(context).primary,
+                                                                                                        borderRadius: BorderRadius.circular(9.0),
+                                                                                                      ),
+                                                                                                      child: Align(
+                                                                                                        alignment: const AlignmentDirectional(0.0, 0.0),
+                                                                                                        child: FaIcon(
+                                                                                                          FontAwesomeIcons.plus,
+                                                                                                          color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                          size: 24.0,
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ),
+                                                                                                  ),
+                                                                                                ],
                                                                                               ),
                                                                                             ),
                                                                                           ],
@@ -566,7 +557,7 @@ class _CartWidgetState extends State<CartWidget> with TickerProviderStateMixin {
                                                                                 alignment: const AlignmentDirectional(1.0, -1.0),
                                                                                 child: Padding(
                                                                                   padding: const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
-                                                                                  child: Text(
+                                                                                  child: AutoSizeText(
                                                                                     formatNumber(
                                                                                       cartItemsItem.totalPrice,
                                                                                       formatType: FormatType.custom,
@@ -576,10 +567,11 @@ class _CartWidgetState extends State<CartWidget> with TickerProviderStateMixin {
                                                                                     ),
                                                                                     textAlign: TextAlign.end,
                                                                                     style: FlutterFlowTheme.of(context).headlineLarge.override(
-                                                                                          fontFamily: 'Kantumruy Pro',
-                                                                                          fontSize: 30.0,
+                                                                                          fontFamily: 'Inter',
+                                                                                          fontSize: 24.0,
                                                                                           letterSpacing: 0.0,
                                                                                         ),
+                                                                                    minFontSize: 9.0,
                                                                                   ),
                                                                                 ),
                                                                               ),
@@ -640,7 +632,7 @@ class _CartWidgetState extends State<CartWidget> with TickerProviderStateMixin {
                                                                 .headlineSmall
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   color: const Color(
                                                                       0xFFDDDDDD),
                                                                   letterSpacing:
@@ -716,8 +708,7 @@ class _CartWidgetState extends State<CartWidget> with TickerProviderStateMixin {
                                                               context)
                                                           .titleSmall
                                                           .override(
-                                                            fontFamily:
-                                                                'Kantumruy Pro',
+                                                            fontFamily: 'Inter',
                                                             color: Colors.white,
                                                             fontSize: 21.0,
                                                             letterSpacing: 0.0,
@@ -764,8 +755,7 @@ class _CartWidgetState extends State<CartWidget> with TickerProviderStateMixin {
                                                               context)
                                                           .titleSmall
                                                           .override(
-                                                            fontFamily:
-                                                                'Kantumruy Pro',
+                                                            fontFamily: 'Inter',
                                                             color: Colors.white,
                                                             fontSize: 21.0,
                                                             letterSpacing: 0.0,
@@ -832,8 +822,7 @@ class _CartWidgetState extends State<CartWidget> with TickerProviderStateMixin {
                                                             context)
                                                         .headlineLarge
                                                         .override(
-                                                          fontFamily:
-                                                              'Kantumruy Pro',
+                                                          fontFamily: 'Inter',
                                                           fontSize: 30.0,
                                                           letterSpacing: 0.0,
                                                         ),
@@ -849,19 +838,16 @@ class _CartWidgetState extends State<CartWidget> with TickerProviderStateMixin {
                                                           .getText(
                                                         'fahvhc4m' /* User */,
                                                       ),
-                                                      style:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .headlineLarge
-                                                              .override(
-                                                                fontFamily:
-                                                                    'Kantumruy Pro',
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .primary,
-                                                                letterSpacing:
-                                                                    0.0,
-                                                              ),
+                                                      style: FlutterFlowTheme
+                                                              .of(context)
+                                                          .headlineLarge
+                                                          .override(
+                                                            fontFamily: 'Inter',
+                                                            color: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .primary,
+                                                            letterSpacing: 0.0,
+                                                          ),
                                                     ),
                                                   ),
                                                 ],
@@ -952,8 +938,7 @@ class _CartWidgetState extends State<CartWidget> with TickerProviderStateMixin {
                                                             context)
                                                         .bodyLarge
                                                         .override(
-                                                          fontFamily:
-                                                              'Kantumruy Pro',
+                                                          fontFamily: 'Inter',
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.bold,
@@ -1062,7 +1047,7 @@ class _CartWidgetState extends State<CartWidget> with TickerProviderStateMixin {
                                                               .bodyLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 letterSpacing:
                                                                     0.0,
                                                                 fontWeight:
@@ -1116,8 +1101,7 @@ class _CartWidgetState extends State<CartWidget> with TickerProviderStateMixin {
                                                     FlutterFlowTheme.of(context)
                                                         .headlineLarge
                                                         .override(
-                                                          fontFamily:
-                                                              'Kantumruy Pro',
+                                                          fontFamily: 'Inter',
                                                           letterSpacing: 0.0,
                                                         ),
                                               ),
@@ -1478,7 +1462,7 @@ class _CartWidgetState extends State<CartWidget> with TickerProviderStateMixin {
                                                                 .bodyLarge
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   fontSize:
                                                                       20.0,
                                                                   letterSpacing:
@@ -1534,7 +1518,7 @@ class _CartWidgetState extends State<CartWidget> with TickerProviderStateMixin {
                                                                 serializeParam(
                                                               _model.checkboxTodayValue ==
                                                                       true
-                                                                  ? 'Delivery By Today'
+                                                                  ? 'Express delivery'
                                                                   : 'Get In Place ',
                                                               ParamType.String,
                                                             ),

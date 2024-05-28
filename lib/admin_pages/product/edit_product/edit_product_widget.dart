@@ -285,7 +285,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                           style: FlutterFlowTheme.of(context)
                                               .displayMedium
                                               .override(
-                                                fontFamily: 'Kantumruy Pro',
+                                                fontFamily: 'Inter',
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w600,
                                               ),
@@ -410,7 +410,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                                 .bodyLarge
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primaryBackground,
@@ -497,7 +497,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                                 .titleLarge
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -518,7 +518,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                             .labelLarge
                                                             .override(
                                                               fontFamily:
-                                                                  'Kantumruy Pro',
+                                                                  'Inter',
                                                               fontSize: 18.0,
                                                               letterSpacing:
                                                                   0.0,
@@ -545,7 +545,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                                 .labelMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -561,7 +561,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                                 .labelLarge
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -631,8 +631,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                               .of(context)
                                                           .bodyMedium
                                                           .override(
-                                                            fontFamily:
-                                                                'Kantumruy Pro',
+                                                            fontFamily: 'Inter',
                                                             letterSpacing: 0.0,
                                                           ),
                                                       validator: _model
@@ -654,7 +653,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                             .labelLarge
                                                             .override(
                                                               fontFamily:
-                                                                  'Kantumruy Pro',
+                                                                  'Inter',
                                                               fontSize: 18.0,
                                                               letterSpacing:
                                                                   0.0,
@@ -687,7 +686,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                                 .labelLarge
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -757,8 +756,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                               .of(context)
                                                           .bodyMedium
                                                           .override(
-                                                            fontFamily:
-                                                                'Kantumruy Pro',
+                                                            fontFamily: 'Inter',
                                                             letterSpacing: 0.0,
                                                           ),
                                                       validator: _model
@@ -780,7 +778,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                             .labelLarge
                                                             .override(
                                                               fontFamily:
-                                                                  'Kantumruy Pro',
+                                                                  'Inter',
                                                               fontSize: 18.0,
                                                               letterSpacing:
                                                                   0.0,
@@ -807,7 +805,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                                 .labelMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -823,7 +821,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                                 .labelLarge
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -893,8 +891,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                               .of(context)
                                                           .bodyMedium
                                                           .override(
-                                                            fontFamily:
-                                                                'Kantumruy Pro',
+                                                            fontFamily: 'Inter',
                                                             letterSpacing: 0.0,
                                                           ),
                                                       maxLines: 9,
@@ -986,7 +983,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                                 .titleLarge
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -1007,7 +1004,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                             .labelLarge
                                                             .override(
                                                               fontFamily:
-                                                                  'Kantumruy Pro',
+                                                                  'Inter',
                                                               fontSize: 18.0,
                                                               letterSpacing:
                                                                   0.0,
@@ -1293,7 +1290,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                                         .labelLarge
                                                                         .override(
                                                                           fontFamily:
-                                                                              'Kantumruy Pro',
+                                                                              'Inter',
                                                                           letterSpacing:
                                                                               0.0,
                                                                         ),
@@ -1322,7 +1319,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                             .labelLarge
                                                             .override(
                                                               fontFamily:
-                                                                  'Kantumruy Pro',
+                                                                  'Inter',
                                                               fontSize: 18.0,
                                                               letterSpacing:
                                                                   0.0,
@@ -1625,7 +1622,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                                     .titleSmall
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Kantumruy Pro',
+                                                                          'Inter',
                                                                       color: Colors
                                                                           .white,
                                                                       letterSpacing:
@@ -1727,7 +1724,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                                 .titleLarge
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -1748,7 +1745,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                             .labelLarge
                                                             .override(
                                                               fontFamily:
-                                                                  'Kantumruy Pro',
+                                                                  'Inter',
                                                               fontSize: 18.0,
                                                               letterSpacing:
                                                                   0.0,
@@ -1781,7 +1778,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                                 .labelMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -1797,7 +1794,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                                 .labelLarge
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -1870,8 +1867,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                               .of(context)
                                                           .bodyMedium
                                                           .override(
-                                                            fontFamily:
-                                                                'Kantumruy Pro',
+                                                            fontFamily: 'Inter',
                                                             letterSpacing: 0.0,
                                                           ),
                                                       keyboardType:
@@ -1897,7 +1893,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                             .labelLarge
                                                             .override(
                                                               fontFamily:
-                                                                  'Kantumruy Pro',
+                                                                  'Inter',
                                                               fontSize: 18.0,
                                                               letterSpacing:
                                                                   0.0,
@@ -1937,7 +1933,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                                       .bodyLarge
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Kantumruy Pro',
+                                                                            'Inter',
                                                                         letterSpacing:
                                                                             0.0,
                                                                         fontWeight:
@@ -1977,7 +1973,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Kantumruy Pro',
+                                                                            'Inter',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -2043,7 +2039,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                                       .bodyLarge
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Kantumruy Pro',
+                                                                            'Inter',
                                                                         letterSpacing:
                                                                             0.0,
                                                                         fontWeight:
@@ -2082,7 +2078,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                                           .labelMedium
                                                                           .override(
                                                                             fontFamily:
-                                                                                'Kantumruy Pro',
+                                                                                'Inter',
                                                                             letterSpacing:
                                                                                 0.0,
                                                                           ),
@@ -2096,7 +2092,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                                           .labelLarge
                                                                           .override(
                                                                             fontFamily:
-                                                                                'Kantumruy Pro',
+                                                                                'Inter',
                                                                             letterSpacing:
                                                                                 0.0,
                                                                           ),
@@ -2159,7 +2155,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                                         .bodyMedium
                                                                         .override(
                                                                           fontFamily:
-                                                                              'Kantumruy Pro',
+                                                                              'Inter',
                                                                           letterSpacing:
                                                                               0.0,
                                                                         ),
@@ -2206,7 +2202,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                                     .bodyLarge
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Kantumruy Pro',
+                                                                          'Inter',
                                                                       letterSpacing:
                                                                           0.0,
                                                                       fontWeight:
@@ -2280,7 +2276,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                                     .labelMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Kantumruy Pro',
+                                                                          'Inter',
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
@@ -2290,7 +2286,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Kantumruy Pro',
+                                                                          'Inter',
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
@@ -2300,7 +2296,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Kantumruy Pro',
+                                                                          'Inter',
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),

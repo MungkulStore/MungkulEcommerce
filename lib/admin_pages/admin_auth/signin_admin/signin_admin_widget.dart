@@ -227,8 +227,7 @@ class _SigninAdminWidgetState extends State<SigninAdminWidget> {
                                                             context)
                                                         .displayMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Kantumruy Pro',
+                                                          fontFamily: 'Inter',
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .primaryBackground,

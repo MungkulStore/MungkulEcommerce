@@ -88,7 +88,12 @@ class _MyOrderDetailWidgetState extends State<MyOrderDetailWidget>
                 maxWidth: 1537.0,
                 maxHeight: 960.0,
               ),
-              decoration: const BoxDecoration(),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(0.0),
+                border: Border.all(
+                  color: FlutterFlowTheme.of(context).primary,
+                ),
+              ),
               child: SingleChildScrollView(
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
@@ -124,7 +129,7 @@ class _MyOrderDetailWidgetState extends State<MyOrderDetailWidget>
                                     style: FlutterFlowTheme.of(context)
                                         .displaySmall
                                         .override(
-                                          fontFamily: 'Kantumruy Pro',
+                                          fontFamily: 'Inter',
                                           color: FlutterFlowTheme.of(context)
                                               .primary,
                                           letterSpacing: 0.0,
@@ -248,7 +253,7 @@ class _MyOrderDetailWidgetState extends State<MyOrderDetailWidget>
                                                                 .titleMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   color: const Color(
                                                                       0xFF0B0001),
                                                                   letterSpacing:
@@ -283,7 +288,7 @@ class _MyOrderDetailWidgetState extends State<MyOrderDetailWidget>
                                                               .labelLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 letterSpacing:
                                                                     0.0,
                                                                 fontWeight:
@@ -317,7 +322,7 @@ class _MyOrderDetailWidgetState extends State<MyOrderDetailWidget>
                                                               .labelLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 letterSpacing:
                                                                     0.0,
                                                                 fontWeight:
@@ -349,7 +354,7 @@ class _MyOrderDetailWidgetState extends State<MyOrderDetailWidget>
                                                               .labelLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 letterSpacing:
                                                                     0.0,
                                                                 fontWeight:
@@ -381,7 +386,7 @@ class _MyOrderDetailWidgetState extends State<MyOrderDetailWidget>
                                                               .labelLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 letterSpacing:
                                                                     0.0,
                                                                 fontWeight:
@@ -531,7 +536,7 @@ class _MyOrderDetailWidgetState extends State<MyOrderDetailWidget>
                                                                                         orderedProductsItem.product.name,
                                                                                         maxLines: 1,
                                                                                         style: FlutterFlowTheme.of(context).labelSmall.override(
-                                                                                              fontFamily: 'Kantumruy Pro',
+                                                                                              fontFamily: 'Inter',
                                                                                               letterSpacing: 0.0,
                                                                                               fontWeight: FontWeight.w600,
                                                                                             ),
@@ -543,7 +548,7 @@ class _MyOrderDetailWidgetState extends State<MyOrderDetailWidget>
                                                                                         orderedProductsItem.product.description,
                                                                                         maxLines: 2,
                                                                                         style: FlutterFlowTheme.of(context).bodySmall.override(
-                                                                                              fontFamily: 'Kantumruy Pro',
+                                                                                              fontFamily: 'Inter',
                                                                                               color: const Color(0xFFA3A3A3),
                                                                                               letterSpacing: 0.0,
                                                                                             ),
@@ -582,7 +587,7 @@ class _MyOrderDetailWidgetState extends State<MyOrderDetailWidget>
                                                                                 'ephkbi64' /* In Stock */,
                                                                               ),
                                                                               style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                    fontFamily: 'Kantumruy Pro',
+                                                                                    fontFamily: 'Inter',
                                                                                     letterSpacing: 0.0,
                                                                                     fontWeight: FontWeight.w600,
                                                                                   ),
@@ -618,7 +623,7 @@ class _MyOrderDetailWidgetState extends State<MyOrderDetailWidget>
                                                                             textAlign:
                                                                                 TextAlign.center,
                                                                             style: FlutterFlowTheme.of(context).bodyLarge.override(
-                                                                                  fontFamily: 'Kantumruy Pro',
+                                                                                  fontFamily: 'Inter',
                                                                                   fontSize: 14.0,
                                                                                   letterSpacing: 0.0,
                                                                                   fontWeight: FontWeight.w500,
@@ -655,7 +660,7 @@ class _MyOrderDetailWidgetState extends State<MyOrderDetailWidget>
                                                                             textAlign:
                                                                                 TextAlign.center,
                                                                             style: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                  fontFamily: 'Kantumruy Pro',
+                                                                                  fontFamily: 'Inter',
                                                                                   letterSpacing: 0.0,
                                                                                   fontWeight: FontWeight.w500,
                                                                                 ),
@@ -696,7 +701,7 @@ class _MyOrderDetailWidgetState extends State<MyOrderDetailWidget>
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                fontFamily: 'Kantumruy Pro',
+                                                                                fontFamily: 'Inter',
                                                                                 letterSpacing: 0.0,
                                                                                 fontWeight: FontWeight.w600,
                                                                               ),
@@ -775,7 +780,7 @@ class _MyOrderDetailWidgetState extends State<MyOrderDetailWidget>
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   color: Colors
                                                                       .white,
                                                                   letterSpacing:
@@ -885,7 +890,7 @@ class _MyOrderDetailWidgetState extends State<MyOrderDetailWidget>
                                                                   .labelLarge
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Kantumruy Pro',
+                                                                        'Inter',
                                                                     fontSize:
                                                                         18.0,
                                                                     letterSpacing:
@@ -973,7 +978,7 @@ class _MyOrderDetailWidgetState extends State<MyOrderDetailWidget>
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Kantumruy Pro',
+                                                                          'Inter',
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
@@ -1018,7 +1023,7 @@ class _MyOrderDetailWidgetState extends State<MyOrderDetailWidget>
                                                                 .bodyLarge
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                   fontWeight:
@@ -1042,7 +1047,7 @@ class _MyOrderDetailWidgetState extends State<MyOrderDetailWidget>
                                                                 .bodyLarge
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                   fontWeight:
@@ -1148,7 +1153,7 @@ class _MyOrderDetailWidgetState extends State<MyOrderDetailWidget>
                                                                       .labelLarge
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Kantumruy Pro',
+                                                                            'Inter',
                                                                         fontSize:
                                                                             18.0,
                                                                         letterSpacing:
@@ -1203,7 +1208,7 @@ class _MyOrderDetailWidgetState extends State<MyOrderDetailWidget>
                                                                           .bodyLarge
                                                                           .override(
                                                                             fontFamily:
-                                                                                'Kantumruy Pro',
+                                                                                'Inter',
                                                                             letterSpacing:
                                                                                 0.0,
                                                                             fontWeight:
@@ -1227,7 +1232,7 @@ class _MyOrderDetailWidgetState extends State<MyOrderDetailWidget>
                                                                           .bodyMedium
                                                                           .override(
                                                                             fontFamily:
-                                                                                'Kantumruy Pro',
+                                                                                'Inter',
                                                                             letterSpacing:
                                                                                 0.0,
                                                                             fontWeight:
@@ -1255,7 +1260,7 @@ class _MyOrderDetailWidgetState extends State<MyOrderDetailWidget>
                                                                           .bodyLarge
                                                                           .override(
                                                                             fontFamily:
-                                                                                'Kantumruy Pro',
+                                                                                'Inter',
                                                                             letterSpacing:
                                                                                 0.0,
                                                                             fontWeight:
@@ -1279,7 +1284,7 @@ class _MyOrderDetailWidgetState extends State<MyOrderDetailWidget>
                                                                           .bodyMedium
                                                                           .override(
                                                                             fontFamily:
-                                                                                'Kantumruy Pro',
+                                                                                'Inter',
                                                                             letterSpacing:
                                                                                 0.0,
                                                                             fontWeight:
@@ -1334,7 +1339,7 @@ class _MyOrderDetailWidgetState extends State<MyOrderDetailWidget>
                                                                       .labelLarge
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Kantumruy Pro',
+                                                                            'Inter',
                                                                         fontSize:
                                                                             18.0,
                                                                         letterSpacing:
@@ -1390,7 +1395,7 @@ class _MyOrderDetailWidgetState extends State<MyOrderDetailWidget>
                                                                           .bodyMedium
                                                                           .override(
                                                                             fontFamily:
-                                                                                'Kantumruy Pro',
+                                                                                'Inter',
                                                                             letterSpacing:
                                                                                 0.0,
                                                                             fontWeight:

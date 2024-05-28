@@ -65,8 +65,8 @@ class ProductPageModel extends FlutterFlowModel<ProductPageWidget> {
   List<ProductsRecord>? discountProducts;
   // Stores action output result for [Firestore Query - Query a collection] action in SwitchListTile widget.
   List<ProductsRecord>? products;
-  // Stores action output result for [Firestore Query - Query a collection] action in Button widget.
-  List<ProductsRecord>? resultedListCopy2;
+  // Stores action output result for [Firestore Query - Query a collection] action in Container widget.
+  List<ProductsRecord>? resultedListCopy;
   // Model for footer component.
   late FooterModel footerModel;
 

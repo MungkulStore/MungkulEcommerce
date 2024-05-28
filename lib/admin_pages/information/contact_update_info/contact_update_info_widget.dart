@@ -166,8 +166,7 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .titleLarge
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -184,8 +183,7 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelLarge
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         fontSize: 18.0,
                                                         letterSpacing: 0.0,
                                                       ),
@@ -207,16 +205,14 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                       ),
                                               hintStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .labelLarge
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                       ),
                                               enabledBorder: OutlineInputBorder(
@@ -268,7 +264,7 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily: 'Kantumruy Pro',
+                                                  fontFamily: 'Inter',
                                                   letterSpacing: 0.0,
                                                 ),
                                             validator: _model
@@ -287,8 +283,7 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelLarge
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         fontSize: 18.0,
                                                         letterSpacing: 0.0,
                                                       ),
@@ -310,16 +305,14 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                       ),
                                               hintStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .labelLarge
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                       ),
                                               enabledBorder: OutlineInputBorder(
@@ -371,7 +364,7 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily: 'Kantumruy Pro',
+                                                  fontFamily: 'Inter',
                                                   letterSpacing: 0.0,
                                                 ),
                                             validator: _model
@@ -390,8 +383,7 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelLarge
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         fontSize: 18.0,
                                                         letterSpacing: 0.0,
                                                       ),
@@ -413,16 +405,14 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                       ),
                                               hintStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .labelLarge
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                       ),
                                               enabledBorder: OutlineInputBorder(
@@ -474,7 +464,7 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily: 'Kantumruy Pro',
+                                                  fontFamily: 'Inter',
                                                   letterSpacing: 0.0,
                                                 ),
                                             maxLines: null,
@@ -494,8 +484,7 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelLarge
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         fontSize: 18.0,
                                                         letterSpacing: 0.0,
                                                       ),
@@ -517,16 +506,14 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                       ),
                                               hintStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .labelLarge
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                       ),
                                               enabledBorder: OutlineInputBorder(
@@ -578,7 +565,7 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily: 'Kantumruy Pro',
+                                                  fontFamily: 'Inter',
                                                   letterSpacing: 0.0,
                                                 ),
                                             maxLines: null,
@@ -598,8 +585,7 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelLarge
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         fontSize: 18.0,
                                                         letterSpacing: 0.0,
                                                       ),
@@ -621,16 +607,14 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                       ),
                                               hintStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .labelLarge
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                       ),
                                               enabledBorder: OutlineInputBorder(
@@ -682,7 +666,7 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily: 'Kantumruy Pro',
+                                                  fontFamily: 'Inter',
                                                   letterSpacing: 0.0,
                                                 ),
                                             maxLines: null,
@@ -737,8 +721,7 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .titleLarge
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -755,8 +738,7 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelLarge
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         fontSize: 18.0,
                                                         letterSpacing: 0.0,
                                                       ),
@@ -778,16 +760,14 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                       ),
                                               hintStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .labelLarge
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                       ),
                                               enabledBorder: OutlineInputBorder(
@@ -839,7 +819,7 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyLarge
                                                 .override(
-                                                  fontFamily: 'Kantumruy Pro',
+                                                  fontFamily: 'Inter',
                                                   letterSpacing: 0.0,
                                                 ),
                                             maxLines: 9,
@@ -859,8 +839,7 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelLarge
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         fontSize: 18.0,
                                                         letterSpacing: 0.0,
                                                       ),
@@ -882,16 +861,14 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                       ),
                                               hintStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .labelLarge
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                       ),
                                               enabledBorder: OutlineInputBorder(
@@ -943,7 +920,7 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyLarge
                                                 .override(
-                                                  fontFamily: 'Kantumruy Pro',
+                                                  fontFamily: 'Inter',
                                                   letterSpacing: 0.0,
                                                 ),
                                             maxLines: 9,
@@ -963,8 +940,7 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelLarge
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         fontSize: 18.0,
                                                         letterSpacing: 0.0,
                                                       ),
@@ -986,16 +962,14 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelLarge
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                       ),
                                               hintStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .labelLarge
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                       ),
                                               enabledBorder: OutlineInputBorder(
@@ -1047,7 +1021,7 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyLarge
                                                 .override(
-                                                  fontFamily: 'Kantumruy Pro',
+                                                  fontFamily: 'Inter',
                                                   letterSpacing: 0.0,
                                                 ),
                                             maxLines: 9,
@@ -1102,8 +1076,7 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .titleLarge
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -1120,8 +1093,7 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelLarge
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         fontSize: 18.0,
                                                         letterSpacing: 0.0,
                                                       ),
@@ -1314,7 +1286,7 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                                               .labelLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -1443,8 +1415,7 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelLarge
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         fontSize: 18.0,
                                                         letterSpacing: 0.0,
                                                       ),
@@ -1637,7 +1608,7 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                                               .labelLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -1766,8 +1737,7 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelLarge
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         fontSize: 18.0,
                                                         letterSpacing: 0.0,
                                                       ),
@@ -1960,7 +1930,7 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                                               .labelLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -2134,7 +2104,7 @@ class _ContactUpdateInfoWidgetState extends State<ContactUpdateInfoWidget> {
                                       textStyle: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .override(
-                                            fontFamily: 'Kantumruy Pro',
+                                            fontFamily: 'Inter',
                                             color: Colors.white,
                                             fontSize: 18.0,
                                             letterSpacing: 0.0,

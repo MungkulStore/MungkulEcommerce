@@ -1,9 +1,13 @@
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
+import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/user_components/quick_view/quick_view_widget.dart';
+import 'package:aligned_tooltip/aligned_tooltip.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'product_card_model.dart';
 export 'product_card_model.dart';
@@ -56,7 +60,7 @@ class _ProductCardWidgetState extends State<ProductCardWidget>
     _model = createModel(context, () => ProductCardModel());
 
     animationsMap.addAll({
-      'containerOnActionTriggerAnimation1': AnimationInfo(
+      'containerOnActionTriggerAnimation': AnimationInfo(
         trigger: AnimationTrigger.onActionTrigger,
         applyInitialState: true,
         effectsBuilder: () => [
@@ -64,35 +68,14 @@ class _ProductCardWidgetState extends State<ProductCardWidget>
           MoveEffect(
             curve: Curves.easeInOut,
             delay: 0.0.ms,
-            duration: 600.0.ms,
-            begin: const Offset(0.0, 6.0),
+            duration: 300.0.ms,
+            begin: const Offset(0.0, 0.0),
             end: const Offset(0.0, 0.0),
           ),
           FadeEffect(
             curve: Curves.easeIn,
             delay: 0.0.ms,
-            duration: 180.0.ms,
-            begin: 0.11,
-            end: 1.0,
-          ),
-        ],
-      ),
-      'containerOnActionTriggerAnimation2': AnimationInfo(
-        trigger: AnimationTrigger.onActionTrigger,
-        applyInitialState: true,
-        effectsBuilder: () => [
-          VisibilityEffect(duration: 1.ms),
-          MoveEffect(
-            curve: Curves.easeInOut,
-            delay: 0.0.ms,
-            duration: 600.0.ms,
-            begin: const Offset(0.0, 6.0),
-            end: const Offset(0.0, 0.0),
-          ),
-          FadeEffect(
-            curve: Curves.easeIn,
-            delay: 0.0.ms,
-            duration: 180.0.ms,
+            duration: 300.0.ms,
             begin: 0.11,
             end: 1.0,
           ),
@@ -120,91 +103,79 @@ class _ProductCardWidgetState extends State<ProductCardWidget>
   Widget build(BuildContext context) {
     context.watch<FFAppState>();
 
-    return MouseRegion(
-      opaque: false,
-      cursor: MouseCursor.defer ?? MouseCursor.defer,
-      onEnter: ((event) async {
-        setState(() => _model.mouseRegionHovered = true);
-        if (animationsMap['containerOnActionTriggerAnimation2'] != null) {
-          animationsMap['containerOnActionTriggerAnimation2']!
-              .controller
-              .forward(from: 0.0);
-        }
-        if (widget.discount! > 0) {
-          if (animationsMap['containerOnActionTriggerAnimation1'] != null) {
-            animationsMap['containerOnActionTriggerAnimation1']!
-                .controller
-                .forward(from: 0.0);
-          }
-        }
-      }),
-      onExit: ((event) async {
-        setState(() => _model.mouseRegionHovered = false);
-        if (animationsMap['containerOnActionTriggerAnimation2'] != null) {
-          animationsMap['containerOnActionTriggerAnimation2']!
-              .controller
-              .forward()
-              .whenComplete(animationsMap['containerOnActionTriggerAnimation2']!
-                  .controller
-                  .reverse);
-        }
-        if (widget.discount! > 0) {
-          if (animationsMap['containerOnActionTriggerAnimation1'] != null) {
-            animationsMap['containerOnActionTriggerAnimation1']!
-                .controller
-                .forward()
-                .whenComplete(
-                    animationsMap['containerOnActionTriggerAnimation1']!
-                        .controller
-                        .reverse);
-          }
-        }
-      }),
-      child: InkWell(
-        splashColor: Colors.transparent,
-        focusColor: Colors.transparent,
-        hoverColor: Colors.transparent,
-        highlightColor: Colors.transparent,
-        onTap: () async {
-          context.pushNamed(
-            'product_Detail',
-            queryParameters: {
-              'productId': serializeParam(
-                widget.id,
-                ParamType.String,
-              ),
-              'cstegoryId': serializeParam(
-                widget.catregory,
-                ParamType.String,
-              ),
-            }.withoutNulls,
-          );
-        },
-        child: Container(
-          width: 280.0,
-          decoration: BoxDecoration(
-            color: FlutterFlowTheme.of(context).secondaryBackground,
-            boxShadow: const [
-              BoxShadow(
-                blurRadius: 6.0,
-                color: Color(0x33000000),
-                offset: Offset(
-                  0.0,
-                  2.0,
-                ),
-              )
-            ],
-            borderRadius: BorderRadius.circular(9.0),
-          ),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Container(
+    return InkWell(
+      splashColor: Colors.transparent,
+      focusColor: Colors.transparent,
+      hoverColor: Colors.transparent,
+      highlightColor: Colors.transparent,
+      onTap: () async {
+        context.pushNamed(
+          'product_Detail',
+          queryParameters: {
+            'productId': serializeParam(
+              widget.id,
+              ParamType.String,
+            ),
+            'cstegoryId': serializeParam(
+              widget.catregory,
+              ParamType.String,
+            ),
+          }.withoutNulls,
+        );
+      },
+      child: Container(
+        width: 270.0,
+        constraints: const BoxConstraints(
+          minWidth: 270.0,
+          minHeight: 350.0,
+        ),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(2.0),
+        ),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            MouseRegion(
+              opaque: false,
+              cursor: MouseCursor.defer ?? MouseCursor.defer,
+              onEnter: ((event) async {
+                setState(() => _model.mouseRegionHovered = true);
+                if (animationsMap['containerOnActionTriggerAnimation'] !=
+                    null) {
+                  animationsMap['containerOnActionTriggerAnimation']!
+                      .controller
+                      .forward(from: 0.0);
+                }
+              }),
+              onExit: ((event) async {
+                setState(() => _model.mouseRegionHovered = false);
+                if (animationsMap['containerOnActionTriggerAnimation'] !=
+                    null) {
+                  animationsMap['containerOnActionTriggerAnimation']!
+                      .controller
+                      .forward()
+                      .whenComplete(
+                          animationsMap['containerOnActionTriggerAnimation']!
+                              .controller
+                              .reverse);
+                }
+              }),
+              child: Container(
                 width: MediaQuery.sizeOf(context).width * 1.0,
                 height: 250.0,
                 decoration: BoxDecoration(
-                  color: FlutterFlowTheme.of(context).alternate,
+                  color: const Color(0xFFF5F5F5),
+                  borderRadius: const BorderRadius.only(
+                    bottomLeft: Radius.circular(3.0),
+                    bottomRight: Radius.circular(3.0),
+                    topLeft: Radius.circular(0.0),
+                    topRight: Radius.circular(0.0),
+                  ),
+                  border: Border.all(
+                    color: const Color(0xFFF5F5F5),
+                    width: 1.0,
+                  ),
                 ),
                 child: SizedBox(
                   width: MediaQuery.sizeOf(context).width * 1.0,
@@ -217,79 +188,233 @@ class _ProductCardWidgetState extends State<ProductCardWidget>
                           borderRadius: BorderRadius.circular(5.0),
                           child: Image.network(
                             widget.image!,
-                            width: MediaQuery.sizeOf(context).width * 1.0,
-                            height: MediaQuery.sizeOf(context).height * 1.0,
+                            width: double.infinity,
+                            height: double.infinity,
                             fit: BoxFit.cover,
                           ),
                         ),
                       ),
-                      if (widget.discount! > 0)
-                        Align(
-                          alignment: const AlignmentDirectional(-1.0, -1.0),
-                          child: Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                7.0, 7.0, 0.0, 0.0),
-                            child: Container(
-                              width: 60.0,
-                              height: 30.0,
-                              decoration: BoxDecoration(
-                                color: FlutterFlowTheme.of(context).primary,
-                                borderRadius: BorderRadius.circular(10.0),
-                              ),
-                              child: Align(
-                                alignment: const AlignmentDirectional(0.0, 0.0),
-                                child: RichText(
-                                  textScaler: MediaQuery.of(context).textScaler,
-                                  text: TextSpan(
+                      Container(
+                        decoration: const BoxDecoration(),
+                        alignment: const AlignmentDirectional(1.0, 0.0),
+                        child: Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              if (widget.discount! <= 0)
+                                Container(
+                                  width: 60.0,
+                                  height: 30.0,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10.0),
+                                  ),
+                                ),
+                              if (widget.discount! > 0)
+                                Container(
+                                  width: 60.0,
+                                  height: 30.0,
+                                  decoration: BoxDecoration(
+                                    color: FlutterFlowTheme.of(context).primary,
+                                    borderRadius: BorderRadius.circular(10.0),
+                                  ),
+                                  child: Align(
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
+                                    child: Text(
+                                      '-${valueOrDefault<String>(
+                                        widget.discount?.toString(),
+                                        '00',
+                                      )}%',
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            fontFamily: 'Inter',
+                                            color: FlutterFlowTheme.of(context)
+                                                .primaryBackground,
+                                            fontSize: 16.0,
+                                            letterSpacing: 0.0,
+                                          ),
+                                    ),
+                                  ),
+                                ),
+                              Align(
+                                alignment: const AlignmentDirectional(1.0, 0.0),
+                                child: Container(
+                                  decoration: const BoxDecoration(),
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.max,
                                     children: [
-                                      TextSpan(
-                                        text:
+                                      AlignedTooltip(
+                                        content: Padding(
+                                          padding: const EdgeInsets.all(4.0),
+                                          child: Text(
                                             FFLocalizations.of(context).getText(
-                                          'qj5hvpq7' /* % */,
+                                              'ambdfmfy' /* Compare Product */,
+                                            ),
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyLarge
+                                                .override(
+                                                  fontFamily: 'Inter',
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primary,
+                                                  letterSpacing: 0.0,
+                                                ),
+                                          ),
                                         ),
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily: 'Kantumruy Pro',
+                                        offset: 4.0,
+                                        preferredDirection: AxisDirection.up,
+                                        borderRadius:
+                                            BorderRadius.circular(2.0),
+                                        backgroundColor:
+                                            FlutterFlowTheme.of(context)
+                                                .secondaryBackground,
+                                        elevation: 4.0,
+                                        tailBaseWidth: 5.0,
+                                        tailLength: 5.0,
+                                        waitDuration:
+                                            const Duration(milliseconds: 10),
+                                        showDuration:
+                                            const Duration(milliseconds: 100),
+                                        triggerMode: TooltipTriggerMode.tap,
+                                        child: FlutterFlowIconButton(
+                                          borderRadius: 20.0,
+                                          borderWidth: 1.0,
+                                          buttonSize: 40.0,
+                                          fillColor:
+                                              FlutterFlowTheme.of(context)
+                                                  .primaryBackground,
+                                          icon: Icon(
+                                            Icons.change_circle_outlined,
+                                            color: FlutterFlowTheme.of(context)
+                                                .primaryText,
+                                            size: 24.0,
+                                          ),
+                                          onPressed: () async {
+                                            FFAppState().update(() {
+                                              FFAppState().addToCompareProducts(
+                                                  widget.id!);
+                                            });
+                                            if (FFAppState()
+                                                    .compareProducts
+                                                    .length >=
+                                                2) {
+                                              context.pushNamed(
+                                                  'Compare_products');
+                                            } else {
+                                              ScaffoldMessenger.of(context)
+                                                  .showSnackBar(
+                                                SnackBar(
+                                                  content: Text(
+                                                    'Add Another Product to Compare',
+                                                    style: GoogleFonts.getFont(
+                                                      'Inter',
+                                                      color: Colors.white,
+                                                      fontWeight:
+                                                          FontWeight.w500,
+                                                      fontSize: 16.0,
+                                                    ),
+                                                  ),
+                                                  duration: const Duration(
+                                                      milliseconds: 4000),
+                                                  backgroundColor:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .primary,
+                                                ),
+                                              );
+                                            }
+                                          },
+                                        ),
+                                      ),
+                                      AlignedTooltip(
+                                        content: Padding(
+                                          padding: const EdgeInsets.all(4.0),
+                                          child: Text(
+                                            FFLocalizations.of(context).getText(
+                                              'c90c5mx2' /* Quick View */,
+                                            ),
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyLarge
+                                                .override(
+                                                  fontFamily: 'Inter',
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primary,
+                                                  letterSpacing: 0.0,
+                                                ),
+                                          ),
+                                        ),
+                                        offset: 4.0,
+                                        preferredDirection: AxisDirection.up,
+                                        borderRadius:
+                                            BorderRadius.circular(2.0),
+                                        backgroundColor:
+                                            FlutterFlowTheme.of(context)
+                                                .secondaryBackground,
+                                        elevation: 4.0,
+                                        tailBaseWidth: 5.0,
+                                        tailLength: 5.0,
+                                        waitDuration:
+                                            const Duration(milliseconds: 10),
+                                        showDuration:
+                                            const Duration(milliseconds: 100),
+                                        triggerMode: TooltipTriggerMode.tap,
+                                        child: Builder(
+                                          builder: (context) =>
+                                              FlutterFlowIconButton(
+                                            borderColor: Colors.transparent,
+                                            borderRadius: 20.0,
+                                            borderWidth: 1.0,
+                                            buttonSize: 40.0,
+                                            fillColor:
+                                                FlutterFlowTheme.of(context)
+                                                    .primaryBackground,
+                                            icon: Icon(
+                                              Icons.remove_red_eye_outlined,
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .secondaryBackground,
-                                              fontSize: 16.0,
-                                              letterSpacing: 0.0,
-                                              fontWeight: FontWeight.w500,
+                                                      .primaryText,
+                                              size: 24.0,
                                             ),
+                                            onPressed: () async {
+                                              await showDialog(
+                                                context: context,
+                                                builder: (dialogContext) {
+                                                  return Dialog(
+                                                    elevation: 0,
+                                                    insetPadding:
+                                                        EdgeInsets.zero,
+                                                    backgroundColor:
+                                                        Colors.transparent,
+                                                    alignment:
+                                                        const AlignmentDirectional(
+                                                                0.0, 0.0)
+                                                            .resolve(
+                                                                Directionality.of(
+                                                                    context)),
+                                                    child: QuickViewWidget(
+                                                      quickView:
+                                                          widget.productRef,
+                                                    ),
+                                                  );
+                                                },
+                                              ).then(
+                                                  (value) => setState(() {}));
+                                            },
+                                          ),
+                                        ),
                                       ),
-                                      TextSpan(
-                                        text: valueOrDefault<String>(
-                                          widget.discount?.toString(),
-                                          '00',
-                                        ),
-                                        style: TextStyle(
-                                          color: FlutterFlowTheme.of(context)
-                                              .primaryBackground,
-                                          fontWeight: FontWeight.w500,
-                                          fontSize: 16.0,
-                                        ),
-                                      )
-                                    ],
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily: 'Kantumruy Pro',
-                                          color: FlutterFlowTheme.of(context)
-                                              .secondaryBackground,
-                                          fontSize: 16.0,
-                                          letterSpacing: 0.0,
-                                        ),
+                                    ].divide(const SizedBox(height: 10.0)),
                                   ),
                                 ),
                               ),
-                            ).animateOnActionTrigger(
-                              animationsMap[
-                                  'containerOnActionTriggerAnimation1']!,
-                            ),
+                            ],
                           ),
                         ),
+                      ),
                       Builder(
                         builder: (context) {
                           if (FFAppState()
@@ -330,7 +455,7 @@ class _ProductCardWidgetState extends State<ProductCardWidget>
                                     _model.updateCheckoutProductStruct(
                                       (e) => e
                                         ..product = _model.currentProduct
-                                        ..quantity = 1
+                                        ..incrementQuantity(1)
                                         ..totalPrice =
                                             _model.currentProduct?.price,
                                     );
@@ -347,7 +472,8 @@ class _ProductCardWidgetState extends State<ProductCardWidget>
                                                 100);
                                   });
                                   FFAppState().update(() {
-                                    FFAppState().subTotal = widget.price!;
+                                    FFAppState().subTotal =
+                                        FFAppState().subTotal + widget.price!;
                                   });
                                   FFAppState().update(() {
                                     FFAppState().addToCheckoutCart(
@@ -360,7 +486,12 @@ class _ProductCardWidgetState extends State<ProductCardWidget>
                                   decoration: BoxDecoration(
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
-                                    borderRadius: BorderRadius.circular(3.0),
+                                    borderRadius: const BorderRadius.only(
+                                      bottomLeft: Radius.circular(3.0),
+                                      bottomRight: Radius.circular(3.0),
+                                      topLeft: Radius.circular(0.0),
+                                      topRight: Radius.circular(0.0),
+                                    ),
                                   ),
                                   child: Align(
                                     alignment: const AlignmentDirectional(0.0, 0.0),
@@ -371,10 +502,10 @@ class _ProductCardWidgetState extends State<ProductCardWidget>
                                       style: FlutterFlowTheme.of(context)
                                           .labelLarge
                                           .override(
-                                            fontFamily: 'Kantumruy Pro',
+                                            fontFamily: 'Inter',
                                             color: FlutterFlowTheme.of(context)
                                                 .primaryBackground,
-                                            fontSize: 18.0,
+                                            fontSize: 16.0,
                                             letterSpacing: 0.0,
                                           ),
                                     ),
@@ -382,7 +513,7 @@ class _ProductCardWidgetState extends State<ProductCardWidget>
                                 ),
                               ).animateOnActionTrigger(
                                 animationsMap[
-                                    'containerOnActionTriggerAnimation2']!,
+                                    'containerOnActionTriggerAnimation']!,
                               ),
                             );
                           } else {
@@ -466,7 +597,7 @@ class _ProductCardWidgetState extends State<ProductCardWidget>
                                           style: FlutterFlowTheme.of(context)
                                               .headlineMedium
                                               .override(
-                                                fontFamily: 'Kantumruy Pro',
+                                                fontFamily: 'Inter',
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .primaryBackground,
@@ -498,15 +629,19 @@ class _ProductCardWidgetState extends State<ProductCardWidget>
                   ),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 16.0),
+            ),
+            Flexible(
+              child: Padding(
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                 child: Container(
                   width: MediaQuery.sizeOf(context).width * 1.0,
+                  height: 82.0,
                   decoration: const BoxDecoration(
                     color: Color(0x00FFFFFF),
                   ),
                   child: Column(
-                    mainAxisSize: MainAxisSize.min,
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Align(
                         alignment: const AlignmentDirectional(-1.0, -1.0),
@@ -519,7 +654,7 @@ class _ProductCardWidgetState extends State<ProductCardWidget>
                             style: FlutterFlowTheme.of(context)
                                 .labelLarge
                                 .override(
-                                  fontFamily: 'Kantumruy Pro',
+                                  fontFamily: 'Poppins',
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w600,
                                 ),
@@ -533,15 +668,29 @@ class _ProductCardWidgetState extends State<ProductCardWidget>
                           mainAxisSize: MainAxisSize.max,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 12.0),
-                              child: Text(
+                            Text(
+                              formatNumber(
+                                (widget.price!) -
+                                    ((widget.price!) *
+                                        widget.discount!.toDouble() /
+                                        100),
+                                formatType: FormatType.custom,
+                                currency: '\$',
+                                format: '0.00',
+                                locale: 'en_US',
+                              ),
+                              style: FlutterFlowTheme.of(context)
+                                  .labelLarge
+                                  .override(
+                                    fontFamily: 'Poppins',
+                                    color: FlutterFlowTheme.of(context).primary,
+                                    letterSpacing: 0.0,
+                                  ),
+                            ),
+                            if (widget.discount! > 0)
+                              Text(
                                 formatNumber(
-                                  (widget.price!) -
-                                      ((widget.price!) *
-                                          widget.discount!.toDouble() /
-                                          100),
+                                  widget.price,
                                   formatType: FormatType.custom,
                                   currency: '\$',
                                   format: '0.00',
@@ -550,43 +699,20 @@ class _ProductCardWidgetState extends State<ProductCardWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .labelLarge
                                     .override(
-                                      fontFamily: 'Kantumruy Pro',
-                                      color:
-                                          FlutterFlowTheme.of(context).primary,
+                                      fontFamily: 'Poppins',
                                       letterSpacing: 0.0,
+                                      decoration: TextDecoration.lineThrough,
                                     ),
-                              ),
-                            ),
-                            if (widget.discount! > 0)
-                              Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 0.0, 0.0, 12.0),
-                                child: Text(
-                                  formatNumber(
-                                    widget.price,
-                                    formatType: FormatType.custom,
-                                    currency: '\$',
-                                    format: '0.00',
-                                    locale: 'en_US',
-                                  ),
-                                  style: FlutterFlowTheme.of(context)
-                                      .labelLarge
-                                      .override(
-                                        fontFamily: 'Kantumruy Pro',
-                                        letterSpacing: 0.0,
-                                        decoration: TextDecoration.lineThrough,
-                                      ),
-                                ),
                               ),
                           ].divide(const SizedBox(width: 12.0)),
                         ),
                       ),
-                    ].divide(const SizedBox(height: 12.0)),
+                    ].divide(const SizedBox(height: 10.0)),
                   ),
                 ),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

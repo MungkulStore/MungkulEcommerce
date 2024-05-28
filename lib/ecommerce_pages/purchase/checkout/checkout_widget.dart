@@ -128,7 +128,11 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                 maxWidth: 1537.0,
                 maxHeight: 960.0,
               ),
-              decoration: const BoxDecoration(),
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: FlutterFlowTheme.of(context).primary,
+                ),
+              ),
               child: SingleChildScrollView(
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
@@ -193,7 +197,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                         style: FlutterFlowTheme.of(context)
                                             .headlineLarge
                                             .override(
-                                              fontFamily: 'Kantumruy Pro',
+                                              fontFamily: 'Inter',
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .primary,
@@ -240,7 +244,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                               .labelLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 fontSize: 18.0,
                                                                 letterSpacing:
                                                                     0.0,
@@ -266,7 +270,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                                     .labelLarge
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Kantumruy Pro',
+                                                                          'Inter',
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
@@ -276,7 +280,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                                     .labelMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Kantumruy Pro',
+                                                                          'Inter',
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
@@ -347,7 +351,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -374,7 +378,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                                 .labelLarge
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   fontSize:
                                                                       18.0,
                                                                   letterSpacing:
@@ -401,7 +405,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                                       .labelLarge
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Kantumruy Pro',
+                                                                            'Inter',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -411,7 +415,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                                       .labelMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Kantumruy Pro',
+                                                                            'Inter',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -482,7 +486,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -507,7 +511,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                               .labelLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 fontSize: 18.0,
                                                                 letterSpacing:
                                                                     0.0,
@@ -596,7 +600,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                                 .labelMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -606,7 +610,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -616,7 +620,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -677,7 +681,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                               .labelLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 fontSize: 18.0,
                                                                 letterSpacing:
                                                                     0.0,
@@ -703,7 +707,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                                     .labelLarge
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Kantumruy Pro',
+                                                                          'Inter',
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
@@ -713,7 +717,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                                     .labelMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Kantumruy Pro',
+                                                                          'Inter',
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
@@ -784,7 +788,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -834,7 +838,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                               .labelLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 fontSize: 18.0,
                                                                 letterSpacing:
                                                                     0.0,
@@ -860,7 +864,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                                     .labelMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Kantumruy Pro',
+                                                                          'Inter',
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
@@ -870,7 +874,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                                     .labelMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Kantumruy Pro',
+                                                                          'Inter',
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
@@ -941,7 +945,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 color: const Color(
                                                                     0xFF2E00FF),
                                                                 letterSpacing:
@@ -968,7 +972,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                               .labelLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 fontSize: 18.0,
                                                                 letterSpacing:
                                                                     0.0,
@@ -994,7 +998,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                                   .labelMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Kantumruy Pro',
+                                                                        'Inter',
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
@@ -1004,7 +1008,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                                   .labelMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Kantumruy Pro',
+                                                                        'Inter',
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
@@ -1076,7 +1080,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -1100,7 +1104,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                               .labelLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 fontSize: 18.0,
                                                                 letterSpacing:
                                                                     0.0,
@@ -1189,7 +1193,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                                 .labelMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -1199,7 +1203,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -1209,7 +1213,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -1270,7 +1274,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                               .labelLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 fontSize: 18.0,
                                                                 letterSpacing:
                                                                     0.0,
@@ -1292,7 +1296,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                                   .labelMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Kantumruy Pro',
+                                                                        'Inter',
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
@@ -1302,7 +1306,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                                   .labelMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Kantumruy Pro',
+                                                                        'Inter',
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
@@ -1374,7 +1378,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -1469,7 +1473,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Kantumruy Pro',
+                                                                          'Inter',
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
@@ -1541,7 +1545,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Kantumruy Pro',
+                                                                          'Inter',
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
@@ -1573,7 +1577,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                           style: FlutterFlowTheme.of(context)
                                               .labelLarge
                                               .override(
-                                                fontFamily: 'Kantumruy Pro',
+                                                fontFamily: 'Inter',
                                                 fontSize: 18.0,
                                                 letterSpacing: 0.0,
                                               ),
@@ -1591,13 +1595,13 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                         labelStyle: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
-                                              fontFamily: 'Kantumruy Pro',
+                                              fontFamily: 'Inter',
                                               letterSpacing: 0.0,
                                             ),
                                         hintStyle: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
-                                              fontFamily: 'Kantumruy Pro',
+                                              fontFamily: 'Inter',
                                               letterSpacing: 0.0,
                                             ),
                                         enabledBorder: OutlineInputBorder(
@@ -1643,7 +1647,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily: 'Kantumruy Pro',
+                                            fontFamily: 'Inter',
                                             letterSpacing: 0.0,
                                           ),
                                       maxLines: 3,
@@ -1811,7 +1815,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                                                     Text(
                                                                                       cartItemsItem.product.name,
                                                                                       style: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                            fontFamily: 'Kantumruy Pro',
+                                                                                            fontFamily: 'Inter',
                                                                                             letterSpacing: 0.0,
                                                                                             fontWeight: FontWeight.bold,
                                                                                           ),
@@ -1822,7 +1826,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                                                         cartItemsItem.product.description.maybeHandleOverflow(maxChars: 100),
                                                                                         textAlign: TextAlign.start,
                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Kantumruy Pro',
+                                                                                              fontFamily: 'Inter',
                                                                                               fontSize: 12.0,
                                                                                               letterSpacing: 0.0,
                                                                                               fontWeight: FontWeight.w500,
@@ -1885,7 +1889,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                                                                           'hwszcnn9' /* Remove */,
                                                                                                         ),
                                                                                                         style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                              fontFamily: 'Kantumruy Pro',
+                                                                                                              fontFamily: 'Inter',
                                                                                                               fontSize: 13.0,
                                                                                                               letterSpacing: 0.0,
                                                                                                             ),
@@ -1984,7 +1988,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                                                                       child: Text(
                                                                                                         cartItemsItem.quantity.toString(),
                                                                                                         style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                              fontFamily: 'Kantumruy Pro',
+                                                                                                              fontFamily: 'Inter',
                                                                                                               fontSize: 18.0,
                                                                                                               letterSpacing: 0.0,
                                                                                                             ),
@@ -2059,7 +2063,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                                                   ),
                                                                                   textAlign: TextAlign.end,
                                                                                   style: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                        fontFamily: 'Kantumruy Pro',
+                                                                                        fontFamily: 'Inter',
                                                                                         fontSize: 16.0,
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.bold,
@@ -2112,8 +2116,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                               .of(context)
                                                           .titleMedium
                                                           .override(
-                                                            fontFamily:
-                                                                'Kantumruy Pro',
+                                                            fontFamily: 'Inter',
                                                             color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .primaryText,
@@ -2486,8 +2489,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Kantumruy Pro',
+                                                          fontFamily: 'Inter',
                                                           letterSpacing: 0.0,
                                                         ),
                                                   ),
@@ -2593,8 +2595,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Kantumruy Pro',
+                                                          fontFamily: 'Inter',
                                                           letterSpacing: 0.0,
                                                         ),
                                                   ),
@@ -2610,20 +2611,21 @@ class _CheckoutWidgetState extends State<CheckoutWidget>
                                                       .fromSTEB(
                                                           0.0, 16.0, 0.0, 0.0),
                                                   child: FFButtonWidget(
-                                                    onPressed: ((_model.fullnameloginTextController
-                                                                        .text ==
-                                                                    '') &&
+                                                    onPressed: ((_model.fullnameloginTextController.text ==
+                                                                    '') ||
                                                             (_model
                                                                         .addressloginTextController
                                                                         .text ==
-                                                                    '') &&
+                                                                    '') ||
                                                             (_model.locationloginValue ==
                                                                     null ||
                                                                 _model.locationloginValue ==
-                                                                    '') &&
+                                                                    '') ||
                                                             (_model.fullnameTextController
                                                                         .text ==
-                                                                    ''))
+                                                                    '') ||
+                                                            (FFAppState()
+                                                                    .checkoutCart.isEmpty))
                                                         ? null
                                                         : () async {
                                                             if (loggedIn ==

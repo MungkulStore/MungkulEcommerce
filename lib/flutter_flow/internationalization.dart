@@ -131,6 +131,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Best Selling Products',
       'km': 'ទំនិញលក់ដាច់បំផុត',
     },
+    'h8ksm4fi': {
+      'en': 'Button',
+      'km': '',
+    },
     'vymv7nrq': {
       'en': 'Best Selling Products',
       'km': 'ផលិតផលលក់ដាច់បំផុត',
@@ -151,8 +155,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Explore Our Products',
       'km': 'ផលិតផលរបស់យើង',
     },
-    '2rnk5dis': {
-      'en': 'View All Our Product',
+    'lsqgn7xp': {
+      'en': 'View All Products',
       'km': '',
     },
     '84u1l9z6': {
@@ -174,6 +178,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // Log_in
   {
+    'dtuhrx1g': {
+      'en': 'Sign In',
+      'km': '',
+    },
     '3xfvk4pz': {
       'en': 'Log In',
       'km': 'ចូលគណនី',
@@ -217,6 +225,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // Sign_up
   {
+    '7yjjzr01': {
+      'en': 'Sign Up',
+      'km': '',
+    },
     'co8k5t5b': {
       'en': 'Create an Account',
       'km': 'បង្កើត​គណនី',
@@ -656,15 +668,23 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'km': 'email',
     },
     'l61kuat7': {
-      'en': 'Edit Header 1',
+      'en': 'Name',
       'km': '',
     },
     'moy0mafh': {
-      'en': 'Edit Header 2',
+      'en': 'Phone Number',
       'km': '',
     },
     'iqonmgig': {
-      'en': 'Edit Header 3',
+      'en': 'Adress',
+      'km': '',
+    },
+    '7k0b85u0': {
+      'en': 'Email',
+      'km': '',
+    },
+    'qljitdj1': {
+      'en': 'Edit Info',
       'km': '',
     },
     'svsr9a6k': {
@@ -836,12 +856,28 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // product_Detail
   {
-    'pe63hrz7': {
-      'en': 'Add to Cart',
-      'km': 'បញ្ចូលទៅក្នុងរទេះ',
+    'bro9ffp1': {
+      'en': 'Buy Now',
+      'km': '',
     },
-    '9085bt5f': {
+    'tgur89z9': {
+      'en': 'Express delivery',
+      'km': '',
+    },
+    'dlg4kvjo': {
+      'en': 'Express delivery',
+      'km': '',
+    },
+    'af76lrd5': {
       'en': 'Remove',
+      'km': '',
+    },
+    'amb5ctsk': {
+      'en': 'Go to Cart',
+      'km': '',
+    },
+    'hocvx2c4': {
+      'en': 'Compare Product',
       'km': '',
     },
     'avvbrbpa': {
@@ -967,10 +1003,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Category',
       'km': '',
     },
-    '654e1otm': {
-      'en': 'Option 1',
-      'km': '',
-    },
     '7z9q567u': {
       'en': 'Please select...',
       'km': '',
@@ -983,12 +1015,20 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Add Category',
       'km': '',
     },
-    '7crn8kj5': {
+    'nq4ndkfn': {
       'en': 'Choose Category',
       'km': '',
     },
-    'blhnsewn': {
+    'k4d43j83': {
       'en': 'Type Category here....',
+      'km': '',
+    },
+    'ju1tj1c9': {
+      'en': 'Save',
+      'km': '',
+    },
+    'x55cp61e': {
+      'en': 'Drag and drop image here, or click add image',
       'km': '',
     },
     '6xe2y21s': {
@@ -1021,10 +1061,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     '5i428lzt': {
       'en': 'Description',
       'km': 'ការពិពណ៌នា',
-    },
-    'mmkcb2xw': {
-      'en': 'Category',
-      'km': 'ប្រភេទ',
     },
     'gaeliwhq': {
       'en': 'Total',
@@ -1184,6 +1220,22 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // my_Order
   {
+    'm36x98kb': {
+      'en': 'Manage My Account',
+      'km': '',
+    },
+    'jrhfinye': {
+      'en': 'My Account',
+      'km': '',
+    },
+    'cbc62m42': {
+      'en': 'My Order',
+      'km': '',
+    },
+    'kjz080bp': {
+      'en': 'My Order',
+      'km': '',
+    },
     'adq70ih0': {
       'en': 'Order',
       'km': 'ទំនិញ',
@@ -1212,6 +1264,34 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Status',
       'km': 'ការទូទាត់',
     },
+    '830gyz0o': {
+      'en': 'Edit Your Profile',
+      'km': '',
+    },
+    'qjx1v4hc': {
+      'en': 'Full Name',
+      'km': '',
+    },
+    'aptsbjfz': {
+      'en': 'Phone Number',
+      'km': '',
+    },
+    'z7uvhn3b': {
+      'en': 'Adress',
+      'km': '',
+    },
+    'ijsvi9s1': {
+      'en': 'Email',
+      'km': '',
+    },
+    'o9mi7jny': {
+      'en': 'Sign Out',
+      'km': '',
+    },
+    '0awziubb': {
+      'en': 'Save Change',
+      'km': '',
+    },
     '8frk2i6i': {
       'en': 'Home',
       'km': 'ទំព័រដើម',
@@ -1239,13 +1319,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'What are you looking for?',
       'km': 'តើ​អ្នក​កំពុង​រក​អ្វី?',
     },
-    'bbaxtjrt': {
+    'bdwomnyk': {
       'en': 'Discount',
-      'km': 'បញ្ចុះតម្លៃ',
+      'km': '',
     },
-    'xs0pc2ye': {
+    'u413xiip': {
       'en': ' Discount product',
-      'km': 'ផលិតផលបញ្ចុះតម្លៃ',
+      'km': '',
     },
     '0h422m33': {
       'en': 'No Products Available',
@@ -1648,10 +1728,45 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'km': '',
     },
   },
+  // Compare_products
+  {
+    '2g9zedg8': {
+      'en': 'Image',
+      'km': '',
+    },
+    'cujnk8nw': {
+      'en': 'Name',
+      'km': '',
+    },
+    'aqx6a2ee': {
+      'en': 'Price',
+      'km': '',
+    },
+    'c3im7fu1': {
+      'en': 'Description',
+      'km': '',
+    },
+    'fgmb7z3k': {
+      'en': 'Detail',
+      'km': '',
+    },
+    'smsagm76': {
+      'en': 'View more Detail',
+      'km': '',
+    },
+    '9bgs8l1i': {
+      'en': 'Home',
+      'km': '',
+    },
+  },
   // ProductCard
   {
-    'qj5hvpq7': {
-      'en': '%',
+    'ambdfmfy': {
+      'en': 'Compare Product',
+      'km': '',
+    },
+    'c90c5mx2': {
+      'en': 'Quick View',
       'km': '',
     },
     '7oy2rv0y': {
@@ -1691,6 +1806,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'n2f4rjc3': {
       'en': 'Banner List',
+      'km': '',
+    },
+    '9ofgf45v': {
+      'en': 'Button',
       'km': '',
     },
   },
@@ -1848,6 +1967,25 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'km': 'ចូលទៅកាន់ទំព័រដើម',
     },
   },
+  // QuickView
+  {
+    '7nopfxyw': {
+      'en': 'Availability:',
+      'km': '',
+    },
+    'zxfg870j': {
+      'en': 'Category: ',
+      'km': '',
+    },
+    '3z4ff76a': {
+      'en': 'Base Price:',
+      'km': '',
+    },
+    'zoyag0qn': {
+      'en': 'Add to Cart',
+      'km': '',
+    },
+  },
   // Miscellaneous
   {
     'vuzvfxrq': {
@@ -1895,6 +2033,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'km': '',
     },
     'a2yght21': {
+      'en': '',
+      'km': '',
+    },
+    'furndtik': {
       'en': '',
       'km': '',
     },

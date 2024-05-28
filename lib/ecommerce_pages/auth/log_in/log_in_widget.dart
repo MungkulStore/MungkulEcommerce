@@ -134,7 +134,11 @@ class _LogInWidgetState extends State<LogInWidget>
                 maxWidth: 1537.0,
                 maxHeight: 960.0,
               ),
-              decoration: const BoxDecoration(),
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: FlutterFlowTheme.of(context).primary,
+                ),
+              ),
               child: SingleChildScrollView(
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
@@ -152,6 +156,20 @@ class _LogInWidgetState extends State<LogInWidget>
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
+                          Align(
+                            alignment: const AlignmentDirectional(-1.0, -1.0),
+                            child: Text(
+                              FFLocalizations.of(context).getText(
+                                'dtuhrx1g' /* Sign In */,
+                              ),
+                              style: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .override(
+                                    fontFamily: 'Inter',
+                                    letterSpacing: 0.0,
+                                  ),
+                            ),
+                          ),
                           Container(
                             width: MediaQuery.sizeOf(context).width * 1.0,
                             decoration: BoxDecoration(
@@ -210,8 +228,7 @@ class _LogInWidgetState extends State<LogInWidget>
                                                           context)
                                                       .displaySmall
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -233,8 +250,7 @@ class _LogInWidgetState extends State<LogInWidget>
                                                           context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Kantumruy Pro',
+                                                        fontFamily: 'Inter',
                                                         letterSpacing: 0.0,
                                                       ),
                                                 ),
@@ -290,7 +306,7 @@ class _LogInWidgetState extends State<LogInWidget>
                                                                       .labelLarge
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Kantumruy Pro',
+                                                                            'Inter',
                                                                         color: FlutterFlowTheme.of(context)
                                                                             .primaryBackground,
                                                                         letterSpacing:
@@ -349,7 +365,7 @@ class _LogInWidgetState extends State<LogInWidget>
                                                                         .bodyMedium
                                                                         .override(
                                                                           fontFamily:
-                                                                              'Kantumruy Pro',
+                                                                              'Inter',
                                                                           letterSpacing:
                                                                               0.0,
                                                                         ),
@@ -358,7 +374,7 @@ class _LogInWidgetState extends State<LogInWidget>
                                                                         .bodyMedium
                                                                         .override(
                                                                           fontFamily:
-                                                                              'Kantumruy Pro',
+                                                                              'Inter',
                                                                           color:
                                                                               const Color(0xFF0B0001),
                                                                           letterSpacing:
@@ -461,7 +477,7 @@ class _LogInWidgetState extends State<LogInWidget>
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Kantumruy Pro',
+                                                                            'Inter',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -495,6 +511,8 @@ class _LogInWidgetState extends State<LogInWidget>
                                                                   .primaryBackground,
                                                               size: 24.0,
                                                             ),
+                                                            showLoadingIndicator:
+                                                                true,
                                                             onPressed:
                                                                 () async {
                                                               FFAppState()
@@ -562,7 +580,7 @@ class _LogInWidgetState extends State<LogInWidget>
                                                                   .labelLarge
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Kantumruy Pro',
+                                                                        'Inter',
                                                                     letterSpacing:
                                                                         0.0,
                                                                     fontWeight:
@@ -592,7 +610,7 @@ class _LogInWidgetState extends State<LogInWidget>
                                                                       .bodyLarge
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Kantumruy Pro',
+                                                                            'Inter',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -801,7 +819,7 @@ class _LogInWidgetState extends State<LogInWidget>
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                fontFamily: 'Kantumruy Pro',
+                                                                                fontFamily: 'Inter',
                                                                                 color: FlutterFlowTheme.of(context).primary,
                                                                                 letterSpacing: 0.0,
                                                                                 fontWeight: FontWeight.normal,
@@ -813,7 +831,7 @@ class _LogInWidgetState extends State<LogInWidget>
                                                                     return FlutterFlowTimer(
                                                                       initialTime:
                                                                           _model
-                                                                              .timerMilliseconds,
+                                                                              .timerInitialTimeMs,
                                                                       getDisplayTime:
                                                                           (value) =>
                                                                               StopWatchTimer.getDisplayTime(
@@ -860,7 +878,7 @@ class _LogInWidgetState extends State<LogInWidget>
                                                                           .headlineSmall
                                                                           .override(
                                                                             fontFamily:
-                                                                                'Kantumruy Pro',
+                                                                                'Inter',
                                                                             color:
                                                                                 FlutterFlowTheme.of(context).primary,
                                                                             fontSize:
@@ -923,8 +941,7 @@ class _LogInWidgetState extends State<LogInWidget>
                                                               context)
                                                           .titleSmall
                                                           .override(
-                                                            fontFamily:
-                                                                'Kantumruy Pro',
+                                                            fontFamily: 'Inter',
                                                             color: Colors.white,
                                                             fontSize: 21.0,
                                                             letterSpacing: 0.0,
@@ -959,8 +976,7 @@ class _LogInWidgetState extends State<LogInWidget>
                                                               .of(context)
                                                           .bodyMedium
                                                           .override(
-                                                            fontFamily:
-                                                                'Kantumruy Pro',
+                                                            fontFamily: 'Inter',
                                                             letterSpacing: 0.0,
                                                           ),
                                                     ),
@@ -989,7 +1005,7 @@ class _LogInWidgetState extends State<LogInWidget>
                                                                 .bodyLarge
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,

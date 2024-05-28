@@ -82,7 +82,11 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                     maxWidth: 1537.0,
                     maxHeight: 960.0,
                   ),
-                  decoration: const BoxDecoration(),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: FlutterFlowTheme.of(context).primary,
+                    ),
+                  ),
                   child: SingleChildScrollView(
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
@@ -105,7 +109,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                             ),
                             child: Padding(
                               padding: const EdgeInsetsDirectional.fromSTEB(
-                                  40.0, 0.0, 40.0, 0.0),
+                                  130.0, 0.0, 130.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
@@ -122,7 +126,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .displayLarge
                                               .override(
-                                                fontFamily: 'Kantumruy Pro',
+                                                fontFamily: 'Inter',
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w600,
                                               ),
@@ -135,7 +139,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .titleLarge
                                             .override(
-                                              fontFamily: 'Kantumruy Pro',
+                                              fontFamily: 'Inter',
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .primary,
@@ -170,8 +174,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .displayMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Kantumruy Pro',
+                                                          fontFamily: 'Inter',
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .primary,
@@ -188,8 +191,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyLarge
                                                         .override(
-                                                          fontFamily:
-                                                              'Kantumruy Pro',
+                                                          fontFamily: 'Inter',
                                                           letterSpacing: 0.0,
                                                           lineHeight: 2.0,
                                                         ),
@@ -257,8 +259,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .displayMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Kantumruy Pro',
+                                                          fontFamily: 'Inter',
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .primary,
@@ -275,8 +276,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyLarge
                                                         .override(
-                                                          fontFamily:
-                                                              'Kantumruy Pro',
+                                                          fontFamily: 'Inter',
                                                           letterSpacing: 0.0,
                                                           lineHeight: 2.0,
                                                         ),
@@ -313,8 +313,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .displayMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Kantumruy Pro',
+                                                          fontFamily: 'Inter',
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .primary,
@@ -331,8 +330,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyLarge
                                                         .override(
-                                                          fontFamily:
-                                                              'Kantumruy Pro',
+                                                          fontFamily: 'Inter',
                                                           letterSpacing: 0.0,
                                                           lineHeight: 2.0,
                                                         ),

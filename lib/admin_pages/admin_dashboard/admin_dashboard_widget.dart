@@ -889,7 +889,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                         style: FlutterFlowTheme.of(context)
                                             .displaySmall
                                             .override(
-                                              fontFamily: 'Kantumruy Pro',
+                                              fontFamily: 'Inter',
                                               letterSpacing: 0.0,
                                             ),
                                       ).animateOnPageLoad(animationsMap[
@@ -906,7 +906,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                         style: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
-                                              fontFamily: 'Kantumruy Pro',
+                                              fontFamily: 'Inter',
                                               letterSpacing: 0.0,
                                             ),
                                       ).animateOnPageLoad(animationsMap[
@@ -1034,7 +1034,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                               .headlineSmall
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -1057,7 +1057,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                               .headlineLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -1179,7 +1179,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                               .headlineSmall
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -1224,7 +1224,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                                   .headlineLarge
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Kantumruy Pro',
+                                                                        'Inter',
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
@@ -1348,7 +1348,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                               .headlineSmall
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -1393,7 +1393,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                                   .headlineLarge
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Kantumruy Pro',
+                                                                        'Inter',
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
@@ -1434,7 +1434,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                     style: FlutterFlowTheme.of(context)
                                         .labelLarge
                                         .override(
-                                          fontFamily: 'Kantumruy Pro',
+                                          fontFamily: 'Inter',
                                           letterSpacing: 0.0,
                                         ),
                                   ).animateOnPageLoad(animationsMap[
@@ -1666,7 +1666,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                                       .titleLarge
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Kantumruy Pro',
+                                                                            'Inter',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -1691,7 +1691,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                                         .labelMedium
                                                                         .override(
                                                                           fontFamily:
-                                                                              'Kantumruy Pro',
+                                                                              'Inter',
                                                                           letterSpacing:
                                                                               0.0,
                                                                         ),
@@ -1929,7 +1929,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                                       .titleLarge
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Kantumruy Pro',
+                                                                            'Inter',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -1954,7 +1954,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                                         .labelMedium
                                                                         .override(
                                                                           fontFamily:
-                                                                              'Kantumruy Pro',
+                                                                              'Inter',
                                                                           letterSpacing:
                                                                               0.0,
                                                                         ),
@@ -2174,7 +2174,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                                 .titleLarge
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -2200,7 +2200,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                               .labelMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -2391,7 +2391,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                                 .titleLarge
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -2417,7 +2417,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                               .labelMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -2596,8 +2596,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                             context)
                                                         .headlineLarge
                                                         .override(
-                                                          fontFamily:
-                                                              'Kantumruy Pro',
+                                                          fontFamily: 'Inter',
                                                           letterSpacing: 0.0,
                                                         ),
                                                   ),
@@ -2667,7 +2666,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                                 .labelLarge
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primaryBackground,
@@ -2709,7 +2708,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                               .labelLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .primaryBackground,
@@ -2750,7 +2749,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                               .labelLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .primaryBackground,
@@ -2791,7 +2790,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                               .labelLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .primaryBackground,
@@ -2832,7 +2831,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                               .labelLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .primaryBackground,
@@ -2991,7 +2990,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                                               AutoSizeText(
                                                                             listViewProductsRecord.name,
                                                                             style: FlutterFlowTheme.of(context).bodyLarge.override(
-                                                                                  fontFamily: 'Kantumruy Pro',
+                                                                                  fontFamily: 'Inter',
                                                                                   letterSpacing: 0.0,
                                                                                 ),
                                                                           ),
@@ -3032,7 +3031,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                fontFamily: 'Kantumruy Pro',
+                                                                                fontFamily: 'Inter',
                                                                                 letterSpacing: 0.0,
                                                                               ),
                                                                         ),
@@ -3071,7 +3070,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                fontFamily: 'Kantumruy Pro',
+                                                                                fontFamily: 'Inter',
                                                                                 letterSpacing: 0.0,
                                                                               ),
                                                                         ),
@@ -3119,7 +3118,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                fontFamily: 'Kantumruy Pro',
+                                                                                fontFamily: 'Inter',
                                                                                 fontSize: 14.0,
                                                                                 letterSpacing: 0.0,
                                                                               ),
@@ -3151,7 +3150,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                fontFamily: 'Kantumruy Pro',
+                                                                                fontFamily: 'Inter',
                                                                                 letterSpacing: 0.0,
                                                                               ),
                                                                         ),

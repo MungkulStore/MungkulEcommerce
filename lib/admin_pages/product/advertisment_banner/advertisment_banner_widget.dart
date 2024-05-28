@@ -240,8 +240,7 @@ class _AdvertismentBannerWidgetState extends State<AdvertismentBannerWidget>
                                                     FlutterFlowTheme.of(context)
                                                         .displayMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Kantumruy Pro',
+                                                          fontFamily: 'Inter',
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w600,
@@ -326,7 +325,7 @@ class _AdvertismentBannerWidgetState extends State<AdvertismentBannerWidget>
                                                               .titleLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -519,7 +518,7 @@ class _AdvertismentBannerWidgetState extends State<AdvertismentBannerWidget>
                                                                           .labelLarge
                                                                           .override(
                                                                             fontFamily:
-                                                                                'Kantumruy Pro',
+                                                                                'Inter',
                                                                             letterSpacing:
                                                                                 0.0,
                                                                           ),
@@ -681,8 +680,7 @@ class _AdvertismentBannerWidgetState extends State<AdvertismentBannerWidget>
                                                     FlutterFlowTheme.of(context)
                                                         .titleLarge
                                                         .override(
-                                                          fontFamily:
-                                                              'Kantumruy Pro',
+                                                          fontFamily: 'Inter',
                                                           letterSpacing: 0.0,
                                                         ),
                                               ),
@@ -717,7 +715,7 @@ class _AdvertismentBannerWidgetState extends State<AdvertismentBannerWidget>
                                                               .bodyLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 letterSpacing:
                                                                     0.0,
                                                                 fontWeight:
@@ -794,7 +792,7 @@ class _AdvertismentBannerWidgetState extends State<AdvertismentBannerWidget>
                                                                       .labelMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Kantumruy Pro',
+                                                                            'Inter',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -804,7 +802,7 @@ class _AdvertismentBannerWidgetState extends State<AdvertismentBannerWidget>
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Kantumruy Pro',
+                                                                            'Inter',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -814,7 +812,7 @@ class _AdvertismentBannerWidgetState extends State<AdvertismentBannerWidget>
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Kantumruy Pro',
+                                                                            'Inter',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -885,7 +883,7 @@ class _AdvertismentBannerWidgetState extends State<AdvertismentBannerWidget>
                                                               .bodyLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Kantumruy Pro',
+                                                                    'Inter',
                                                                 letterSpacing:
                                                                     0.0,
                                                                 fontWeight:
@@ -917,7 +915,7 @@ class _AdvertismentBannerWidgetState extends State<AdvertismentBannerWidget>
                                                                       .labelMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Kantumruy Pro',
+                                                                            'Inter',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -933,7 +931,7 @@ class _AdvertismentBannerWidgetState extends State<AdvertismentBannerWidget>
                                                                       .labelLarge
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Kantumruy Pro',
+                                                                            'Inter',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -1004,7 +1002,7 @@ class _AdvertismentBannerWidgetState extends State<AdvertismentBannerWidget>
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Kantumruy Pro',
+                                                                      'Inter',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -1102,7 +1100,7 @@ class _AdvertismentBannerWidgetState extends State<AdvertismentBannerWidget>
                                       textStyle: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .override(
-                                            fontFamily: 'Kantumruy Pro',
+                                            fontFamily: 'Inter',
                                             color: Colors.white,
                                             fontSize: 18.0,
                                             letterSpacing: 0.0,
